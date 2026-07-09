@@ -1,0 +1,5 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Athirikya mark">
+  <rect width="128" height="128" rx="28" fill="#0B1F3A"/>
+  <path d="M20 70C36 46 43 49 45 79C47 95 60 72 68 64C77 55 83 67 85 84C88 102 108 70 116 60" stroke="#2F7DF6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M86 65C104 56 114 45 121 34C124 29 128 32 127 38L124 76C123 82 116 84 112 79L101 65C96 71 91 76 86 80" fill="#FFC642"/>
+</svg>
