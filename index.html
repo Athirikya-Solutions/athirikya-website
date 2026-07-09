@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Athirikya</title>
+  <title>Athirikya | Turning Uncertainty into Confidence</title>
   <meta name="description" content="Athirikya builds thoughtful software that helps people navigate uncertainty with clarity and confidence.">
+  <link rel="icon" href="assets/athirikya-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Athirikya home">Athirikya</a>
+    <a class="brand" href="index.html" aria-label="Athirikya home">
+      <img src="assets/athirikya-logo.svg" alt="Athirikya">
+    </a>
     <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
       <a href="#products">Products</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
@@ -19,58 +23,117 @@
   </header>
 
   <main>
-    <section class="hero">
-      <p class="eyebrow">Independent software studio</p>
-      <h1>Turning Uncertainty into Confidence</h1>
-      <p class="hero-text">Building thoughtful software that helps people navigate uncertainty with clarity and confidence.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#products">View Products</a>
-        <a class="button secondary" href="mailto:info@athirikya.com">Contact Us</a>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="pill">Software for real life</p>
+        <h1 id="hero-title">Turning uncertainty into <span>confidence</span>.</h1>
+        <p class="hero-text">Building thoughtful software that helps people navigate uncertainty with clarity and confidence.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#products">Explore our product</a>
+          <a class="button secondary" href="#about">Learn about Athirikya</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="MyGermanFreund app preview">
+        <div class="phone-frame">
+          <div class="phone-top"></div>
+          <div class="app-screen">
+            <div class="app-bar"><span>☰</span><strong>🇩🇪 MyGermanFreund</strong><span>🔔</span></div>
+            <h3>Guten Tag! 👋</h3>
+            <p>How can we help you today?</p>
+            <div class="app-card blue"><span>📄</span><div><strong>Letter Scanner</strong><small>Upload a letter and get clear explanations.</small></div></div>
+            <div class="app-card green"><span>💬</span><div><strong>German Buzz</strong><small>Prepare for real conversations this week.</small></div></div>
+            <div class="app-card gold"><span>💡</span><div><strong>Did You Know?</strong><small>Learn practical Germany knowledge.</small></div></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section about" aria-labelledby="about-title">
+    <section class="feature-strip" aria-label="MyGermanFreund features">
+      <article>
+        <span>📄</span>
+        <h3>Scan & understand letters</h3>
+        <p>Get clear AI-assisted explanations of official German letters.</p>
+      </article>
+      <article>
+        <span>📅</span>
+        <h3>Track important deadlines</h3>
+        <p>Add identified future deadlines to your calendar.</p>
+      </article>
+      <article>
+        <span>💬</span>
+        <h3>German Buzz</h3>
+        <p>Prepare with weekly topics, vocabulary, and guided dialogues.</p>
+      </article>
+      <article>
+        <span>💡</span>
+        <h3>Did You Know?</h3>
+        <p>Discover practical insights about everyday life in Germany.</p>
+      </article>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
       <div class="section-copy">
         <p class="eyebrow">About Athirikya</p>
-        <h2 id="about-title">Practical software for real-world moments.</h2>
-        <p>Athirikya creates digital products that make everyday life easier to understand. We focus on practical tools that reduce complexity, support better decisions, and help people move forward with confidence.</p>
-        <p>Our products are guided by a simple belief: technology should feel useful, human, and clear.</p>
+        <h2 id="about-title">Practical software for real-world uncertainty.</h2>
+        <p>Athirikya is an independent software studio dedicated to building thoughtful digital products that help people move forward with clarity and confidence.</p>
+        <p>We believe technology should do more than automate tasks. It should make everyday life easier to understand, reduce complexity, and help people make informed decisions.</p>
       </div>
       <div class="principles" aria-label="Athirikya principles">
-        <div>
-          <span>01</span>
-          <strong>Solve real problems.</strong>
+        <div><span>01</span><strong>Solve real problems.</strong></div>
+        <div><span>02</span><strong>Keep technology simple.</strong></div>
+        <div><span>03</span><strong>Build confidence.</strong></div>
+      </div>
+    </section>
+
+    <section class="section product-section" id="products" aria-labelledby="products-title">
+      <div class="product-copy">
+        <p class="pill">Our first product</p>
+        <h2 id="products-title">MyGermanFreund</h2>
+        <h3>Confident. Capable. In Germany.</h3>
+        <p>MyGermanFreund helps newcomers, expats, students, and international professionals understand official letters, learn practical Germany knowledge, and prepare for everyday conversations.</p>
+        <div class="product-points">
+          <div><span>🧭</span><strong>Built for newcomers</strong><small>Designed around real needs in Germany.</small></div>
+          <div><span>🛡️</span><strong>Privacy-minded</strong><small>Personal data is reduced whenever possible before AI analysis.</small></div>
+          <div><span>🔒</span><strong>Simple and reliable</strong><small>Focused V1 features, clear guidance, and practical value.</small></div>
         </div>
-        <div>
-          <span>02</span>
-          <strong>Keep technology simple.</strong>
-        </div>
-        <div>
-          <span>03</span>
-          <strong>Build confidence.</strong>
+        <a class="store-badge" href="#" aria-label="Google Play coming soon">Coming soon on Google Play</a>
+      </div>
+      <div class="product-preview" aria-label="German Buzz preview">
+        <div class="preview-card">
+          <p class="week">KW 28</p>
+          <h3>German Buzz</h3>
+          <p>Prepare for real conversations this week.</p>
+          <ul>
+            <li>Worum geht es?</li>
+            <li>Gespräch</li>
+            <li>Wörter</li>
+            <li>Satz zum Thema</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section" id="products" aria-labelledby="products-title">
-      <p class="eyebrow">Products</p>
-      <h2 id="products-title">Our first product</h2>
-      <article class="product-card">
-        <div>
-          <p class="product-label">MyGermanFreund</p>
-          <h3>Confident. Capable. In Germany.</h3>
-          <p>MyGermanFreund helps newcomers, expats, students, and international professionals understand official German letters, discover everyday Germany knowledge, and prepare for real conversations.</p>
-          <ul class="feature-list">
-            <li>AI-assisted German letter summaries</li>
-            <li>Practical Did You Know insights for life in Germany</li>
-            <li>German Buzz weekly conversation topics, vocabulary, and dialogues</li>
-          </ul>
-        </div>
-        <div class="product-status">
-          <span>V1 release preparing</span>
-          <p>Google Play launch planned.</p>
-        </div>
-      </article>
+    <section class="why" aria-labelledby="why-title">
+      <p class="eyebrow">Why Athirikya?</p>
+      <h2 id="why-title">Thoughtful by design.</h2>
+      <div class="why-grid">
+        <article><span>💎</span><h3>Practical</h3><p>We build tools around real situations, not abstract technology.</p></article>
+        <article><span>🤍</span><h3>Human</h3><p>We design for people who need clarity, reassurance, and momentum.</p></article>
+        <article><span>✅</span><h3>Trustworthy</h3><p>We value simplicity, privacy, and dependable everyday usefulness.</p></article>
+      </div>
+    </section>
+
+    <section class="journey" aria-labelledby="journey-title">
+      <div>
+        <p class="eyebrow">The journey continues</p>
+        <h2 id="journey-title">More practical products are on the way.</h2>
+        <p>Athirikya is built to grow beyond one product. Our focus remains the same: helping people navigate uncertainty with clarity and confidence.</p>
+      </div>
+      <div class="future-grid">
+        <article><span>🏛️</span><h3>Bureaucracy Guide</h3><p>Step-by-step support for complex processes.</p><small>Coming soon</small></article>
+        <article><span>🏠</span><h3>Housing Assistant</h3><p>Support for finding, understanding, and managing housing.</p><small>Coming soon</small></article>
+        <article><span>👥</span><h3>Community Hub</h3><p>Tools to connect, share, and grow together.</p><small>Coming soon</small></article>
+      </div>
     </section>
 
     <section class="section contact" id="contact" aria-labelledby="contact-title">
@@ -82,11 +145,18 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Athirikya. All rights reserved.</p>
     <div>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms</a>
+      <img src="assets/athirikya-logo.svg" alt="Athirikya">
+      <p>Turning Uncertainty into Confidence</p>
     </div>
+    <nav aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p>© 2026 Athirikya. All rights reserved.</p>
   </footer>
 </body>
 </html>
