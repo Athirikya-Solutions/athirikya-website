@@ -1,0 +1,8 @@
+<svg width="260" height="72" viewBox="0 0 260 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Athirikya</title>
+  <desc id="desc">Athirikya logo with upward arrow and tagline Turning Uncertainty into Confidence</desc>
+  <path d="M14 35C28 17 34 18 36 42C38 55 48 40 54 35C62 27 66 36 68 50C70 61 85 44 93 39C102 33 108 42 111 54C114 67 132 44 144 34" stroke="#2F7DF6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M139 35C167 23 185 9 202 1C208 -2 214 2 214 9L216 34C217 42 208 47 202 42L185 29C174 41 162 51 148 58" fill="#FFC642"/>
+  <text x="70" y="31" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="900" letter-spacing="1.2" fill="#0B1F3A">Athirikya</text>
+  <text x="70" y="53" font-family="Inter, Arial, sans-serif" font-size="7" font-weight="800" letter-spacing="2.6" fill="#0B1F3A">TURNING UNCERTAINTY INTO CONFIDENCE</text>
+</svg>
