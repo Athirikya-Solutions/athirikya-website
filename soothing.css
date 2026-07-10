@@ -7,22 +7,22 @@ body {
 h1,
 h2,
 h3 {
-  letter-spacing: -0.025em;
-  line-height: 1.16;
-  font-weight: 750;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 h1 {
   max-width: 620px;
-  font-size: clamp(42px, 5.4vw, 68px);
+  font-size: clamp(40px, 5vw, 64px);
 }
 
 h2 {
-  font-size: clamp(28px, 3.2vw, 42px);
+  font-size: clamp(27px, 3vw, 40px);
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .hero {
@@ -35,52 +35,113 @@ h3 {
   max-width: 620px;
   margin-top: 22px;
   font-size: clamp(18px, 2vw, 22px);
-  font-weight: 520;
+  font-weight: 500;
   line-height: 1.55;
   color: #526178;
 }
 
 .pill,
 .eyebrow {
-  font-weight: 750;
+  font-weight: 700;
   letter-spacing: 0.04em;
 }
 
 .nav,
 .button,
 .store-badge {
-  font-weight: 700;
+  font-weight: 650;
 }
 
 .section {
-  padding: 38px;
+  padding: 36px;
 }
 
 .section-copy p:not(.eyebrow),
-.contact p,
 .product-copy p,
 .why p,
 .legal-page p,
 .legal-page li {
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.72;
 }
 
 .product-copy h3 {
-  font-size: 21px;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.legal-page {
+  max-width: 820px;
+  padding-top: 42px;
+}
+
+.legal-page > h1 {
+  font-size: clamp(36px, 4.4vw, 52px);
   font-weight: 680;
+}
+
+.legal-card {
+  padding: 32px 36px;
+  border-radius: 24px;
+  box-shadow: 0 12px 36px rgba(15, 35, 70, 0.06);
+}
+
+.legal-card h2 {
+  margin-top: 30px;
+  font-size: 23px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.legal-card p {
+  color: #5f6c80;
+}
+
+.legal-updated {
+  margin-top: 34px;
+  font-size: 14px !important;
+  color: #7b8799 !important;
+}
+
+.footer-meta {
+  justify-self: end;
+  text-align: right;
+}
+
+.footer-meta p,
+.site-footer .footer-meta a {
+  margin: 2px 0;
+  color: #7a8698;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.legal-footer img {
+  width: 150px;
+}
+
+@media (max-width: 960px) {
+  .footer-meta {
+    justify-self: start;
+    text-align: left;
+  }
 }
 
 @media (max-width: 680px) {
   h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 29px;
   }
 
   .hero {
     padding-top: 38px;
+  }
+
+  .legal-card {
+    padding: 24px;
   }
 }
