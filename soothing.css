@@ -1,0 +1,86 @@
+/* Softer typography and spacing for the public reference site. */
+body {
+  color: #24324a;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.025em;
+  line-height: 1.16;
+  font-weight: 750;
+}
+
+h1 {
+  max-width: 620px;
+  font-size: clamp(42px, 5.4vw, 68px);
+}
+
+h2 {
+  font-size: clamp(28px, 3.2vw, 42px);
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.hero {
+  min-height: 590px;
+  padding-top: 54px;
+  padding-bottom: 38px;
+}
+
+.hero-text {
+  max-width: 620px;
+  margin-top: 22px;
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 520;
+  line-height: 1.55;
+  color: #526178;
+}
+
+.pill,
+.eyebrow {
+  font-weight: 750;
+  letter-spacing: 0.04em;
+}
+
+.nav,
+.button,
+.store-badge {
+  font-weight: 700;
+}
+
+.section {
+  padding: 38px;
+}
+
+.section-copy p:not(.eyebrow),
+.contact p,
+.product-copy p,
+.why p,
+.legal-page p,
+.legal-page li {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.product-copy h3 {
+  font-size: 21px;
+  font-weight: 680;
+}
+
+@media (max-width: 680px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .hero {
+    padding-top: 38px;
+  }
+}
