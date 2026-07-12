@@ -75,7 +75,8 @@ h3 {
 .product-copy p,
 .why p,
 .legal-page p,
-.legal-page li {
+.legal-page li,
+.feature-copy p:not(.eyebrow) {
   font-size: 16px;
   line-height: 1.76;
   font-weight: 400;
@@ -91,6 +92,94 @@ h3 {
 .preview-card li,
 .app-card strong {
   font-weight: 600;
+}
+
+.brand img,
+.site-footer img {
+  object-fit: contain;
+}
+
+.hero-app-screenshot,
+.product-image-preview img,
+.feature-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 20px 55px rgba(15, 35, 70, 0.15);
+}
+
+.hero-app-screenshot {
+  position: relative;
+  z-index: 2;
+  width: min(340px, 88%);
+  max-height: 610px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.product-image-preview {
+  display: grid;
+  place-items: center;
+  min-height: 420px;
+  padding: 24px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, #f9fbff, #eef5ff);
+}
+
+.product-image-preview img {
+  width: min(300px, 100%);
+  max-height: 560px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.mgf-page {
+  padding-top: 34px;
+}
+
+.mgf-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 42px;
+  align-items: center;
+}
+
+.mgf-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 54px;
+  align-items: center;
+  margin: 58px 0;
+  padding: 38px;
+  border: 1px solid #e5ebf5;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0 14px 40px rgba(15, 35, 70, 0.06);
+}
+
+.mgf-feature.reverse .feature-copy {
+  order: 2;
+}
+
+.mgf-feature.reverse .feature-screenshot {
+  order: 1;
+}
+
+.feature-copy h2 {
+  margin-bottom: 16px;
+}
+
+.feature-screenshot {
+  display: grid;
+  place-items: center;
+}
+
+.feature-screenshot img {
+  width: min(300px, 100%);
+  max-height: 620px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .legal-page {
@@ -149,6 +238,20 @@ h3 {
     justify-self: start;
     text-align: left;
   }
+
+  .mgf-intro,
+  .mgf-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .mgf-feature.reverse .feature-copy,
+  .mgf-feature.reverse .feature-screenshot {
+    order: initial;
+  }
+
+  .hero-app-screenshot {
+    width: min(300px, 78%);
+  }
 }
 
 @media (max-width: 680px) {
@@ -162,6 +265,23 @@ h3 {
 
   .hero {
     padding-top: 34px;
+  }
+
+  .hero-app-screenshot {
+    width: min(270px, 82%);
+    border-radius: 22px;
+  }
+
+  .product-image-preview,
+  .mgf-feature {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .product-image-preview img,
+  .feature-screenshot img {
+    width: min(270px, 100%);
+    border-radius: 22px;
   }
 
   .legal-card {
