@@ -241,6 +241,13 @@ h3 {
   width: 150px;
 }
 
+/* The Athirikya homepage presents only the company and its products.
+   German Buzz remains available within the MyGermanFreund product area. */
+a[href="german-buzz/"],
+a[href="german-buzz/2026/kw-28/"] {
+  display: none !important;
+}
+
 @media (max-width: 960px) {
   .footer-meta {
     justify-self: start;
