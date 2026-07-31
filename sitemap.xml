@@ -9,4 +9,19 @@
   <url><loc>https://athirikya.com/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://athirikya.com/impressum.html</loc><lastmod>2026-07-30</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://athirikya.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url>
+    <loc>https://athirikya.com/mygermanfreund/german-buzz/kw-29/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://athirikya.com/mygermanfreund/german-buzz/kw-30/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://athirikya.com/mygermanfreund/german-buzz/kw-31/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
