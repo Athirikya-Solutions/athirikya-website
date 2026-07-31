@@ -12,10 +12,8 @@ import json
 import re
 import sys
 from dataclasses import dataclass
-from datetime import date
 from pathlib import Path
 from typing import Any
-from xml.etree import ElementTree as ET
 
 SITE_URL = "https://athirikya.com"
 ISSUES_DIR = Path("mygermanfreund/german-buzz")
@@ -66,6 +64,12 @@ class Issue:
         return f"KW {self.week}"
 
     @property
+    def display_date_range(self) -> str:
+        if re.search(r"\b\d{4}\b", self.date_range):
+            return self.date_range
+        return f"{self.date_range} {self.year}"
+
+    @property
     def url(self) -> str:
         return f"{SITE_URL}/mygermanfreund/german-buzz/{self.slug}/"
 
@@ -83,7 +87,6 @@ def normalize_issue(raw: dict[str, Any]) -> Issue:
     week = int(match.group(2))
     if not 1 <= week <= 53:
         raise ValidationError(f"Invalid calendar week: {week}")
-
     if raw.get("year") != year or raw.get("weekNumber") != week:
         raise ValidationError("year and weekNumber must match the id field.")
 
@@ -125,7 +128,7 @@ def render_topic(topic: Topic) -> str:
 
 def render_issue(issue: Issue) -> str:
     topics_html = "\n".join(render_topic(topic) for topic in issue.topics)
-    description = f"German Buzz {issue.kw} ({issue.date_range}): {issue.weekly_summary}."
+    description = f"German Buzz {issue.kw} ({issue.display_date_range}): {issue.weekly_summary}."
     structured = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -168,7 +171,7 @@ def render_issue(issue: Issue) -> str:
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../../index.html">Athirikya</a> / <a href="../">German Buzz</a> / {escape(issue.kw)}</nav>
     <article>
       <header class="content-hero issue-intro">
-        <div class="issue-meta"><span>{escape(issue.kw)}</span><span>{escape(issue.date_range)}</span></div>
+        <div class="issue-meta"><span>{escape(issue.kw)}</span><span>{escape(issue.display_date_range)}</span></div>
         <h1>German Buzz</h1>
         <p class="content-lead">{escape(issue.tagline)}</p>
         <p>{escape(issue.weekly_summary)}</p>
@@ -191,15 +194,26 @@ def render_issue(issue: Issue) -> str:
 
 def render_issue_card(issue: Issue) -> str:
     return f'''      <article class="issue-card" data-issue-id="{escape(issue.issue_id)}">
-        <div class="issue-meta"><span>{escape(issue.kw)}</span><span>{escape(issue.date_range)}</span></div>
+        <div class="issue-meta"><span>{escape(issue.kw)}</span><span>{escape(issue.display_date_range)}</span></div>
         <h2>{escape(issue.weekly_summary)}</h2>
         <p>{escape(issue.tagline)}</p>
         <a class="text-link text-link-cta" href="{escape(issue.slug)}/">Read German Buzz {escape(issue.kw)} <span aria-hidden="true">→</span></a>
       </article>'''
 
 
+def normalize_card(card: str) -> str:
+    card = card.strip()
+    return card if card.startswith("      ") else "      " + card
+
+
+def pluralize_landing_heading(content: str) -> str:
+    return content.replace(">Available web issue</h2>", ">Available web issues</h2>", 1)
+
+
 def update_landing(content: str, issue: Issue) -> str:
+    content = pluralize_landing_heading(content)
     new_card = render_issue_card(issue)
+
     if START_MARKER in content and END_MARKER in content:
         before, remainder = content.split(START_MARKER, 1)
         managed, after = remainder.split(END_MARKER, 1)
@@ -209,7 +223,9 @@ def update_landing(content: str, issue: Issue) -> str:
             managed,
             flags=re.DOTALL,
         )
-        existing_cards = re.findall(r'<article class="issue-card".*?</article>', managed, flags=re.DOTALL)
+        existing_cards = [normalize_card(card) for card in re.findall(
+            r'<article class="issue-card".*?</article>', managed, flags=re.DOTALL
+        )]
         block = "\n" + "\n".join([new_card, *existing_cards]) + "\n      "
         return before + START_MARKER + block + END_MARKER + after
 
@@ -217,28 +233,30 @@ def update_landing(content: str, issue: Issue) -> str:
     if not match:
         raise ValidationError(f"Could not locate issue-list section in {LANDING_PAGE}.")
 
-    existing = match.group(2).strip()
-    managed = f"\n      {START_MARKER}\n{new_card}\n{existing}\n      {END_MARKER}\n    "
+    existing_cards = [normalize_card(card) for card in re.findall(
+        r'<article class="issue-card".*?</article>', match.group(2), flags=re.DOTALL
+    )]
+    managed = (
+        f"\n      {START_MARKER}\n"
+        + "\n".join([new_card, *existing_cards])
+        + f"\n      {END_MARKER}\n    "
+    )
     return content[: match.start()] + match.group(1) + managed + match.group(3) + content[match.end() :]
 
 
 def update_sitemap(content: str, issue: Issue) -> str:
-    namespace_uri = "http://www.sitemaps.org/schemas/sitemap/0.9"
-    ET.register_namespace("", namespace_uri)
-    root = ET.fromstring(content)
-    ns = {"sm": namespace_uri}
+    if re.search(rf"<loc>\s*{re.escape(issue.url)}\s*</loc>", content):
+        return content
+    if "</urlset>" not in content:
+        raise ValidationError(f"Could not locate closing urlset tag in {SITEMAP}.")
 
-    for node in root.findall("sm:url", ns):
-        loc = node.find("sm:loc", ns)
-        if loc is not None and loc.text == issue.url:
-            return content
-
-    url_node = ET.SubElement(root, f"{{{namespace_uri}}}url")
-    ET.SubElement(url_node, f"{{{namespace_uri}}}loc").text = issue.url
-    ET.SubElement(url_node, f"{{{namespace_uri}}}changefreq").text = "weekly"
-    ET.SubElement(url_node, f"{{{namespace_uri}}}priority").text = "0.8"
-    ET.indent(root, space="  ")
-    return '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(root, encoding="unicode") + "\n"
+    block = f'''  <url>
+    <loc>{issue.url}</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+'''
+    return content.replace("</urlset>", block + "</urlset>", 1)
 
 
 def main() -> int:
