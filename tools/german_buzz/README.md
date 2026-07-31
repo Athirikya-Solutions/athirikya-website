@@ -1,76 +1,77 @@
 # German Buzz website generator
 
-`generate_website.py` creates a weekly German Buzz HTML page from the same JSON content used for the mobile app.
+The website tools create weekly German Buzz HTML pages from the same JSON used by the mobile app. They work locally only and never commit, push, deploy, connect to Firestore, or track visitors.
 
-It works locally only. It does not commit, push, deploy, or connect to Firestore.
+## Recommended command
 
-## Files it manages
+Use the recommendation-aware wrapper:
 
-For an issue such as `2026-W31`, the generator:
+```powershell
+python tools/german_buzz/generate_website_with_recommendations.py path\to\2026-W32.json --dry-run
+```
 
-- creates `mygermanfreund/german-buzz/kw-31/index.html`;
-- adds the issue to `mygermanfreund/german-buzz/index.html`;
+Generate locally after reviewing the dry run:
+
+```powershell
+python tools/german_buzz/generate_website_with_recommendations.py path\to\2026-W32.json
+```
+
+The wrapper reuses `generate_website.py` and adds curated resources from `recommendations.json`.
+
+## Files managed
+
+For an issue such as `2026-W32`, the generator:
+
+- creates `mygermanfreund/german-buzz/kw-32/index.html`;
+- adds the newest issue to `mygermanfreund/german-buzz/index.html`;
 - adds the canonical issue URL to `sitemap.xml`.
 
 Existing issue pages are preserved. Replacing an existing issue requires `--force`.
 
-## Recommended workflow
+## Canonical JSON fields
 
-Run validation first:
+The website uses only:
 
-```powershell
-python tools/german_buzz/generate_website.py path\to\2026-W31.json --dry-run
-```
+- `id`
+- `year`
+- `weekNumber`
+- `dateRange`
+- `tagline`
+- `weeklySummary`
+- `topics[].title`
+- `topics[].whatsHappening`
+- `topics[].germanContext`
 
-Generate the files locally:
+Mobile-only dialogue and vocabulary fields are ignored.
 
-```powershell
-python tools/german_buzz/generate_website.py path\to\2026-W31.json
-```
+## Context-aware recommendations
 
-Then review the changes before committing:
+`recommendations.json` contains manually reviewed rules. Each rule has:
+
+- topic keywords;
+- one or more HTTPS resources;
+- a short description;
+- a visible source name.
+
+The wrapper searches the topic title and explanation, shows at most two unique resources, opens external links in a new tab, and omits the recommendation section when nothing relevant matches.
+
+Current controls:
+
+- no paid placements;
+- no affiliate parameters;
+- no advertising SDK;
+- no click tracking;
+- no automatic external API lookup;
+- recommendations must be reviewed before publication.
+
+A future sponsored or affiliate resource must be explicitly labelled and approved before it is added to `recommendations.json`.
+
+## Review before committing
 
 ```powershell
 git status
 git diff -- mygermanfreund/german-buzz sitemap.xml
+grep -R "Helpful resources" mygermanfreund/german-buzz/kw-32/index.html
 ```
 
-Do not use `--force` unless the already published issue has been reviewed and intentionally needs correction.
-
-## Expected JSON
-
-The canonical format is:
-
-```json
-{
-  "id": "2026-W31",
-  "title": "A concise weekly headline",
-  "summary": "A short introduction for the web issue and search metadata.",
-  "start_date": "2026-07-27",
-  "end_date": "2026-08-02",
-  "topics": [
-    {
-      "eyebrow": "German topic label",
-      "title": "English topic heading",
-      "context": "Why this may come up in everyday conversations.",
-      "explanation": "Simple German explanation of the topic.",
-      "sentence": "A practical German sentence for conversation."
-    }
-  ]
-}
-```
-
-`start_date` and `end_date` are optional. When omitted, the ISO calendar week in `id` is used.
-
-For compatibility with existing mobile JSON, the generator also accepts common aliases such as `issue_id`, `issueId`, `headline`, `description`, `german_title`, `english_title`, `english_context`, `german_explanation`, and `conversation_sentence`.
-
-## Safety checks
-
-The command fails without writing files when:
-
-- the issue id is not in `YYYY-W##` format;
-- required content is missing;
-- `topics` is empty or malformed;
-- the website landing page or sitemap is missing;
-- the weekly page already exists and `--force` was not supplied;
-- the landing page structure cannot be located safely.
+Do not use `--force` unless an existing generated page has been reviewed and intentionally needs correction.
