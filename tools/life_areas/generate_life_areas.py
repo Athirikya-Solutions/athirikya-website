@@ -81,7 +81,7 @@ def render_page(area:dict[str,str],units:list[dict[str,Any]])->str:
     if au:
         units_html="\n".join(render_unit(u) for u in au)
         count=sum(len(u["experiences"]) for u in au)
-        intro=f"{count} German Buzz experience{'' if count==1 else 's'} currently contribute to this Life Area."
+        intro=("1 German Buzz experience currently contributes to this Life Area." if count==1 else f"{count} German Buzz experiences currently contribute to this Life Area.")
     else:
         units_html='''      <article class="notice-card">
         <p>No Knowledge Units have been added yet. This area will grow from real German Buzz experiences.</p>
