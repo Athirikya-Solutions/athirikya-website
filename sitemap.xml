@@ -24,4 +24,19 @@
     <changefreq>never</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://athirikya.com/mygermanfreund/guides/workplace-holiday-cover/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://athirikya.com/mygermanfreund/guides/wochenmarkt/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://athirikya.com/mygermanfreund/guides/parcels-neighbours/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
