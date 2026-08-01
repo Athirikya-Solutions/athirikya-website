@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -18,6 +19,7 @@ SITE_URL = "https://athirikya.com"
 OUTPUT_ROOT = Path("mygermanfreund/life-areas")
 LIFE_AREAS_FILE = Path(__file__).with_name("life_areas.json")
 KNOWLEDGE_UNITS_FILE = Path(__file__).with_name("knowledge_units.json")
+SAFE_SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
 class ValidationError(ValueError):
@@ -32,6 +34,18 @@ def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def normalize_slug(value: Any, field_name: str) -> str:
+    if not isinstance(value, str) or not value.strip():
+        raise ValidationError(f"{field_name} must be a non-empty string.")
+
+    slug = value.strip()
+    if not SAFE_SLUG.fullmatch(slug):
+        raise ValidationError(
+            f"{field_name} must be a safe lowercase slug using only letters, numbers and hyphens: {slug!r}"
+        )
+    return slug
+
+
 def validate_life_areas(raw: Any) -> list[dict[str, str]]:
     if not isinstance(raw, dict) or not isinstance(raw.get("lifeAreas"), list):
         raise ValidationError("life_areas.json must contain a lifeAreas array.")
@@ -41,30 +55,83 @@ def validate_life_areas(raw: Any) -> list[dict[str, str]]:
     for index, item in enumerate(raw["lifeAreas"], start=1):
         if not isinstance(item, dict):
             raise ValidationError(f"Life Area {index} must be an object.")
-        area_id = item.get("id")
+
+        area_id = normalize_slug(item.get("id"), f"Life Area {index} id")
         title = item.get("title")
         description = item.get("description")
-        if not all(isinstance(value, str) and value.strip() for value in (area_id, title, description)):
-            raise ValidationError(f"Life Area {index} requires id, title and description.")
+        if not isinstance(title, str) or not title.strip():
+            raise ValidationError(f"Life Area {index} requires a non-empty title.")
+        if not isinstance(description, str) or not description.strip():
+            raise ValidationError(f"Life Area {index} requires a non-empty description.")
+
         if area_id in seen:
             raise ValidationError(f"Duplicate Life Area id: {area_id}")
         seen.add(area_id)
-        areas.append({"id": area_id.strip(), "title": title.strip(), "description": description.strip()})
+
+        areas.append(
+            {
+                "id": area_id,
+                "title": title.strip(),
+                "description": description.strip(),
+            }
+        )
     return areas
 
 
-def validate_knowledge_units(raw: Any) -> list[dict[str, Any]]:
+def validate_knowledge_units(
+    raw: Any, valid_life_area_ids: set[str]
+) -> list[dict[str, Any]]:
     if not isinstance(raw, list):
         raise ValidationError("knowledge_units.json must contain an array.")
-    return [item for item in raw if isinstance(item, dict)]
+
+    units: list[dict[str, Any]] = []
+    seen: set[str] = set()
+
+    for index, item in enumerate(raw, start=1):
+        if not isinstance(item, dict):
+            raise ValidationError(f"Knowledge Unit {index} must be an object.")
+
+        unit_id = normalize_slug(item.get("id"), f"Knowledge Unit {index} id")
+        life_area = normalize_slug(
+            item.get("lifeArea"), f"Knowledge Unit {index} lifeArea"
+        )
+        title = item.get("title")
+        summary = item.get("summary")
+
+        if life_area not in valid_life_area_ids:
+            raise ValidationError(
+                f"Knowledge Unit {index} references unknown Life Area: {life_area}"
+            )
+        if not isinstance(title, str) or not title.strip():
+            raise ValidationError(f"Knowledge Unit {index} requires a non-empty title.")
+        if summary is not None and (
+            not isinstance(summary, str) or not summary.strip()
+        ):
+            raise ValidationError(
+                f"Knowledge Unit {index} summary must be a non-empty string when provided."
+            )
+        if unit_id in seen:
+            raise ValidationError(f"Duplicate Knowledge Unit id: {unit_id}")
+        seen.add(unit_id)
+
+        normalized: dict[str, Any] = {
+            "id": unit_id,
+            "lifeArea": life_area,
+            "title": title.strip(),
+        }
+        if isinstance(summary, str):
+            normalized["summary"] = summary.strip()
+        units.append(normalized)
+
+    return units
 
 
 def render_page(area: dict[str, str], units: list[dict[str, Any]]) -> str:
-    area_units = [unit for unit in units if unit.get("lifeArea") == area["id"]]
+    area_units = [unit for unit in units if unit["lifeArea"] == area["id"]]
     if area_units:
         units_html = "\n".join(
             f'''      <article class="notice-card">
-        <h3>{esc(str(unit.get("title", unit.get("id", "Knowledge Unit"))))}</h3>
+        <h3>{esc(unit["title"])}</h3>
         <p>{esc(str(unit.get("summary", "This Knowledge Unit is evolving through German Buzz.")))}</p>
       </article>'''
             for unit in area_units
@@ -133,7 +200,10 @@ def main() -> int:
     try:
         repo_root = args.repo_root.resolve()
         areas = validate_life_areas(load_json(LIFE_AREAS_FILE))
-        units = validate_knowledge_units(load_json(KNOWLEDGE_UNITS_FILE))
+        valid_life_area_ids = {area["id"] for area in areas}
+        units = validate_knowledge_units(
+            load_json(KNOWLEDGE_UNITS_FILE), valid_life_area_ids
+        )
 
         for area in areas:
             path = repo_root / OUTPUT_ROOT / area["id"] / "index.html"
