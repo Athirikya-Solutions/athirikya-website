@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "principle": "Real life comes first. Life Areas provide a stable but expandable backbone; Knowledge Units emerge from real German Buzz topics during the first year.",
+  "lifeAreas": [
+    {"id":"work","title":"Work","description":"Everyday professional life, workplace communication, routines and expectations in Germany."},
+    {"id":"home","title":"Home & Neighbourhood","description":"Living in a German home, interacting with neighbours and handling everyday household situations."},
+    {"id":"government","title":"Government & Bureaucracy","description":"Public services, official processes, authorities and administrative life in Germany."},
+    {"id":"health","title":"Health & Wellbeing","description":"Doctors, pharmacies, insurance, prevention and everyday health situations."},
+    {"id":"finance","title":"Banking & Finance","description":"Banking, payments, bills, insurance costs and personal finances in Germany."},
+    {"id":"shopping","title":"Shopping & Services","description":"Supermarkets, weekly markets, shops, returns, payments and everyday services."},
+    {"id":"transport","title":"Travel & Transport","description":"Local transport, Deutsche Bahn, road travel, tickets and disruptions."},
+    {"id":"education","title":"Education & Learning","description":"Schools, universities, German courses, libraries and learning opportunities."},
+    {"id":"family","title":"Family & Children","description":"Childcare, school holidays, family routines and activities for children."},
+    {"id":"communication","title":"Communication","description":"Emails, phone calls, invitations, small talk and everyday communication habits."},
+    {"id":"weather","title":"Seasons & Weather","description":"How weather and the seasons shape routines, plans and conversations in Germany."},
+    {"id":"culture","title":"Culture & Society","description":"Traditions, public holidays, customs, social expectations and shared cultural life."},
+    {"id":"food","title":"Food & Everyday Living","description":"Seasonal food, restaurants, cooking, eating habits and everyday routines."},
+    {"id":"leisure","title":"Leisure & Community","description":"Parks, events, sports, clubs, museums and activities in the local community."},
+    {"id":"digital","title":"Digital Life","description":"Online appointments, digital public services and useful apps for living in Germany."}
+  ]
+}
