@@ -23,5 +23,13 @@
 .guide-grid p,.letter-type-list p,.notice-card p,.small-note { color:#5f6d80; }
 .notice-card { background:#f8fbff; }
 .small-note { font-size:14px; }
+.topic-connections { margin-top:22px; padding-top:18px; border-top:1px solid #e4eaf3; }
+.topic-connections h3 { margin:0 0 12px; font-size:15px; letter-spacing:.02em; color:#31445f; }
+.topic-connections ul { display:grid; gap:10px; margin:0; padding:0; list-style:none; }
+.topic-connection { padding:14px 15px; border-radius:14px; background:#f7faff; }
+.topic-connection-type { display:block; margin-bottom:5px; color:#6b7890; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; }
+.topic-connection a { color:#215fae; font-weight:700; text-decoration:none; }
+.topic-connection a:hover,.topic-connection a:focus-visible { text-decoration:underline; }
+.topic-connection p { margin:6px 0 0; color:#5f6d80; font-size:14px; line-height:1.5; }
 @media (max-width:960px) { .launch-panel { margin-inline:auto; } }
 @media (max-width:680px) { .launch-panel { padding:22px; border-radius:22px; } .guide-grid,.letter-type-list { grid-template-columns:1fr; } .text-link-cta { width:100%; justify-content:space-between; } }
