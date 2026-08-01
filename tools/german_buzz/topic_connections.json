@@ -1,0 +1,37 @@
+{
+  "2026-W31": {
+    "Ferienmodus im Büro": [
+      {
+        "type": "Practical guide",
+        "label": "Abwesenheitsnotiz und Urlaubsübergabe vorbereiten",
+        "description": "Kurze Beispiele für eine Abwesenheitsnotiz und eine einfache Übergabe vor dem Urlaub.",
+        "url": "/mygermanfreund/guides/workplace-holiday-cover/"
+      }
+    ],
+    "Open-Air-Festivals im Sommer": [
+      {
+        "type": "Official resource",
+        "label": "Aktuelle Wetter- und Unwetterwarnungen prüfen",
+        "description": "Der Deutsche Wetterdienst veröffentlicht amtliche Warnungen für Gewitter, Starkregen, Hitze und andere Wetterlagen.",
+        "url": "https://www.dwd.de/DE/leistungen/warnungen/wetterwarnungen.html",
+        "external": true
+      }
+    ],
+    "Sommerobst vom Wochenmarkt": [
+      {
+        "type": "Practical guide",
+        "label": "So funktioniert ein Wochenmarkt in Deutschland",
+        "description": "Was man am Stand fragen kann, wie Mengen bestellt werden und worauf man beim Einkauf achten kann.",
+        "url": "/mygermanfreund/guides/wochenmarkt/"
+      }
+    ],
+    "Pakete für die Nachbarn": [
+      {
+        "type": "Everyday guide",
+        "label": "Pakete für Nachbarn annehmen und abholen",
+        "description": "Was üblich ist und welche einfachen Sätze beim Abholen oder Übergeben helfen.",
+        "url": "/mygermanfreund/guides/parcels-neighbours/"
+      }
+    ]
+  }
+}
