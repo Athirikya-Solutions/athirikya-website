@@ -171,8 +171,7 @@ def render_english_panel(web: WebTopic) -> str:
 def render_learn_more(item: LearnMore) -> str:
     if not item.enabled:
         return ""
-    return f'''\n          <aside class="topic-connections" aria-label="Learn more">
-            <h3>Learn more</h3>
+    return f'''\n          <aside class="topic-connections" aria-label="Related guide">
             <a class="text-link text-link-cta" href="{escape(item.url or "")}">{escape(item.title or "")} <span aria-hidden="true">→</span></a>
             <p>{escape(item.summary or "")}</p>
           </aside>'''
