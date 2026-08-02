@@ -1,1 +1,126 @@
-[]
+[
+  {
+    "id": "holiday-cover",
+    "lifeArea": "work",
+    "title": "Holiday cover and office absences",
+    "summary": "How teams keep work moving when colleagues are on holiday, including clear handovers, temporary responsibilities and realistic response times.",
+    "experiences": [
+      {
+        "issueId": "2026-W29",
+        "topic": "Urlaubsvertretung im Büro",
+        "url": "/mygermanfreund/german-buzz/kw-29/"
+      },
+      {
+        "issueId": "2026-W31",
+        "topic": "Ferienmodus im Büro",
+        "url": "/mygermanfreund/german-buzz/kw-31/"
+      }
+    ]
+  },
+  {
+    "id": "neighbour-help",
+    "lifeArea": "home",
+    "title": "Small favours between neighbours",
+    "summary": "Everyday help such as watering plants while someone is away, explaining what is needed and returning the favour later.",
+    "experiences": [
+      {
+        "issueId": "2026-W30",
+        "topic": "Pflanzen während des Urlaubs",
+        "url": "/mygermanfreund/german-buzz/kw-30/"
+      }
+    ]
+  },
+  {
+    "id": "parcel-etiquette",
+    "lifeArea": "home",
+    "title": "Parcels and neighbour etiquette",
+    "summary": "What usually happens when a parcel is left with a neighbour and how to ask, collect or hand it over politely.",
+    "experiences": [
+      {
+        "issueId": "2026-W31",
+        "topic": "Pakete für die Nachbarn",
+        "url": "/mygermanfreund/german-buzz/kw-31/"
+      }
+    ]
+  },
+  {
+    "id": "weekly-markets",
+    "lifeArea": "shopping",
+    "title": "Shopping at a weekly market",
+    "summary": "Buying seasonal produce, asking where food comes from, ordering quantities and understanding common market routines.",
+    "experiences": [
+      {
+        "issueId": "2026-W31",
+        "topic": "Sommerobst vom Wochenmarkt",
+        "url": "/mygermanfreund/german-buzz/kw-31/"
+      }
+    ]
+  },
+  {
+    "id": "transport-disruptions",
+    "lifeArea": "transport",
+    "title": "Roadworks, diversions and changed routes",
+    "summary": "How temporary closures and altered bus or tram routes affect everyday journeys and what to check before leaving.",
+    "experiences": [
+      {
+        "issueId": "2026-W30",
+        "topic": "Baustellen und Umleitungen",
+        "url": "/mygermanfreund/german-buzz/kw-30/"
+      }
+    ]
+  },
+  {
+    "id": "short-trip-preparation",
+    "lifeArea": "transport",
+    "title": "Preparing for a short trip",
+    "summary": "Packing only what is needed, keeping documents accessible and staying flexible when travelling by bus or train.",
+    "experiences": [
+      {
+        "issueId": "2026-W29",
+        "topic": "Reisen mit leichtem Gepäck",
+        "url": "/mygermanfreund/german-buzz/kw-29/"
+      }
+    ]
+  },
+  {
+    "id": "ice-cream-culture",
+    "lifeArea": "food",
+    "title": "Meeting at an ice-cream shop",
+    "summary": "Ordering in a cone or cup, talking about flavours and using an ice-cream stop as an easy summer social activity.",
+    "experiences": [
+      {
+        "issueId": "2026-W30",
+        "topic": "Eine Pause in der Eisdiele",
+        "url": "/mygermanfreund/german-buzz/kw-30/"
+      }
+    ]
+  },
+  {
+    "id": "summer-outings",
+    "lifeArea": "leisure",
+    "title": "Summer outings and open-air events",
+    "summary": "Planning seasonal activities such as swimming, neighbourhood festivals, outdoor cinema and open-air music while checking weather, timing and local details.",
+    "experiences": [
+      {
+        "issueId": "2026-W29",
+        "topic": "Ein Tag am Badesee",
+        "url": "/mygermanfreund/german-buzz/kw-29/"
+      },
+      {
+        "issueId": "2026-W29",
+        "topic": "Sommerfeste in der Nachbarschaft",
+        "url": "/mygermanfreund/german-buzz/kw-29/"
+      },
+      {
+        "issueId": "2026-W30",
+        "topic": "Kino unter freiem Himmel",
+        "url": "/mygermanfreund/german-buzz/kw-30/"
+      },
+      {
+        "issueId": "2026-W31",
+        "topic": "Open-Air-Festivals im Sommer",
+        "url": "/mygermanfreund/german-buzz/kw-31/"
+      }
+    ]
+  }
+]
