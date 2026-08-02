@@ -1,86 +1,200 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse, html, json, re
+
+import argparse
+import html
+import json
+import re
 from pathlib import Path
 from typing import Any
 
-SITE_URL="https://athirikya.com"
-OUTPUT_ROOT=Path("mygermanfreund/life-areas")
-LIFE_AREAS_FILE=Path(__file__).with_name("life_areas.json")
-KNOWLEDGE_UNITS_FILE=Path(__file__).with_name("knowledge_units.json")
-SAFE_SLUG=re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
-ISSUE_ID=re.compile(r"^\d{4}-W\d{2}$")
+SITE_URL = "https://athirikya.com"
+OUTPUT_ROOT = Path("mygermanfreund/life-areas")
+LIFE_AREAS_FILE = Path(__file__).with_name("life_areas.json")
+KNOWLEDGE_UNITS_FILE = Path(__file__).with_name("knowledge_units.json")
+PUBLISHED_GUIDES_FILE = Path(__file__).with_name("published_guides.json")
+SAFE_SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+ISSUE_ID = re.compile(r"^\d{4}-W\d{2}$")
 
-class ValidationError(ValueError): pass
-def esc(v:str)->str: return html.escape(v,quote=True)
-def load_json(p:Path)->Any: return json.loads(p.read_text(encoding="utf-8"))
-def require_text(v:Any,n:str)->str:
-    if not isinstance(v,str) or not v.strip(): raise ValidationError(f"{n} must be a non-empty string.")
-    return v.strip()
-def normalize_slug(v:Any,n:str)->str:
-    s=require_text(v,n)
-    if not SAFE_SLUG.fullmatch(s): raise ValidationError(f"{n} must be a safe lowercase slug: {s!r}")
-    return s
 
-def validate_life_areas(raw:Any)->list[dict[str,str]]:
-    if not isinstance(raw,dict) or not isinstance(raw.get("lifeAreas"),list):
+class ValidationError(ValueError):
+    pass
+
+
+def esc(value: str) -> str:
+    return html.escape(value, quote=True)
+
+
+def load_json(path: Path) -> Any:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def require_text(value: Any, name: str) -> str:
+    if not isinstance(value, str) or not value.strip():
+        raise ValidationError(f"{name} must be a non-empty string.")
+    return value.strip()
+
+
+def normalize_slug(value: Any, name: str) -> str:
+    slug = require_text(value, name)
+    if not SAFE_SLUG.fullmatch(slug):
+        raise ValidationError(f"{name} must be a safe lowercase slug: {slug!r}")
+    return slug
+
+
+def validate_life_areas(raw: Any) -> list[dict[str, str]]:
+    if not isinstance(raw, dict) or not isinstance(raw.get("lifeAreas"), list):
         raise ValidationError("life_areas.json must contain a lifeAreas array.")
-    out=[]; seen=set()
-    for i,item in enumerate(raw["lifeAreas"],1):
-        if not isinstance(item,dict): raise ValidationError(f"Life Area {i} must be an object.")
-        aid=normalize_slug(item.get("id"),f"Life Area {i} id")
-        if aid in seen: raise ValidationError(f"Duplicate Life Area id: {aid}")
-        seen.add(aid)
-        out.append({"id":aid,"title":require_text(item.get("title"),f"Life Area {i} title"),"description":require_text(item.get("description"),f"Life Area {i} description")})
-    return out
+    output: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for index, item in enumerate(raw["lifeAreas"], start=1):
+        if not isinstance(item, dict):
+            raise ValidationError(f"Life Area {index} must be an object.")
+        area_id = normalize_slug(item.get("id"), f"Life Area {index} id")
+        if area_id in seen:
+            raise ValidationError(f"Duplicate Life Area id: {area_id}")
+        seen.add(area_id)
+        output.append(
+            {
+                "id": area_id,
+                "title": require_text(item.get("title"), f"Life Area {index} title"),
+                "description": require_text(
+                    item.get("description"), f"Life Area {index} description"
+                ),
+            }
+        )
+    return output
 
-def expected_issue_url(issue_id:str)->str:
-    week=issue_id.split("-W",1)[1]
+
+def expected_issue_url(issue_id: str) -> str:
+    week = issue_id.split("-W", 1)[1]
     return f"/mygermanfreund/german-buzz/kw-{int(week)}/"
 
-def validate_experiences(raw:Any,unit_index:int,global_seen:set[tuple[str,str]])->list[dict[str,str]]:
-    if raw is None: return []
-    if not isinstance(raw,list): raise ValidationError(f"Knowledge Unit {unit_index} experiences must be an array.")
-    out=[]
-    for i,item in enumerate(raw,1):
-        p=f"Knowledge Unit {unit_index} experience {i}"
-        if not isinstance(item,dict): raise ValidationError(f"{p} must be an object.")
-        issue=require_text(item.get("issueId"),f"{p} issueId")
-        if not ISSUE_ID.fullmatch(issue): raise ValidationError(f"{p} issueId must use YYYY-W## format.")
-        topic=require_text(item.get("topic"),f"{p} topic")
-        url=require_text(item.get("url"),f"{p} url")
-        expected_url=expected_issue_url(issue)
-        if url!=expected_url: raise ValidationError(f"{p} url must match {issue}: expected {expected_url}, got {url}")
-        key=(issue,topic.casefold())
-        if key in global_seen: raise ValidationError(f"Duplicate experience across Knowledge Units: {issue} / {topic}")
-        global_seen.add(key); out.append({"issueId":issue,"topic":topic,"url":url})
-    return out
 
-def validate_knowledge_units(raw:Any,valid:set[str])->list[dict[str,Any]]:
-    if not isinstance(raw,list): raise ValidationError("knowledge_units.json must contain an array.")
-    out=[]; seen=set(); global_experiences:set[tuple[str,str]]=set()
-    for i,item in enumerate(raw,1):
-        if not isinstance(item,dict): raise ValidationError(f"Knowledge Unit {i} must be an object.")
-        uid=normalize_slug(item.get("id"),f"Knowledge Unit {i} id")
-        area=normalize_slug(item.get("lifeArea"),f"Knowledge Unit {i} lifeArea")
-        if area not in valid: raise ValidationError(f"Knowledge Unit {i} references unknown Life Area: {area}")
-        if uid in seen: raise ValidationError(f"Duplicate Knowledge Unit id: {uid}")
-        seen.add(uid)
-        out.append({"id":uid,"lifeArea":area,"title":require_text(item.get("title"),f"Knowledge Unit {i} title"),"summary":require_text(item.get("summary"),f"Knowledge Unit {i} summary"),"experiences":validate_experiences(item.get("experiences"),i,global_experiences)})
-    return out
+def validate_experiences(
+    raw: Any, unit_index: int, global_seen: set[tuple[str, str]]
+) -> list[dict[str, str]]:
+    if raw is None:
+        return []
+    if not isinstance(raw, list):
+        raise ValidationError(
+            f"Knowledge Unit {unit_index} experiences must be an array."
+        )
+    output: list[dict[str, str]] = []
+    for index, item in enumerate(raw, start=1):
+        prefix = f"Knowledge Unit {unit_index} experience {index}"
+        if not isinstance(item, dict):
+            raise ValidationError(f"{prefix} must be an object.")
+        issue = require_text(item.get("issueId"), f"{prefix} issueId")
+        if not ISSUE_ID.fullmatch(issue):
+            raise ValidationError(f"{prefix} issueId must use YYYY-W## format.")
+        topic = require_text(item.get("topic"), f"{prefix} topic")
+        url = require_text(item.get("url"), f"{prefix} url")
+        expected_url = expected_issue_url(issue)
+        if url != expected_url:
+            raise ValidationError(
+                f"{prefix} url must match {issue}: expected {expected_url}, got {url}"
+            )
+        key = (issue, topic.casefold())
+        if key in global_seen:
+            raise ValidationError(
+                f"Duplicate experience across Knowledge Units: {issue} / {topic}"
+            )
+        global_seen.add(key)
+        output.append({"issueId": issue, "topic": topic, "url": url})
+    return output
 
-def render_unit(unit:dict[str,Any])->str:
-    return f'''      <article class="notice-card" id="{esc(unit["id"])}">
-        <h2>{esc(unit["title"])}</h2>
-        <p>{esc(unit["summary"])}</p>
+
+def validate_knowledge_units(raw: Any, valid_areas: set[str]) -> None:
+    if not isinstance(raw, list):
+        raise ValidationError("knowledge_units.json must contain an array.")
+    seen: set[str] = set()
+    global_experiences: set[tuple[str, str]] = set()
+    for index, item in enumerate(raw, start=1):
+        if not isinstance(item, dict):
+            raise ValidationError(f"Knowledge Unit {index} must be an object.")
+        unit_id = normalize_slug(item.get("id"), f"Knowledge Unit {index} id")
+        area = normalize_slug(item.get("lifeArea"), f"Knowledge Unit {index} lifeArea")
+        if area not in valid_areas:
+            raise ValidationError(
+                f"Knowledge Unit {index} references unknown Life Area: {area}"
+            )
+        if unit_id in seen:
+            raise ValidationError(f"Duplicate Knowledge Unit id: {unit_id}")
+        seen.add(unit_id)
+        require_text(item.get("title"), f"Knowledge Unit {index} title")
+        require_text(item.get("summary"), f"Knowledge Unit {index} summary")
+        validate_experiences(item.get("experiences"), index, global_experiences)
+
+
+def validate_published_guides(
+    raw: Any, valid_areas: set[str]
+) -> list[dict[str, str]]:
+    if not isinstance(raw, list):
+        raise ValidationError("published_guides.json must contain an array.")
+    output: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for index, item in enumerate(raw, start=1):
+        if not isinstance(item, dict):
+            raise ValidationError(f"Published guide {index} must be an object.")
+        guide_id = normalize_slug(item.get("id"), f"Published guide {index} id")
+        if guide_id in seen:
+            raise ValidationError(f"Duplicate published guide id: {guide_id}")
+        seen.add(guide_id)
+        area = normalize_slug(
+            item.get("lifeArea"), f"Published guide {index} lifeArea"
+        )
+        if area not in valid_areas:
+            raise ValidationError(
+                f"Published guide {index} references unknown Life Area: {area}"
+            )
+        url = require_text(item.get("url"), f"Published guide {index} url")
+        expected_url = f"/mygermanfreund/guides/{guide_id}/"
+        if url != expected_url:
+            raise ValidationError(
+                f"Published guide {index} url must be {expected_url}."
+            )
+        issue = require_text(
+            item.get("sourceIssueId"), f"Published guide {index} sourceIssueId"
+        )
+        if not ISSUE_ID.fullmatch(issue):
+            raise ValidationError(
+                f"Published guide {index} sourceIssueId must use YYYY-W## format."
+            )
+        output.append(
+            {
+                "id": guide_id,
+                "lifeArea": area,
+                "title": require_text(
+                    item.get("title"), f"Published guide {index} title"
+                ),
+                "summary": require_text(
+                    item.get("summary"), f"Published guide {index} summary"
+                ),
+                "url": url,
+                "sourceIssueId": issue,
+                "sourceTopic": require_text(
+                    item.get("sourceTopic"), f"Published guide {index} sourceTopic"
+                ),
+            }
+        )
+    return output
+
+
+def render_guide(guide: dict[str, str]) -> str:
+    return f'''      <article class="notice-card" id="{esc(guide["id"])}">
+        <h2>{esc(guide["title"])}</h2>
+        <p>{esc(guide["summary"])}</p>
+        <a class="text-link text-link-cta" href="{esc(guide["url"])}">Read guide <span aria-hidden="true">→</span></a>
       </article>'''
 
-def render_page(area:dict[str,str],units:list[dict[str,Any]])->str:
-    area_units=[u for u in units if u["lifeArea"]==area["id"]]
-    content="\n".join(render_unit(u) for u in area_units)
+
+def render_page(area: dict[str, str], guides: list[dict[str, str]]) -> str:
+    area_guides = [guide for guide in guides if guide["lifeArea"] == area["id"]]
+    content = "\n".join(render_guide(guide) for guide in area_guides)
     if not content:
-        content='      <p class="small-note">Practical guidance for this area will be added when there is useful, specific information to share.</p>'
-    canonical=f"{SITE_URL}/mygermanfreund/life-areas/{area['id']}/"
+        content = '      <p class="small-note">Practical guidance for this area will be added when there is useful, specific information to share.</p>'
+    canonical = f"{SITE_URL}/mygermanfreund/life-areas/{area['id']}/"
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -115,22 +229,32 @@ def render_page(area:dict[str,str],units:list[dict[str,Any]])->str:
 </html>
 '''
 
-def main()->int:
-    parser=argparse.ArgumentParser()
-    parser.add_argument("--repo-root",type=Path,default=Path.cwd())
-    parser.add_argument("--dry-run",action="store_true")
-    args=parser.parse_args()
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--repo-root", type=Path, default=Path.cwd())
+    parser.add_argument("--dry-run", action="store_true")
+    args = parser.parse_args()
     try:
-        root=args.repo_root.resolve()
-        areas=validate_life_areas(load_json(LIFE_AREAS_FILE))
-        units=validate_knowledge_units(load_json(KNOWLEDGE_UNITS_FILE),{a["id"] for a in areas})
+        root = args.repo_root.resolve()
+        areas = validate_life_areas(load_json(LIFE_AREAS_FILE))
+        valid_areas = {area["id"] for area in areas}
+        validate_knowledge_units(load_json(KNOWLEDGE_UNITS_FILE), valid_areas)
+        guides = validate_published_guides(
+            load_json(PUBLISHED_GUIDES_FILE), valid_areas
+        )
         for area in areas:
-            path=root/OUTPUT_ROOT/area["id"]/"index.html"
+            path = root / OUTPUT_ROOT / area["id"] / "index.html"
             print(f"{'WOULD WRITE' if args.dry_run else 'WRITE'}: {path}")
             if not args.dry_run:
-                path.parent.mkdir(parents=True,exist_ok=True)
-                path.write_text(render_page(area,units),encoding="utf-8")
-        print(f"Public topic pages processed: {len(areas)}"); return 0
-    except (OSError,json.JSONDecodeError,ValidationError) as exc:
-        print(f"ERROR: {exc}"); return 1
-if __name__=="__main__": raise SystemExit(main())
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(render_page(area, guides), encoding="utf-8")
+        print(f"Public topic pages processed: {len(areas)}")
+        return 0
+    except (OSError, json.JSONDecodeError, ValidationError) as exc:
+        print(f"ERROR: {exc}")
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
