@@ -145,14 +145,27 @@ def load_enrichment(path: Path, issue_raw: dict[str, Any]) -> dict[str, WebTopic
     return output
 
 
-def render_facts(facts: InterestingFacts) -> str:
+def render_german_facts(facts: InterestingFacts) -> str:
     if not facts.enabled:
         return ""
     return f'''\n          <aside class="topic-facts" aria-label="Interesting to know">
             <h3>Interesting to know</h3>
-            <div lang="de"><p>{escape(facts.de or "")}</p></div>
-            <div lang="en"><p>{escape(facts.en or "")}</p></div>
+            <p>{escape(facts.de or "")}</p>
           </aside>'''
+
+
+def render_english_panel(web: WebTopic) -> str:
+    english_fact = ""
+    if web.interesting_facts.enabled:
+        english_fact = f'''\n              <h4>Interesting to know</h4>
+              <p>{escape(web.interesting_facts.en or "")}</p>'''
+    return f'''\n          <details class="topic-language-details">
+            <summary>English</summary>
+            <div lang="en" class="topic-language-content">
+              <h3>{escape(web.english_title)}</h3>
+              <p>{escape(web.english_context)}</p>{english_fact}
+            </div>
+          </details>'''
 
 
 def render_learn_more(item: LearnMore) -> str:
@@ -167,16 +180,10 @@ def render_learn_more(item: LearnMore) -> str:
 
 def render_topic(topic: base.Topic, web: WebTopic) -> str:
     return f'''        <section class="topic-card">
-          <p class="eyebrow">{escape(topic.title)}</p>
-          <h2>{escape(web.english_title)}</h2>
+          <h2>{escape(topic.title)}</h2>
           <div lang="de">
-            <h3>Deutsch</h3>
             <p>{escape(topic.whats_happening)}</p>
-          </div>
-          <div lang="en">
-            <h3>English</h3>
-            <p>{escape(web.english_context)}</p>
-          </div>{render_facts(web.interesting_facts)}{render_learn_more(web.learn_more)}
+          </div>{render_german_facts(web.interesting_facts)}{render_english_panel(web)}{render_learn_more(web.learn_more)}
         </section>'''
 
 
@@ -194,7 +201,7 @@ def main() -> int:
     try:
         weekly_path = args.weekly_json.resolve()
         issue_raw = json.loads(weekly_path.read_text(encoding="utf-8"))
-        issue = base.normalize_issue(issue_raw)
+        base.normalize_issue(issue_raw)
         enrichment = load_enrichment(args.website_enrichment.resolve(), issue_raw)
 
         original_render_topic = base.render_topic
