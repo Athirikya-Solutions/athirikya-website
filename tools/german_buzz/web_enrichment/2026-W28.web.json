@@ -1,0 +1,60 @@
+{
+  "issueId": "2026-W28",
+  "topics": [
+    {
+      "title": "Sommerhitze im Alltag",
+      "englishTitle": "Summer heat in everyday life",
+      "englishContext": "Hot weather is a common topic in Germany during July, especially at home, in offices and on public transport. People often discuss warm apartments, poor air circulation and ways to manage the heat.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Viele Wohnungen in Deutschland haben keine Klimaanlage. Deshalb werden Rollläden, Ventilatoren und frühes Lüften im Sommer besonders wichtig.",
+        "en": "Many homes in Germany do not have air conditioning. Shutters, fans and early-morning ventilation therefore become especially important during hot periods."
+      },
+      "learnMore": {
+        "enabled": false
+      }
+    },
+    {
+      "title": "Eis essen gehen",
+      "englishTitle": "Going out for ice cream",
+      "englishContext": "Ice-cream shops are popular summer meeting places in Germany. In the evenings and at weekends, people often meet friends, colleagues or neighbours there and talk about favourite flavours and recommendations.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Viele Eisdielen in Deutschland werden von italienischen Familien betrieben und gehören seit Jahrzehnten zum sommerlichen Stadtbild.",
+        "en": "Many German ice-cream shops are run by Italian families and have been part of the summer streetscape for decades."
+      },
+      "learnMore": {
+        "enabled": false
+      }
+    },
+    {
+      "title": "Urlaubsvertretung im Büro",
+      "englishTitle": "Holiday cover in the office",
+      "englishContext": "During the summer holiday season, German teams often discuss who will cover urgent work, which tasks remain open and when absent colleagues will return. Clear absence communication is especially important during quieter holiday weeks.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "In vielen deutschen Büros gehören klare Abwesenheitsnotizen mit Rückkehrdatum und Vertretungskontakt zur üblichen Urlaubsvorbereitung.",
+        "en": "In many German workplaces, a clear out-of-office message with a return date and replacement contact is a normal part of preparing for leave."
+      },
+      "learnMore": {
+        "enabled": true,
+        "title": "Writing an Out-of-Office Email in Germany",
+        "summary": "See what a clear professional absence message should include, with a German example and English translation.",
+        "url": "/mygermanfreund/guides/out-of-office-email-germany/"
+      }
+    },
+    {
+      "title": "Sommergewitter",
+      "englishTitle": "Summer thunderstorms",
+      "englishContext": "After hot days, thunderstorms can quickly change evening plans and affect roads or public transport. Checking weather warnings before going out is common during unstable summer weather.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Sommergewitter entstehen oft nach sehr warmen Tagen und können regional sehr unterschiedlich ausfallen.",
+        "en": "Summer thunderstorms often develop after very warm days and can vary greatly from one region to another."
+      },
+      "learnMore": {
+        "enabled": false
+      }
+    }
+  ]
+}
