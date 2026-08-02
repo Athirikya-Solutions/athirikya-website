@@ -1,39 +1,30 @@
 # German Buzz Website Format
 
-Status: Frozen after KW28 implementation.
+Status: Frozen after KW32 guide-array update.
 
 ## Source separation
 
-The weekly German Buzz JSON used by the mobile app remains unchanged and is the shared source for:
+The weekly German Buzz JSON used by the mobile app remains unchanged and is the shared source for issue metadata, German topic titles and German `whatsHappening` text.
 
-- issue id, year and week number;
-- date range and weekly summary;
-- German topic title;
-- German `whatsHappening` text.
-
-The website adds a separate enrichment file under:
+Website-only enrichment lives under:
 
 ```text
 tools/german_buzz/web_enrichment/YYYY-W##.web.json
 ```
 
-The website enrichment never changes the mobile-app payload.
-
 ## Required website topic fields
 
-Every weekly topic must appear exactly once in the website enrichment file, matched by its exact German title.
+Every weekly topic must appear exactly once, matched by its exact German title.
 
 Each entry contains:
 
-- `title` — exact title from the weekly JSON;
-- `englishTitle` — reader-facing English heading;
-- `englishContext` — English explanation for a global audience;
-- `interestingFacts` — optional bilingual fact block;
-- `learnMore` — optional practical guide block.
+- `title`
+- `englishTitle`
+- `englishContext`
+- `interestingFacts`
+- `guides`
 
-## Frozen optional blocks
-
-### Interesting facts
+## Interesting facts
 
 ```json
 "interestingFacts": {
@@ -43,72 +34,37 @@ Each entry contains:
 }
 ```
 
-When disabled:
+Use `{ "enabled": false }` when no fact is approved.
+
+## Related guides
+
+`guides` is always an array. Use an empty array when no evergreen guide is approved.
 
 ```json
-"interestingFacts": {
-  "enabled": false
-}
+"guides": [
+  {
+    "title": "Guide title",
+    "summary": "Short reason to open the guide.",
+    "url": "/mygermanfreund/guides/example-guide/"
+  }
+]
 ```
 
-### Learn more
-
-```json
-"learnMore": {
-  "enabled": true,
-  "title": "Guide title",
-  "summary": "Short reason to open the guide.",
-  "url": "/mygermanfreund/guides/example-guide/"
-}
-```
-
-When disabled:
-
-```json
-"learnMore": {
-  "enabled": false
-}
-```
-
-A Learn More guide is added only after editorial approval. The Website Team may suggest guides, but the product owner makes the final decision every Sunday.
+A topic may link to more than one approved guide. Duplicate guide URLs are rejected. Older enrichment files using `learnMore` remain supported temporarily, but new and updated issues must use `guides`.
 
 ## Public website output
 
-Each topic contains only:
+German stays visible. English title, context and English fact appear inside a collapsed dropdown. Only approved guide links are rendered.
 
-1. German topic title;
-2. English title;
-3. German weekly context from the shared JSON;
-4. English website context;
-5. optional Interesting to know block;
-6. optional Learn more block.
-
-The website does not display:
-
-- conversations;
-- vocabulary lists or word meanings;
-- internal Life Area or Knowledge Unit terminology;
-- internal experience tracking.
-
-## Generator command
-
-```bash
-python tools/german_buzz/generate_website_content.py \
-  <weekly-app-json> \
-  tools/german_buzz/web_enrichment/YYYY-W##.web.json \
-  --force
-```
-
-Use `--dry-run` before writing a new issue.
+The website does not display conversations, vocabulary lists, internal Life Area names, Knowledge Unit terminology or experience tracking.
 
 ## Sunday workflow
 
-1. Approve the four German Buzz topics for the mobile app.
-2. Publish the unchanged weekly JSON to the app workflow.
-3. Prepare the website enrichment for all four topics.
-4. Decide `interestingFacts` yes/no for each topic.
-5. Website Team suggests `learnMore` yes/no; product owner approves.
-6. Create any approved guide before enabling its link.
-7. Run the website generator.
-8. Review the generated weekly page, landing page and sitemap diff.
-9. Commit, merge and verify the live website.
+1. Approve the four mobile-app topics.
+2. Keep the mobile JSON unchanged.
+3. Prepare website enrichment.
+4. Decide `interestingFacts` for each topic.
+5. Website Team suggests evergreen guides; the product owner approves or rejects them.
+6. Create approved guides and map them internally to a Life Area.
+7. Run the website generator and review the static page and sitemap.
+8. Merge and verify the live website.

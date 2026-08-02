@@ -1,0 +1,55 @@
+{
+  "issueId": "2026-W32",
+  "topics": [
+    {
+      "title": "Zurück aus dem Urlaub",
+      "englishTitle": "Returning from holiday",
+      "englishContext": "At the beginning of August, many people return from their summer holidays. Colleagues and neighbours often talk about destinations, weather, accommodation and memorable experiences.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Nach dem Sommerurlaub beginnen viele Gespräche im Büro mit Fragen zur Reise. Solche Gespräche sind eine einfache Form von Small Talk und helfen Kolleginnen und Kollegen, wieder in den Arbeitsalltag zurückzufinden.",
+        "en": "After the summer holiday period, conversations about recent trips are a common and easy form of small talk in German workplaces."
+      },
+      "guides": []
+    },
+    {
+      "title": "Wespen beim Essen im Freien",
+      "englishTitle": "Wasps during outdoor meals",
+      "englishContext": "Wasps are common around outdoor cafés, gardens and picnic areas in late summer, especially near sweet drinks and food.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Wespen werden besonders von süßen Getränken, Kuchen und reifem Obst angezogen. Ruhig zu bleiben und Lebensmittel abzudecken ist meist hilfreicher, als nach ihnen zu schlagen.",
+        "en": "Covering food and drinks and remaining calm is generally more effective than trying to swat the wasps away."
+      },
+      "guides": []
+    },
+    {
+      "title": "Den Schulstart vorbereiten",
+      "englishTitle": "Preparing for the new school year",
+      "englishContext": "Families begin checking school supplies, timetables, transport arrangements and childcare as the new school year approaches.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Die Sommerferien enden in den Bundesländern zu unterschiedlichen Zeiten. Deshalb beginnt die Vorbereitung auf das neue Schuljahr nicht überall in Deutschland in derselben Woche.",
+        "en": "School holidays end on different dates in each German federal state, so the school-start period varies across the country."
+      },
+      "guides": [
+        {
+          "title": "Enrolling Your Child in a German School",
+          "summary": "A practical starting point for international families: whom to contact, what to prepare and what to do if the school is closed or no placement information has arrived.",
+          "url": "/mygermanfreund/guides/enrolling-your-child-in-a-german-school/"
+        }
+      ]
+    },
+    {
+      "title": "Ein Ausflug mit dem Fahrrad",
+      "englishTitle": "A bicycle trip",
+      "englishContext": "During summer, many people plan short cycling trips along rivers, through forests or between small towns.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Viele regionale Radwege verbinden Flüsse, Wälder und kleinere Orte. Vor längeren Touren prüfen viele Menschen nicht nur das Wetter, sondern auch Reifen, Bremsen und die geplante Strecke.",
+        "en": "Germany has many regional cycle routes, and riders commonly check their bicycles, route and weather before setting off."
+      },
+      "guides": []
+    }
+  ]
+}
