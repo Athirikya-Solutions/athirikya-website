@@ -1,0 +1,54 @@
+{
+  "issueId": "2026-W29",
+  "topics": [
+    {
+      "title": "Urlaubsvertretung im Büro",
+      "englishTitle": "Holiday cover in the office",
+      "englishContext": "During the summer holiday season, colleagues may temporarily take over urgent tasks for one another. Teams often discuss open work, deadlines and who should handle questions while someone is away.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "In vielen deutschen Büros werden Abwesenheiten frühzeitig im Team angekündigt. Eine automatische Abwesenheitsnotiz informiert zusätzlich externe Kontakte über das Rückkehrdatum und eine mögliche Vertretung.",
+        "en": "In many German workplaces, absences are communicated to the team in advance. An automatic out-of-office message also tells external contacts when the employee will return and whom they can contact in urgent cases."
+      },
+      "learnMore": {
+        "enabled": true,
+        "title": "Writing an Out-of-Office Email in Germany",
+        "summary": "See what a clear professional absence message should include, with a German example and English translation.",
+        "url": "/mygermanfreund/guides/out-of-office-email-germany/"
+      }
+    },
+    {
+      "title": "Ein Tag am Badesee",
+      "englishTitle": "A day at a swimming lake",
+      "englishContext": "On warm summer days, many people visit an outdoor pool or swimming lake. Places with lawns, shade and a kiosk are especially popular, and visitors usually bring drinks, sunscreen and towels.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Nicht jeder Badesee wird überwacht. Hinweise vor Ort zeigen, ob das Baden erlaubt ist, welche Bereiche geschützt sind und ob eine Badeaufsicht vorhanden ist.",
+        "en": "Not every swimming lake is supervised. Signs at the location indicate whether swimming is permitted, which areas are protected and whether lifeguards are present."
+      },
+      "learnMore": {"enabled": false}
+    },
+    {
+      "title": "Sommerfeste in der Nachbarschaft",
+      "englishTitle": "Summer festivals in the neighbourhood",
+      "englishContext": "During July, many towns and neighbourhoods organise small summer festivals with music, food, drinks and activities for children. They offer an informal opportunity to meet people who live nearby.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Viele Stadtteil- und Nachbarschaftsfeste werden von Vereinen, Kirchengemeinden, Schulen oder lokalen Initiativen organisiert. Deshalb wirken sie oft persönlicher als große kommerzielle Veranstaltungen.",
+        "en": "Many neighbourhood festivals are organised by local associations, churches, schools or community initiatives. This often makes them feel more personal than large commercial events."
+      },
+      "learnMore": {"enabled": false}
+    },
+    {
+      "title": "Reisen mit leichtem Gepäck",
+      "englishTitle": "Travelling with light luggage",
+      "englishContext": "Many people take short trips or weekend journeys during summer. Travelling with less luggage makes it easier to use buses and trains, change connections and move through stations.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Auf vielen regionalen Bahnstrecken gibt es nur begrenzten Platz für große Koffer. Leichtes Gepäck erleichtert deshalb besonders das Umsteigen und Reisen mit Regionalzügen.",
+        "en": "Large suitcases can be inconvenient on regional trains, where luggage space may be limited. Light luggage therefore makes transfers and short rail journeys easier."
+      },
+      "learnMore": {"enabled": false}
+    }
+  ]
+}
