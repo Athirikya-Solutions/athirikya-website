@@ -50,8 +50,7 @@ def validate_experiences(raw:Any,unit_index:int,global_seen:set[tuple[str,str]])
         topic=require_text(item.get("topic"),f"{p} topic")
         url=require_text(item.get("url"),f"{p} url")
         expected_url=expected_issue_url(issue)
-        if url!=expected_url:
-            raise ValidationError(f"{p} url must match {issue}: expected {expected_url}, got {url}")
+        if url!=expected_url: raise ValidationError(f"{p} url must match {issue}: expected {expected_url}, got {url}")
         key=(issue,topic.casefold())
         if key in global_seen: raise ValidationError(f"Duplicate experience across Knowledge Units: {issue} / {topic}")
         global_seen.add(key); out.append({"issueId":issue,"topic":topic,"url":url})
@@ -70,36 +69,24 @@ def validate_knowledge_units(raw:Any,valid:set[str])->list[dict[str,Any]]:
         out.append({"id":uid,"lifeArea":area,"title":require_text(item.get("title"),f"Knowledge Unit {i} title"),"summary":require_text(item.get("summary"),f"Knowledge Unit {i} summary"),"experiences":validate_experiences(item.get("experiences"),i,global_experiences)})
     return out
 
-def render_experiences(items:list[dict[str,str]])->str:
-    if not items: return '        <p class="small-note">More real-life examples will be added as German Buzz develops.</p>'
-    lis="\n".join(f'          <li><a href="{esc(x["url"])}">{esc(x["issueId"])} · {esc(x["topic"])}</a></li>' for x in items)
-    return f'        <p class="small-note">Seen in German Buzz:</p>\n        <ul class="life-area-experiences">\n{lis}\n        </ul>'
-
-def render_unit(u:dict[str,Any])->str:
-    return f'''      <article class="notice-card" id="{esc(u["id"])}">
-        <h3>{esc(u["title"])}</h3>
-        <p>{esc(u["summary"])}</p>
-{render_experiences(u["experiences"])}
+def render_unit(unit:dict[str,Any])->str:
+    return f'''      <article class="notice-card" id="{esc(unit["id"])}">
+        <h2>{esc(unit["title"])}</h2>
+        <p>{esc(unit["summary"])}</p>
       </article>'''
 
 def render_page(area:dict[str,str],units:list[dict[str,Any]])->str:
-    au=[u for u in units if u["lifeArea"]==area["id"]]
-    if au:
-        units_html="\n".join(render_unit(u) for u in au)
-        count=sum(len(u["experiences"]) for u in au)
-        intro=("1 German Buzz experience currently contributes to this Life Area." if count==1 else f"{count} German Buzz experiences currently contribute to this Life Area.")
-    else:
-        units_html='''      <article class="notice-card">
-        <p>No Knowledge Units have been added yet. This area will grow from real German Buzz experiences.</p>
-      </article>'''
-        intro="No experiences have been added yet. Weekly topics will gradually enrich this Life Area."
+    area_units=[u for u in units if u["lifeArea"]==area["id"]]
+    content="\n".join(render_unit(u) for u in area_units)
+    if not content:
+        content='      <p class="small-note">Practical guidance for this area will be added when there is useful, specific information to share.</p>'
     canonical=f"{SITE_URL}/mygermanfreund/life-areas/{area['id']}/"
     return f'''<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(area['title'])} | Life Areas | MyGermanFreund</title>
+  <title>{esc(area['title'])} | MyGermanFreund</title>
   <meta name="description" content="{esc(area['description'])}">
   <link rel="canonical" href="{canonical}">
   <meta name="robots" content="index,follow">
@@ -115,19 +102,12 @@ def render_page(area:dict[str,str],units:list[dict[str,Any]])->str:
     <nav class="nav" aria-label="Main navigation"><a href="../../../index.html">Home</a><a href="../../german-buzz/">German Buzz</a><a href="../../../mygermanfreund.html">MyGermanFreund</a></nav>
   </header>
   <main class="content-page">
-    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../../index.html">Athirikya</a> / <a href="../../../mygermanfreund.html">MyGermanFreund</a> / Life Areas / {esc(area['title'])}</nav>
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../../index.html">Athirikya</a> / <a href="../../../mygermanfreund.html">MyGermanFreund</a> / {esc(area['title'])}</nav>
     <article>
-      <header class="content-hero"><p class="eyebrow">Life Area</p><h1>{esc(area['title'])}</h1><p class="content-lead">{esc(area['description'])}</p></header>
-      <section class="guide-section" aria-labelledby="knowledge-units">
-        <h2 id="knowledge-units">Knowledge Units</h2>
-        <div class="guide-grid">
-{units_html}
-        </div>
+      <header class="content-hero"><h1>{esc(area['title'])}</h1><p class="content-lead">{esc(area['description'])}</p></header>
+      <section class="guide-section">
+{content}
       </section>
-      <section class="guide-section notice-card" aria-labelledby="buzz-experiences"><h2 id="buzz-experiences">German Buzz Experiences</h2><p>{esc(intro)}</p></section>
-      <section class="guide-section notice-card"><h2>Related Letter Types</h2><p>Coming soon.</p></section>
-      <section class="guide-section notice-card"><h2>Related Did You Know?</h2><p>Coming soon.</p></section>
-      <section class="guide-section notice-card"><h2>Official Resources</h2><p>Coming soon.</p></section>
     </article>
   </main>
   <footer class="site-footer"><div><img src="../../../assets/athirikya-logo.png" alt="Athirikya"></div><nav aria-label="Footer navigation"><a href="../../../privacy.html">Privacy</a><a href="../../../terms.html">Terms</a><a href="../../../impressum.html">Impressum</a><a href="../../../contact.html">Contact</a></nav><p>© 2026 Athirikya. All rights reserved.</p></footer>
@@ -150,7 +130,7 @@ def main()->int:
             if not args.dry_run:
                 path.parent.mkdir(parents=True,exist_ok=True)
                 path.write_text(render_page(area,units),encoding="utf-8")
-        print(f"Life Areas processed: {len(areas)}"); return 0
+        print(f"Public topic pages processed: {len(areas)}"); return 0
     except (OSError,json.JSONDecodeError,ValidationError) as exc:
         print(f"ERROR: {exc}"); return 1
 if __name__=="__main__": raise SystemExit(main())
