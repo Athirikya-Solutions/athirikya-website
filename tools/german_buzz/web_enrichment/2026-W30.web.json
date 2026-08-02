@@ -1,0 +1,49 @@
+{
+  "issueId": "2026-W30",
+  "topics": [
+    {
+      "title": "Baustellen und Umleitungen",
+      "englishTitle": "Roadworks and diversions",
+      "englishContext": "During summer, many cities carry out roadworks and maintenance. Bus and tram routes may change temporarily, and everyday journeys can take longer than usual.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Viele größere Bauarbeiten werden in die Ferienzeit gelegt, weil dann weniger Pendler und Schülerinnen und Schüler unterwegs sind. Trotzdem können Umleitungen den Nahverkehr deutlich verändern.",
+        "en": "Major construction work is often scheduled during school holidays because fewer commuters and students are travelling. Even so, diversions can significantly affect local transport."
+      },
+      "learnMore": {"enabled": false}
+    },
+    {
+      "title": "Eine Pause in der Eisdiele",
+      "englishTitle": "A break at the ice-cream shop",
+      "englishContext": "On warm days, ice-cream shops become popular meeting places. People choose between classic and unusual flavours and order their ice cream in a cone or cup.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Viele Eisdielen in Deutschland werden von italienischen Familien geführt. Einige schließen im Winter vollständig und öffnen erst wieder im Frühjahr.",
+        "en": "Many ice-cream shops in Germany are run by Italian families. Some close completely during winter and reopen in spring."
+      },
+      "learnMore": {"enabled": false}
+    },
+    {
+      "title": "Pflanzen während des Urlaubs",
+      "englishTitle": "Looking after plants during a holiday",
+      "englishContext": "Indoor and balcony plants often need more water during summer. People who travel may ask friends or neighbours to water them and explain how often this should be done.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Das Gießen von Pflanzen ist eine typische kleine Nachbarschaftshilfe während der Urlaubszeit. Häufig übernimmt man später eine ähnliche Aufgabe als Gegenleistung.",
+        "en": "Watering plants is a common small favour between neighbours during the holiday season. The favour is often returned later in a similar situation."
+      },
+      "learnMore": {"enabled": false}
+    },
+    {
+      "title": "Kino unter freiem Himmel",
+      "englishTitle": "Open-air cinema",
+      "englishContext": "During summer, many cities show films outdoors. These events usually begin after sunset and may take place in parks, courtyards or unusual public spaces.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Open-Air-Kinos finden häufig in Parks, Innenhöfen, Schwimmbädern oder historischen Gebäuden statt. Auch an warmen Tagen kann es am späten Abend kühl werden.",
+        "en": "Open-air cinemas are often hosted in parks, courtyards, swimming pools or historic locations. Even after a warm day, temperatures can drop later in the evening."
+      },
+      "learnMore": {"enabled": false}
+    }
+  ]
+}
