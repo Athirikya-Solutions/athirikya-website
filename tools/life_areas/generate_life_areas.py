@@ -34,10 +34,14 @@ def validate_life_areas(raw:Any)->list[dict[str,str]]:
         out.append({"id":aid,"title":require_text(item.get("title"),f"Life Area {i} title"),"description":require_text(item.get("description"),f"Life Area {i} description")})
     return out
 
-def validate_experiences(raw:Any,unit_index:int)->list[dict[str,str]]:
+def expected_issue_url(issue_id:str)->str:
+    week=issue_id.split("-W",1)[1]
+    return f"/mygermanfreund/german-buzz/kw-{int(week)}/"
+
+def validate_experiences(raw:Any,unit_index:int,global_seen:set[tuple[str,str]])->list[dict[str,str]]:
     if raw is None: return []
     if not isinstance(raw,list): raise ValidationError(f"Knowledge Unit {unit_index} experiences must be an array.")
-    out=[]; seen=set()
+    out=[]
     for i,item in enumerate(raw,1):
         p=f"Knowledge Unit {unit_index} experience {i}"
         if not isinstance(item,dict): raise ValidationError(f"{p} must be an object.")
@@ -45,15 +49,17 @@ def validate_experiences(raw:Any,unit_index:int)->list[dict[str,str]]:
         if not ISSUE_ID.fullmatch(issue): raise ValidationError(f"{p} issueId must use YYYY-W## format.")
         topic=require_text(item.get("topic"),f"{p} topic")
         url=require_text(item.get("url"),f"{p} url")
-        if not url.startswith("/mygermanfreund/german-buzz/kw-"): raise ValidationError(f"{p} url must point to a German Buzz weekly page.")
+        expected_url=expected_issue_url(issue)
+        if url!=expected_url:
+            raise ValidationError(f"{p} url must match {issue}: expected {expected_url}, got {url}")
         key=(issue,topic.casefold())
-        if key in seen: raise ValidationError(f"Duplicate experience: {issue} / {topic}")
-        seen.add(key); out.append({"issueId":issue,"topic":topic,"url":url})
+        if key in global_seen: raise ValidationError(f"Duplicate experience across Knowledge Units: {issue} / {topic}")
+        global_seen.add(key); out.append({"issueId":issue,"topic":topic,"url":url})
     return out
 
 def validate_knowledge_units(raw:Any,valid:set[str])->list[dict[str,Any]]:
     if not isinstance(raw,list): raise ValidationError("knowledge_units.json must contain an array.")
-    out=[]; seen=set()
+    out=[]; seen=set(); global_experiences:set[tuple[str,str]]=set()
     for i,item in enumerate(raw,1):
         if not isinstance(item,dict): raise ValidationError(f"Knowledge Unit {i} must be an object.")
         uid=normalize_slug(item.get("id"),f"Knowledge Unit {i} id")
@@ -61,7 +67,7 @@ def validate_knowledge_units(raw:Any,valid:set[str])->list[dict[str,Any]]:
         if area not in valid: raise ValidationError(f"Knowledge Unit {i} references unknown Life Area: {area}")
         if uid in seen: raise ValidationError(f"Duplicate Knowledge Unit id: {uid}")
         seen.add(uid)
-        out.append({"id":uid,"lifeArea":area,"title":require_text(item.get("title"),f"Knowledge Unit {i} title"),"summary":require_text(item.get("summary"),f"Knowledge Unit {i} summary"),"experiences":validate_experiences(item.get("experiences"),i)})
+        out.append({"id":uid,"lifeArea":area,"title":require_text(item.get("title"),f"Knowledge Unit {i} title"),"summary":require_text(item.get("summary"),f"Knowledge Unit {i} summary"),"experiences":validate_experiences(item.get("experiences"),i,global_experiences)})
     return out
 
 def render_experiences(items:list[dict[str,str]])->str:
