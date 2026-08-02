@@ -1,0 +1,60 @@
+{
+  "issueId": "2026-W31",
+  "topics": [
+    {
+      "title": "Ferienmodus im Büro",
+      "englishTitle": "Holiday mode in the office",
+      "englishContext": "At the end of July, many employees are on leave. Offices may be quieter, meetings are postponed, and replies can take longer than usual.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Während der Sommerferien rechnen viele deutsche Unternehmen mit längeren Antwortzeiten. Klare Abwesenheitsnotizen helfen externen Kontakten zu erkennen, wann jemand zurückkehrt und wer in dringenden Fällen erreichbar ist.",
+        "en": "During the summer holiday period, longer response times are common in many German workplaces. Clear out-of-office messages tell external contacts when someone will return and whom they can contact if the matter is urgent."
+      },
+      "learnMore": {
+        "enabled": true,
+        "title": "Writing an Out-of-Office Email in Germany",
+        "summary": "See what a clear professional absence message should include, with a German example and English translation.",
+        "url": "/mygermanfreund/guides/out-of-office-email-germany/"
+      }
+    },
+    {
+      "title": "Open-Air-Festivals im Sommer",
+      "englishTitle": "Summer open-air festivals",
+      "englishContext": "Germany hosts many outdoor concerts and festivals during summer. Some last for one evening, while others continue for an entire weekend.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Auch bei warmem Wetter ändern sich die Bedingungen am Abend schnell. Viele Veranstalter veröffentlichen deshalb kurz vor Beginn Hinweise zu Wetter, Einlass, erlaubten Taschen und Trinkflaschen.",
+        "en": "Conditions can change quickly even after a warm day. Organisers often publish last-minute information about the weather, entry rules, permitted bags and drinking bottles."
+      },
+      "learnMore": {
+        "enabled": false
+      }
+    },
+    {
+      "title": "Sommerobst vom Wochenmarkt",
+      "englishTitle": "Summer fruit from the weekly market",
+      "englishContext": "Weekly markets offer a wide selection of fresh seasonal fruit during summer. Customers can ask where the produce comes from, how ripe it is and how much it costs.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Wochenmärkte finden häufig nur an bestimmten Wochentagen und zu festen Vormittagszeiten statt. Das Angebot verändert sich deutlich mit der Saison und der regionalen Ernte.",
+        "en": "Weekly markets usually operate only on particular days and during fixed morning hours. The selection changes noticeably according to the season and regional harvest."
+      },
+      "learnMore": {
+        "enabled": false
+      }
+    },
+    {
+      "title": "Pakete für die Nachbarn",
+      "englishTitle": "Parcels left with neighbours",
+      "englishContext": "When someone is not at home, a delivery company may leave the parcel with a neighbour. The recipient normally receives a card or app notification explaining where it was delivered.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Ob ein Paket bei einem Nachbarn abgegeben werden darf, hängt vom Paketdienst, den gewählten Zustelloptionen und möglichen Ablagevereinbarungen ab. Die Benachrichtigung nennt normalerweise den Namen oder die Adresse der Person, die das Paket angenommen hat.",
+        "en": "Whether a parcel may be left with a neighbour depends on the delivery company, the selected delivery preferences and any authorised drop-off arrangements. The notification normally identifies the person or address that accepted it."
+      },
+      "learnMore": {
+        "enabled": false
+      }
+    }
+  ]
+}
