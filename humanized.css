@@ -31,5 +31,38 @@
 .topic-connection a { color:#215fae; font-weight:700; text-decoration:none; }
 .topic-connection a:hover,.topic-connection a:focus-visible { text-decoration:underline; }
 .topic-connection p { margin:6px 0 0; color:#5f6d80; font-size:14px; line-height:1.5; }
+
+/* The current source logo includes white canvas around the artwork. These
+   wrappers crop that canvas consistently without changing every page. */
+.brand {
+  width: 188px;
+  height: 52px;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+.brand img {
+  width: 214px;
+  max-width: none;
+  height: auto;
+  transform: translate(-13px, -18px);
+}
+.site-footer > div:first-child {
+  width: 170px;
+  height: 46px;
+  overflow: hidden;
+}
+.site-footer > div:first-child img {
+  width: 193px;
+  max-width: none;
+  height: auto;
+  transform: translate(-12px, -16px);
+}
+
 @media (max-width:960px) { .launch-panel { margin-inline:auto; } }
-@media (max-width:680px) { .launch-panel { padding:22px; border-radius:22px; } .guide-grid,.letter-type-list { grid-template-columns:1fr; } .text-link-cta { width:100%; justify-content:space-between; } }
+@media (max-width:680px) {
+  .launch-panel { padding:22px; border-radius:22px; }
+  .guide-grid,.letter-type-list { grid-template-columns:1fr; }
+  .text-link-cta { width:100%; justify-content:space-between; }
+  .brand { width: 164px; height: 46px; }
+  .brand img { width: 187px; transform: translate(-11px, -16px); }
+}
