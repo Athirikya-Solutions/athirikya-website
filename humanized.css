@@ -32,25 +32,30 @@
 .topic-connection a:hover,.topic-connection a:focus-visible { text-decoration:underline; }
 .topic-connection p { margin:6px 0 0; color:#5f6d80; font-size:14px; line-height:1.5; }
 
-/* Brand assets are intentionally split: the HTML keeps the square icon for
-   favicons, while header and footer images render the wide wordmark. */
-.brand img,
-.site-footer img {
-  content: url("assets/athirikya-wordmark.png");
-  display: block;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+/* Render the visible wordmark on the container instead of replacing an img
+   through CSS content. The latter is not reliable across browsers. */
+.brand {
+  display: inline-flex;
+  width: 220px;
+  height: 64px;
+  flex: 0 0 auto;
+  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
 }
-.brand img { width: 220px; }
-.site-footer img { width: 190px; }
+.brand img { display: none !important; }
+.site-footer > div:first-child::before {
+  content: "";
+  display: block;
+  width: 190px;
+  height: 56px;
+  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
+}
+.site-footer > div:first-child > img { display: none !important; }
 
 @media (max-width:960px) { .launch-panel { margin-inline:auto; } }
 @media (max-width:680px) {
   .launch-panel { padding:22px; border-radius:22px; }
   .guide-grid,.letter-type-list { grid-template-columns:1fr; }
   .text-link-cta { width:100%; justify-content:space-between; }
-  .brand img { width: 172px; }
-  .site-footer img { width: 165px; }
+  .brand { width:172px; height:52px; }
+  .site-footer > div:first-child::before { width:165px; height:48px; }
 }
