@@ -32,12 +32,12 @@
 .topic-connection a:hover,.topic-connection a:focus-visible { text-decoration:underline; }
 .topic-connection p { margin:6px 0 0; color:#5f6d80; font-size:14px; line-height:1.5; }
 
-/* Render the visible wordmark on the container instead of replacing an img
-   through CSS content. The latter is not reliable across browsers. */
+/* Keep these dimensions aligned with soothing.css because this stylesheet is
+   loaded later on some pages and therefore wins the cascade. */
 .brand {
   display: inline-flex;
-  width: 220px;
-  height: 64px;
+  width: 190px;
+  height: 78px;
   flex: 0 0 auto;
   background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
 }
@@ -45,17 +45,19 @@
 .site-footer > div:first-child::before {
   content: "";
   display: block;
-  width: 190px;
-  height: 56px;
+  width: 170px;
+  height: 70px;
   background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
 }
 .site-footer > div:first-child > img { display: none !important; }
+.legal-footer > div:first-child::before { width:150px; height:62px; }
 
 @media (max-width:960px) { .launch-panel { margin-inline:auto; } }
 @media (max-width:680px) {
   .launch-panel { padding:22px; border-radius:22px; }
   .guide-grid,.letter-type-list { grid-template-columns:1fr; }
   .text-link-cta { width:100%; justify-content:space-between; }
-  .brand { width:172px; height:52px; }
-  .site-footer > div:first-child::before { width:165px; height:48px; }
+  .brand { width:155px; height:64px; }
+  .site-footer > div:first-child::before { width:150px; height:62px; }
+  .legal-footer > div:first-child::before { width:140px; height:58px; }
 }
