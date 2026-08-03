@@ -94,25 +94,25 @@ h3 {
   font-weight: 600;
 }
 
-/* Brand assets are intentionally split: the square app icon is used for
-   browser tabs, while every visible header/footer image uses the wordmark. */
-.brand img,
-.site-footer img {
-  content: url("assets/athirikya-wordmark.png");
-  display: block;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.brand img {
+/* Browser tabs use the square icon. Visible branding uses the wide wordmark.
+   Render it on the existing containers so every current static page works,
+   including pages that do not load humanized.css. */
+.brand {
+  display: inline-flex;
   width: 220px;
+  height: 64px;
+  flex: 0 0 auto;
+  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
 }
-
-.site-footer img {
+.brand img { display: none !important; }
+.site-footer > div:first-child::before {
+  content: "";
+  display: block;
   width: 190px;
+  height: 56px;
+  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
 }
+.site-footer > div:first-child > img { display: none !important; }
 
 .hero-app-screenshot,
 .product-image-preview img,
@@ -297,12 +297,14 @@ a[href="german-buzz/2026/kw-28/"] {
     padding-top: 34px;
   }
 
-  .brand img {
+  .brand {
     width: 172px;
+    height: 52px;
   }
 
-  .site-footer img {
+  .site-footer > div:first-child::before {
     width: 165px;
+    height: 48px;
   }
 
   .hero-app-screenshot {
