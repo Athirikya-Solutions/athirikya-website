@@ -31,5 +31,26 @@
 .topic-connection a { color:#215fae; font-weight:700; text-decoration:none; }
 .topic-connection a:hover,.topic-connection a:focus-visible { text-decoration:underline; }
 .topic-connection p { margin:6px 0 0; color:#5f6d80; font-size:14px; line-height:1.5; }
+
+/* Brand assets are intentionally split: the HTML keeps the square icon for
+   favicons, while header and footer images render the wide wordmark. */
+.brand img,
+.site-footer img {
+  content: url("assets/athirikya-wordmark.png");
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.brand img { width: 220px; }
+.site-footer img { width: 190px; }
+
 @media (max-width:960px) { .launch-panel { margin-inline:auto; } }
-@media (max-width:680px) { .launch-panel { padding:22px; border-radius:22px; } .guide-grid,.letter-type-list { grid-template-columns:1fr; } .text-link-cta { width:100%; justify-content:space-between; } }
+@media (max-width:680px) {
+  .launch-panel { padding:22px; border-radius:22px; }
+  .guide-grid,.letter-type-list { grid-template-columns:1fr; }
+  .text-link-cta { width:100%; justify-content:space-between; }
+  .brand img { width: 172px; }
+  .site-footer img { width: 165px; }
+}
