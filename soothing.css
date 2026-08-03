@@ -94,24 +94,30 @@ h3 {
   font-weight: 600;
 }
 
-/* Brand assets are intentionally split: the square app icon is used for
-   browser tabs, while every visible header/footer image uses the wordmark. */
-.brand img,
-.site-footer img {
-  content: url("assets/athirikya-wordmark.png");
-  display: block;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.brand img {
-  width: 220px;
-}
-
-.site-footer img {
+/* Browser tabs use the square icon. Visible branding uses the wide wordmark.
+   The source image includes the tagline, so give it enough vertical room and
+   scale it with contain rather than clipping it to the old logo dimensions. */
+.brand {
+  display: inline-flex;
   width: 190px;
+  height: 78px;
+  flex: 0 0 auto;
+  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
+}
+.brand img { display: none !important; }
+.site-footer > div:first-child::before {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 70px;
+  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
+}
+.site-footer > div:first-child > img { display: none !important; }
+
+/* Legal pages intentionally use a more compact footer brand. */
+.legal-footer > div:first-child::before {
+  width: 150px;
+  height: 62px;
 }
 
 .hero-app-screenshot,
@@ -297,12 +303,19 @@ a[href="german-buzz/2026/kw-28/"] {
     padding-top: 34px;
   }
 
-  .brand img {
-    width: 172px;
+  .brand {
+    width: 155px;
+    height: 64px;
   }
 
-  .site-footer img {
-    width: 165px;
+  .site-footer > div:first-child::before {
+    width: 150px;
+    height: 62px;
+  }
+
+  .legal-footer > div:first-child::before {
+    width: 140px;
+    height: 58px;
   }
 
   .hero-app-screenshot {
