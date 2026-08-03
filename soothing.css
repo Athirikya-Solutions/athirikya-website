@@ -94,9 +94,24 @@ h3 {
   font-weight: 600;
 }
 
+/* Brand assets are intentionally split: the square app icon is used for
+   browser tabs, while every visible header/footer image uses the wordmark. */
 .brand img,
 .site-footer img {
+  content: url("assets/athirikya-wordmark.png");
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
+}
+
+.brand img {
+  width: 220px;
+}
+
+.site-footer img {
+  width: 190px;
 }
 
 .hero-app-screenshot,
@@ -280,6 +295,14 @@ a[href="german-buzz/2026/kw-28/"] {
 
   .hero {
     padding-top: 34px;
+  }
+
+  .brand img {
+    width: 172px;
+  }
+
+  .site-footer img {
+    width: 165px;
   }
 
   .hero-app-screenshot {
