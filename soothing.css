@@ -94,30 +94,47 @@ h3 {
   font-weight: 600;
 }
 
-/* Browser tabs use the square icon. Visible branding uses the wide wordmark.
-   The source image includes the tagline, so give it enough vertical room and
-   scale it with contain rather than clipping it to the old logo dimensions. */
-.brand {
-  display: inline-flex;
+/* Visible branding uses the wordmark directly in the HTML. */
+.brand img {
+  display: block;
   width: 190px;
-  height: 78px;
-  flex: 0 0 auto;
+  height: auto;
+}
+
+.site-footer > div:first-child > img {
+  display: block;
+  width: 170px;
+  height: auto;
+}
+
+.legal-footer > div:first-child > img {
+  width: 150px;
+}
+
+/* Compatibility for older generated pages that still reference the square
+   favicon asset in visible branding. New and regenerated pages should point
+   directly to athirikya-wordmark.png. */
+.brand:has(> img[src$="athirikya-logo.png"]) {
+  width: 190px;
+  min-height: 72px;
   background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
 }
-.brand img { display: none !important; }
-.site-footer > div:first-child::before {
+.brand > img[src$="athirikya-logo.png"] {
+  display: none;
+}
+.site-footer > div:first-child:has(> img[src$="athirikya-logo.png"])::before {
   content: "";
   display: block;
   width: 170px;
-  height: 70px;
+  height: 68px;
   background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
 }
-.site-footer > div:first-child > img { display: none !important; }
-
-/* Legal pages intentionally use a more compact footer brand. */
-.legal-footer > div:first-child::before {
+.site-footer > div:first-child > img[src$="athirikya-logo.png"] {
+  display: none;
+}
+.legal-footer > div:first-child:has(> img[src$="athirikya-logo.png"])::before {
   width: 150px;
-  height: 62px;
+  height: 60px;
 }
 
 .hero-app-screenshot,
@@ -258,10 +275,6 @@ h3 {
   text-decoration: none;
 }
 
-.legal-footer img {
-  width: 150px;
-}
-
 /* The Athirikya homepage presents only the company and its products.
    German Buzz remains available within the MyGermanFreund product area. */
 a[href="german-buzz/"],
@@ -303,19 +316,31 @@ a[href="german-buzz/2026/kw-28/"] {
     padding-top: 34px;
   }
 
-  .brand {
+  .brand img {
     width: 155px;
-    height: 64px;
   }
 
-  .site-footer > div:first-child::before {
+  .site-footer > div:first-child > img {
     width: 150px;
-    height: 62px;
   }
 
-  .legal-footer > div:first-child::before {
+  .legal-footer > div:first-child > img {
     width: 140px;
-    height: 58px;
+  }
+
+  .brand:has(> img[src$="athirikya-logo.png"]) {
+    width: 155px;
+    min-height: 58px;
+  }
+
+  .site-footer > div:first-child:has(> img[src$="athirikya-logo.png"])::before {
+    width: 150px;
+    height: 60px;
+  }
+
+  .legal-footer > div:first-child:has(> img[src$="athirikya-logo.png"])::before {
+    width: 140px;
+    height: 56px;
   }
 
   .hero-app-screenshot {

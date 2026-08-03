@@ -32,32 +32,24 @@
 .topic-connection a:hover,.topic-connection a:focus-visible { text-decoration:underline; }
 .topic-connection p { margin:6px 0 0; color:#5f6d80; font-size:14px; line-height:1.5; }
 
-/* Keep these dimensions aligned with soothing.css because this stylesheet is
-   loaded later on some pages and therefore wins the cascade. */
-.brand {
-  display: inline-flex;
+.brand img {
+  display: block;
   width: 190px;
-  height: 78px;
-  flex: 0 0 auto;
-  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
+  height: auto;
 }
-.brand img { display: none !important; }
-.site-footer > div:first-child::before {
-  content: "";
+.site-footer > div:first-child > img {
   display: block;
   width: 170px;
-  height: 70px;
-  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
+  height: auto;
 }
-.site-footer > div:first-child > img { display: none !important; }
-.legal-footer > div:first-child::before { width:150px; height:62px; }
+.legal-footer > div:first-child > img { width:150px; }
 
 @media (max-width:960px) { .launch-panel { margin-inline:auto; } }
 @media (max-width:680px) {
   .launch-panel { padding:22px; border-radius:22px; }
   .guide-grid,.letter-type-list { grid-template-columns:1fr; }
   .text-link-cta { width:100%; justify-content:space-between; }
-  .brand { width:155px; height:64px; }
-  .site-footer > div:first-child::before { width:150px; height:62px; }
-  .legal-footer > div:first-child::before { width:140px; height:58px; }
+  .brand img { width:155px; }
+  .site-footer > div:first-child > img { width:150px; }
+  .legal-footer > div:first-child > img { width:140px; }
 }
