@@ -95,12 +95,12 @@ h3 {
 }
 
 /* Browser tabs use the square icon. Visible branding uses the wide wordmark.
-   Render it on the existing containers so every current static page works,
-   including pages that do not load humanized.css. */
+   The source image includes the tagline, so give it enough vertical room and
+   scale it with contain rather than clipping it to the old logo dimensions. */
 .brand {
   display: inline-flex;
-  width: 220px;
-  height: 64px;
+  width: 190px;
+  height: 78px;
   flex: 0 0 auto;
   background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
 }
@@ -108,11 +108,17 @@ h3 {
 .site-footer > div:first-child::before {
   content: "";
   display: block;
-  width: 190px;
-  height: 56px;
+  width: 170px;
+  height: 70px;
   background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
 }
 .site-footer > div:first-child > img { display: none !important; }
+
+/* Legal pages intentionally use a more compact footer brand. */
+.legal-footer > div:first-child::before {
+  width: 150px;
+  height: 62px;
+}
 
 .hero-app-screenshot,
 .product-image-preview img,
@@ -298,13 +304,18 @@ a[href="german-buzz/2026/kw-28/"] {
   }
 
   .brand {
-    width: 172px;
-    height: 52px;
+    width: 155px;
+    height: 64px;
   }
 
   .site-footer > div:first-child::before {
-    width: 165px;
-    height: 48px;
+    width: 150px;
+    height: 62px;
+  }
+
+  .legal-footer > div:first-child::before {
+    width: 140px;
+    height: 58px;
   }
 
   .hero-app-screenshot {
