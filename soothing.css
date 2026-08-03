@@ -111,32 +111,6 @@ h3 {
   width: 150px;
 }
 
-/* Compatibility for older generated pages that still reference the square
-   favicon asset in visible branding. New and regenerated pages should point
-   directly to athirikya-wordmark.png. */
-.brand:has(> img[src$="athirikya-logo.png"]) {
-  width: 190px;
-  min-height: 72px;
-  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
-}
-.brand > img[src$="athirikya-logo.png"] {
-  display: none;
-}
-.site-footer > div:first-child:has(> img[src$="athirikya-logo.png"])::before {
-  content: "";
-  display: block;
-  width: 170px;
-  height: 68px;
-  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
-}
-.site-footer > div:first-child > img[src$="athirikya-logo.png"] {
-  display: none;
-}
-.legal-footer > div:first-child:has(> img[src$="athirikya-logo.png"])::before {
-  width: 150px;
-  height: 60px;
-}
-
 .hero-app-screenshot,
 .product-image-preview img,
 .feature-screenshot img {
@@ -326,21 +300,6 @@ a[href="german-buzz/2026/kw-28/"] {
 
   .legal-footer > div:first-child > img {
     width: 140px;
-  }
-
-  .brand:has(> img[src$="athirikya-logo.png"]) {
-    width: 155px;
-    min-height: 58px;
-  }
-
-  .site-footer > div:first-child:has(> img[src$="athirikya-logo.png"])::before {
-    width: 150px;
-    height: 60px;
-  }
-
-  .legal-footer > div:first-child:has(> img[src$="athirikya-logo.png"])::before {
-    width: 140px;
-    height: 56px;
   }
 
   .hero-app-screenshot {
