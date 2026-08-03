@@ -94,30 +94,21 @@ h3 {
   font-weight: 600;
 }
 
-/* Browser tabs use the square icon. Visible branding uses the wide wordmark.
-   The source image includes the tagline, so give it enough vertical room and
-   scale it with contain rather than clipping it to the old logo dimensions. */
-.brand {
-  display: inline-flex;
+/* Visible branding uses the wordmark directly in the HTML. */
+.brand img {
+  display: block;
   width: 190px;
-  height: 78px;
-  flex: 0 0 auto;
-  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
+  height: auto;
 }
-.brand img { display: none !important; }
-.site-footer > div:first-child::before {
-  content: "";
+
+.site-footer > div:first-child > img {
   display: block;
   width: 170px;
-  height: 70px;
-  background: url("assets/athirikya-wordmark.png") left center / contain no-repeat;
+  height: auto;
 }
-.site-footer > div:first-child > img { display: none !important; }
 
-/* Legal pages intentionally use a more compact footer brand. */
-.legal-footer > div:first-child::before {
+.legal-footer > div:first-child > img {
   width: 150px;
-  height: 62px;
 }
 
 .hero-app-screenshot,
@@ -258,10 +249,6 @@ h3 {
   text-decoration: none;
 }
 
-.legal-footer img {
-  width: 150px;
-}
-
 /* The Athirikya homepage presents only the company and its products.
    German Buzz remains available within the MyGermanFreund product area. */
 a[href="german-buzz/"],
@@ -303,19 +290,16 @@ a[href="german-buzz/2026/kw-28/"] {
     padding-top: 34px;
   }
 
-  .brand {
+  .brand img {
     width: 155px;
-    height: 64px;
   }
 
-  .site-footer > div:first-child::before {
+  .site-footer > div:first-child > img {
     width: 150px;
-    height: 62px;
   }
 
-  .legal-footer > div:first-child::before {
+  .legal-footer > div:first-child > img {
     width: 140px;
-    height: 58px;
   }
 
   .hero-app-screenshot {
