@@ -140,6 +140,7 @@ def render_issue(issue: Issue) -> str:
         "isPartOf": {"@type": "CreativeWorkSeries", "name": "German Buzz"},
     }
     structured_json = json.dumps(structured, ensure_ascii=False, separators=(",", ":"))
+    image = f"{SITE_URL}/assets/mgf-german-buzz.jpeg"
 
     return f'''<!doctype html>
 <html lang="de">
@@ -154,7 +155,12 @@ def render_issue(issue: Issue) -> str:
   <meta property="og:title" content="German Buzz {escape(issue.kw)} | MyGermanFreund">
   <meta property="og:description" content="{escape(description)}">
   <meta property="og:url" content="{issue.url}">
+  <meta property="og:image" content="{image}">
   <meta property="og:site_name" content="Athirikya">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="German Buzz {escape(issue.kw)} | MyGermanFreund">
+  <meta name="twitter:description" content="{escape(description)}">
+  <meta name="twitter:image" content="{image}">
   <link rel="icon" href="../../../assets/athirikya-logo.png?v=6" type="image/png">
   <link rel="stylesheet" href="../../../styles.css">
   <link rel="stylesheet" href="../../../soothing.css">

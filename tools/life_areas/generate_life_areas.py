@@ -195,6 +195,7 @@ def render_page(area: dict[str, str], guides: list[dict[str, str]]) -> str:
     if not content:
         content = '      <p class="small-note">Practical guidance for this area will be added when there is useful, specific information to share.</p>'
     canonical = f"{SITE_URL}/mygermanfreund/life-areas/{area['id']}/"
+    image = f"{SITE_URL}/assets/mgf-home.jpeg"
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -204,6 +205,16 @@ def render_page(area: dict[str, str], guides: list[dict[str, str]]) -> str:
   <meta name="description" content="{esc(area['description'])}">
   <link rel="canonical" href="{canonical}">
   <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{esc(area['title'])} | MyGermanFreund">
+  <meta property="og:description" content="{esc(area['description'])}">
+  <meta property="og:url" content="{canonical}">
+  <meta property="og:image" content="{image}">
+  <meta property="og:site_name" content="Athirikya">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{esc(area['title'])} | MyGermanFreund">
+  <meta name="twitter:description" content="{esc(area['description'])}">
+  <meta name="twitter:image" content="{image}">
   <link rel="icon" href="../../../assets/athirikya-logo.png?v=6" type="image/png">
   <link rel="stylesheet" href="../../../styles.css">
   <link rel="stylesheet" href="../../../soothing.css">
