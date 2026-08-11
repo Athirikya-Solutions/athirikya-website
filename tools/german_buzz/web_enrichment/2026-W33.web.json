@@ -1,0 +1,55 @@
+{
+  "issueId": "2026-W33",
+  "topics": [
+    {
+      "title": "Sternschnuppen sehen",
+      "englishTitle": "Watching shooting stars",
+      "englishContext": "In August, many people in Germany look for shooting stars at night. Around 12 and 13 August, the Perseids are especially noticeable, so people often plan an evening outside somewhere dark.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Die Perseiden sind jedes Jahr im August am Himmel zu sehen. Rund um den 12. und 13. August kann man besonders viele Sternschnuppen beobachten. Am besten sucht man dafür einen dunklen Ort mit wenig künstlichem Licht.",
+        "en": "The Perseids appear every August. Around 12 and 13 August, particularly many shooting stars can be visible. A dark place with little artificial light gives you a better view."
+      },
+      "guides": []
+    },
+    {
+      "title": "Grillen im Park",
+      "englishTitle": "Barbecuing in the park",
+      "englishContext": "Outdoor barbecues are popular during summer, but grilling is not automatically allowed in every German park. Cities and individual parks can have their own rules and designated barbecue areas.",
+      "interestingFacts": {
+        "enabled": false,
+        "de": "",
+        "en": ""
+      },
+      "guides": [
+        {
+          "title": "Grilling in Germany: Where Is It Allowed?",
+          "summary": "How to check Grillplätze and local park rules, what to consider when grilling on a balcony or at home, and why charcoal grills must never be used indoors.",
+          "url": "/mygermanfreund/guides/grilling-in-germany/"
+        }
+      ]
+    },
+    {
+      "title": "Auf dem Flohmarkt",
+      "englishTitle": "At the flea market",
+      "englishContext": "Flea markets are common weekend activities in many German cities. People browse second-hand items, talk with sellers and sometimes negotiate the price.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Auf vielen Flohmärkten kann man freundlich nach einem niedrigeren Preis fragen. Ein typischer Satz ist: „Können Sie noch etwas am Preis machen?“ In normalen Geschäften ist Handeln dagegen eher unüblich.",
+        "en": "At many flea markets, it is normal to politely ask whether the seller can lower the price. Bargaining like this is much less common in ordinary shops."
+      },
+      "guides": []
+    },
+    {
+      "title": "Plötzlich Sommerregen",
+      "englishTitle": "Sudden summer rain",
+      "englishContext": "Summer weather can change quickly. A sunny morning can turn into rain later in the day, so people often check the forecast before making outdoor plans.",
+      "interestingFacts": {
+        "enabled": false,
+        "de": "",
+        "en": ""
+      },
+      "guides": []
+    }
+  ]
+}
