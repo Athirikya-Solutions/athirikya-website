@@ -1,0 +1,93 @@
+{
+"id": "2026-W33",
+"title": "German Buzz",
+"weekNumber": 33,
+"year": 2026,
+"dateRange": "10 August – 16 August",
+"tagline": "Prepare for real conversations this week.",
+"weeklySummary": "Sternschnuppen sehen • Grillen im Park • Flohmarkt am Wochenende • Sommerregen",
+"published": true,
+"publishedAt": "2026-08-09T09:00:00+02:00",
+"topics": [
+{
+"title": "Sternschnuppen sehen",
+"whatsHappening": "Im August kann man viele Sternschnuppen sehen. Besonders um den 12. und 13. August schauen viele Menschen nachts in den Himmel. Man nennt diese Sternschnuppen die Perseiden. An einem dunklen Ort kann man sie besser sehen. Deshalb planen manche Leute einen Abend draußen.",
+"conversationStarters": [
+"MGF: Hast du schon von den Perseiden gehört?",
+"Du: Ja, man kann viele Sternschnuppen sehen.",
+"MGF: Möchtest du sie diese Woche anschauen?",
+"Du: Ja, vielleicht am Mittwochabend.",
+"MGF: Wir brauchen einen dunklen Ort.",
+"Du: Dann können wir in den Park fahren."
+],
+"possibleReplies": [
+"die Sternschnuppe — shooting star",
+"die Perseiden — Perseids",
+"der Himmel — sky",
+"dunkel — dark",
+"etwas anschauen — to watch something"
+],
+"germanContext": "Diese Woche möchte ich die Perseiden am Himmel sehen."
+},
+{
+"title": "Grillen im Park",
+"whatsHappening": "Im Sommer grillen viele Menschen gern draußen. Manche treffen sich im Garten oder in einem Park. Nicht überall ist Grillen erlaubt. Deshalb schaut man vorher nach den Regeln und sucht einen passenden Platz.",
+"conversationStarters": [
+"MGF: Wollen wir am Samstag zusammen grillen?",
+"Du: Gerne. Wo möchtest du grillen?",
+"MGF: Vielleicht im Park bei uns.",
+"Du: Darf man dort überhaupt grillen?",
+"MGF: Ja, aber nur auf dem Grillplatz.",
+"Du: Super. Dann bringe ich Salat und Getränke mit."
+],
+"possibleReplies": [
+"grillen — to barbecue",
+"der Grillplatz — barbecue area",
+"erlaubt — allowed",
+"etwas mitbringen — to bring something",
+"die Regeln — rules"
+],
+"germanContext": "Wir grillen am Samstag auf dem Grillplatz im Park."
+},
+{
+"title": "Auf dem Flohmarkt",
+"whatsHappening": "Am Wochenende gibt es in vielen Städten Flohmärkte. Dort verkaufen Menschen gebrauchte Kleidung, Bücher und andere Dinge. Oft kann man über den Preis sprechen. Ein Flohmarkt ist auch ein guter Ort für kleine Gespräche auf Deutsch.",
+"conversationStarters": [
+"MGF: Gehst du manchmal auf den Flohmarkt?",
+"Du: Ja, ich suche gern nach alten Büchern.",
+"MGF: Hast du dort schon etwas Gutes gefunden?",
+"Du: Letztes Mal habe ich eine schöne Lampe gekauft.",
+"MGF: War sie teuer?",
+"Du: Nein, ich habe nur zehn Euro bezahlt."
+],
+"possibleReplies": [
+"der Flohmarkt — flea market",
+"gebraucht — second-hand or used",
+"der Preis — price",
+"etwas finden — to find something",
+"etwas verkaufen — to sell something"
+],
+"germanContext": "Auf dem Flohmarkt finde ich manchmal schöne gebrauchte Sachen."
+},
+{
+"title": "Plötzlich Sommerregen",
+"whatsHappening": "Auch im Sommer kann das Wetter schnell wechseln. Am Morgen scheint die Sonne, aber später kann es regnen. Viele Menschen schauen deshalb vor einem Ausflug auf die Wetter-App. Eine leichte Jacke oder ein kleiner Regenschirm kann praktisch sein.",
+"conversationStarters": [
+"MGF: Hast du gesehen? Später soll es regnen.",
+"Du: Wirklich? Jetzt scheint doch die Sonne.",
+"MGF: Ja, aber am Nachmittag kommt vielleicht Regen.",
+"Du: Dann nehme ich lieber einen Regenschirm mit.",
+"MGF: Gute Idee. Willst du trotzdem in die Stadt gehen?",
+"Du: Ja, ein bisschen Regen ist kein Problem."
+],
+"possibleReplies": [
+"der Sommerregen — summer rain",
+"der Regenschirm — umbrella",
+"das Wetter wechseln — the weather to change",
+"später — later",
+"trotzdem — nevertheless or anyway"
+],
+"germanContext": "Ich nehme einen Regenschirm mit, weil es später regnen kann."
+}
+]
+}

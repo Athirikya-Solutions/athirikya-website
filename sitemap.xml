@@ -22,4 +22,9 @@
   <url><loc>https://athirikya.com/mygermanfreund/guides/short-trip-packing/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://athirikya.com/mygermanfreund/guides/transport-disruptions/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://athirikya.com/mygermanfreund/guides/neighbour-help/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://athirikya.com/mygermanfreund/german-buzz/kw-33/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
