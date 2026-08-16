@@ -1,0 +1,93 @@
+{
+"id": "2026-W34",
+"title": "German Buzz",
+"weekNumber": 34,
+"year": 2026,
+"dateRange": "17 August – 23 August",
+"tagline": "Prepare for real conversations this week.",
+"weeklySummary": "DFB-Pokal startet • Weinfeste im Spätsommer • Kirmes und Volksfeste • Heideblüte im August",
+"published": true,
+"publishedAt": "2026-08-16T09:00:00+02:00",
+"topics": [
+{
+  "title": "Der DFB-Pokal startet",
+  "whatsHappening": "Am Freitag startet die erste Runde im DFB-Pokal. Viele Fußballfans sprechen am Wochenende über die ersten Spiele. Im Pokal spielen große und kleine Vereine gegeneinander. Deshalb gibt es oft spannende Überraschungen.",
+  "conversationStarters": [
+    "MGF: Schaust du am Wochenende den DFB-Pokal?",
+    "Du: Vielleicht. Ich finde die ersten Spiele oft spannend.",
+    "MGF: Hast du eine Lieblingsmannschaft?",
+    "Du: Ja, aber im Pokal unterstütze ich manchmal auch kleinere Vereine.",
+    "MGF: Warum findest du den Pokal interessant?",
+    "Du: Weil dort immer Überraschungen möglich sind."
+  ],
+  "possibleReplies": [
+    "der DFB-Pokal — German Cup",
+    "der Verein — club",
+    "die Lieblingsmannschaft — favorite team",
+    "jemanden unterstützen — to support someone",
+    "die Überraschung — surprise"
+  ],
+  "germanContext": "Im DFB-Pokal spielen große und kleine Vereine gegeneinander."
+},
+{
+"title": "Weinfeste im Spätsommer",
+"whatsHappening": "Im Spätsommer gibt es in vielen Regionen Weinfeste. Dort treffen sich Menschen, probieren Wein und essen regionale Spezialitäten. Oft gibt es Musik und lange Tische draußen. Auch ohne Alkohol kann man dort gut die Atmosphäre genießen.",
+"conversationStarters": [
+"MGF: Warst du schon einmal auf einem Weinfest?",
+"Du: Nein, aber ich würde gern mal hingehen.",
+"MGF: Dort gibt es oft auch gutes Essen und Musik.",
+"Du: Das klingt schön. Muss man vorher reservieren?",
+"MGF: Nicht immer. Oft kann man einfach vorbeikommen.",
+"Du: Dann könnten wir am Wochenende zusammen hingehen."
+],
+"possibleReplies": [
+"das Weinfest — wine festival",
+"der Spätsommer — late summer",
+"regionale Spezialitäten — regional specialties",
+"die Atmosphäre — atmosphere",
+"vorbeikommen — to stop by"
+],
+"germanContext": "Auf einem Weinfest kann man regionale Spezialitäten probieren und draußen sitzen."
+},
+{
+"title": "Kirmes und Volksfeste",
+"whatsHappening": "Im August finden in vielen Städten Kirmes und Volksfeste statt. Dort gibt es Fahrgeschäfte, Essen und Musik. Viele Familien und Freunde verbringen dort den Nachmittag oder Abend. Besonders beliebt sind Riesenrad, Karussell und verschiedene Stände.",
+"conversationStarters": [
+"MGF: Gibt es bei euch gerade eine Kirmes?",
+"Du: Ja, sie ist dieses Wochenende.",
+"MGF: Gehst du hin?",
+"Du: Wahrscheinlich. Ich möchte gern mit dem Riesenrad fahren.",
+"MGF: Magst du auch die schnellen Fahrgeschäfte?",
+"Du: Nicht so gern. Ich gehe lieber zu den Essensständen."
+],
+"possibleReplies": [
+"die Kirmes — funfair",
+"das Volksfest — public festival",
+"das Fahrgeschäft — fairground ride",
+"das Riesenrad — Ferris wheel",
+"der Stand — stall"
+],
+"germanContext": "Auf der Kirmes fahre ich gern mit dem Riesenrad und probiere etwas zu essen."
+},
+{
+"title": "Heideblüte im August",
+"whatsHappening": "Im August blüht die Heide in vielen Landschaften rosa und lila. Besonders bekannt ist die Lüneburger Heide. Viele Menschen machen dort Spaziergänge oder Fahrradtouren. Die Blütezeit ist ein beliebtes Thema für einen Ausflug im Spätsommer.",
+"conversationStarters": [
+"MGF: Hast du schon einmal die Heideblüte gesehen?",
+"Du: Nein, aber die Fotos sehen sehr schön aus.",
+"MGF: Im August ist eine gute Zeit dafür.",
+"Du: Dann könnten wir am Wochenende einen Ausflug machen.",
+"MGF: Möchtest du lieber spazieren oder Fahrrad fahren?",
+"Du: Lieber spazieren. Dann kann ich die Landschaft besser genießen."
+],
+"possibleReplies": [
+"die Heideblüte — heather bloom",
+"die Landschaft — landscape",
+"blühen — to bloom",
+"der Ausflug — excursion",
+"die Blütezeit — flowering season"
+],
+"germanContext": "Im August möchte ich einen Ausflug machen und die Heideblüte sehen."
+}
+]
+}
