@@ -1,0 +1,49 @@
+{
+  "issueId": "2026-W34",
+  "topics": [
+    {
+      "title": "Der DFB-Pokal startet",
+      "englishTitle": "The DFB-Pokal begins",
+      "englishContext": "The first round of the DFB-Pokal starts on 21 August. One of the special things about the cup is that clubs from different levels of German football can play against each other, which often creates surprising results.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "In der ersten Runde des DFB-Pokals treffen Vereine aus verschiedenen Ligen aufeinander. Deshalb spielen manchmal kleinere Vereine gegen bekannte Bundesliga-Mannschaften. Genau diese Spiele machen den Pokal für viele Fans besonders spannend.",
+        "en": "In the first round of the DFB-Pokal, clubs from different levels of German football can meet. Smaller clubs can therefore play against well-known Bundesliga teams, which is one reason the competition is known for surprises."
+      },
+      "guides": []
+    },
+    {
+      "title": "Weinfeste im Spätsommer",
+      "englishTitle": "Wine festivals in late summer",
+      "englishContext": "Late summer is a popular time for wine festivals in several German wine regions. These events are not only about wine: people also come for regional food, music and the social atmosphere.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Deutschland hat 13 offizielle Weinanbaugebiete. Bekannte Regionen sind zum Beispiel Rheingau, Mosel, Rheinhessen, Pfalz und Franken. Viele Weinfeste zeigen deshalb auch regionale Küche und lokale Traditionen.",
+        "en": "Germany has 13 official wine-growing regions, including the Rheingau, Mosel, Rheinhessen, Pfalz and Franken. Wine festivals often reflect the food and traditions of their local region."
+      },
+      "guides": []
+    },
+    {
+      "title": "Kirmes und Volksfeste",
+      "englishTitle": "Funfairs and public festivals",
+      "englishContext": "Many towns and cities hold funfairs and public festivals during summer. Visitors come for rides, food stalls, music and an evening out with family or friends.",
+      "interestingFacts": {
+        "enabled": false,
+        "de": "",
+        "en": ""
+      },
+      "guides": []
+    },
+    {
+      "title": "Heideblüte im August",
+      "englishTitle": "Heather bloom in August",
+      "englishContext": "August is an important time for the heather bloom in northern Germany. The Lüneburger Heide is especially well known, and many people plan walks or cycling trips when the landscape turns purple.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Für die Heideblüte gilt oft die Faustregel vom 8. August bis 9. September. Der genaue Zeitpunkt hängt aber vom Wetter und vom Regen ab. Deshalb kann die Blüte an verschiedenen Orten unterschiedlich weit sein.",
+        "en": "A common rule of thumb for the heather bloom is 8 August to 9 September, but the exact timing depends on weather and rainfall. Different heathland areas can therefore bloom at different times."
+      },
+      "guides": []
+    }
+  ]
+}
