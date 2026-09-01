@@ -1,0 +1,93 @@
+{
+  "id": "2026-W35",
+  "title": "German Buzz",
+  "weekNumber": 35,
+  "year": 2026,
+  "dateRange": "24 August – 30 August",
+  "tagline": "Prepare for real conversations this week.",
+  "weeklySummary": "Bundesliga startet • Gamescom in Köln • Erste Äpfel der Saison • Noch einmal ins Freibad?",
+  "published": true,
+  "publishedAt": "2026-08-23T09:00:00+02:00",
+  "topics": [
+    {
+      "title": "Die Bundesliga startet",
+      "whatsHappening": "Am Freitag startet die neue Bundesliga-Saison. Viele Fußballfans freuen sich auf den ersten Spieltag. Schon vor den ersten Spielen sprechen viele über die Mannschaften und die neue Saison. Im Büro oder mit Freunden ist Fußball deshalb wieder ein beliebtes Thema.",
+      "conversationStarters": [
+        "MGF: Schaust du am Wochenende Bundesliga?",
+        "Du: Ja, ich möchte ein paar Spiele sehen.",
+        "MGF: Welche Mannschaft unterstützt du?",
+        "Du: Ich mag Eintracht Frankfurt.",
+        "MGF: Was erwartest du von der neuen Saison?",
+        "Du: Ich hoffe auf viele spannende Spiele."
+      ],
+      "possibleReplies": [
+        "die Bundesliga — German football league",
+        "der Spieltag — matchday",
+        "die Mannschaft — team",
+        "jemanden unterstützen — to support someone",
+        "die Saison — season"
+      ],
+      "germanContext": "Am Wochenende beginnt die neue Bundesliga-Saison."
+    },
+    {
+      "title": "Gamescom in Köln",
+      "whatsHappening": "Diese Woche findet die Gamescom in Köln statt. Sie ist eine der größten Messen für Computerspiele. Besucher können dort neue Spiele entdecken und ausprobieren. Auch viele Unternehmen, Streamer und Gaming-Fans kommen dafür nach Köln.",
+      "conversationStarters": [
+        "MGF: Hast du schon von der Gamescom gehört?",
+        "Du: Ja, sie findet diese Woche in Köln statt.",
+        "MGF: Spielst du gern Computerspiele?",
+        "Du: Manchmal. Ich spiele besonders gern mit Freunden.",
+        "MGF: Würdest du gern zur Gamescom fahren?",
+        "Du: Ja, ich würde dort gern neue Spiele ausprobieren."
+      ],
+      "possibleReplies": [
+        "die Messe — trade fair",
+        "das Computerspiel — computer game",
+        "etwas entdecken — to discover something",
+        "etwas ausprobieren — to try something",
+        "dafür — for that"
+      ],
+      "germanContext": "Auf der Gamescom kann man viele neue Spiele entdecken und ausprobieren."
+    },
+    {
+      "title": "Die ersten Äpfel der Saison",
+      "whatsHappening": "Im Spätsommer beginnt in vielen Regionen die Apfelernte. Auf Märkten und in Supermärkten findet man jetzt wieder verschiedene Sorten aus Deutschland. Manche Äpfel sind süß, andere schmecken etwas säuerlich. Viele Menschen kaufen gern Obst aus der Region.",
+      "conversationStarters": [
+        "MGF: Hast du schon die neuen Äpfel probiert?",
+        "Du: Noch nicht. Welche Sorte ist gut?",
+        "MGF: Diese hier ist süß und sehr saftig.",
+        "Du: Das klingt gut. Kommen die Äpfel aus der Region?",
+        "MGF: Ja, sie kommen von einem Bauern aus der Nähe.",
+        "Du: Dann nehme ich ein Kilo mit."
+      ],
+      "possibleReplies": [
+        "die Apfelernte — apple harvest",
+        "die Apfelsorte — apple variety",
+        "süß — sweet",
+        "saftig — juicy",
+        "aus der Region — from the local region"
+      ],
+      "germanContext": "Im Spätsommer kaufe ich gern frische Äpfel aus der Region."
+    },
+    {
+      "title": "Noch einmal ins Freibad?",
+      "whatsHappening": "Ende August nutzen viele Menschen noch einmal warme Tage im Freibad. Langsam geht die Freibadsaison zu Ende. Deshalb schauen viele vorher auf das Wetter und die Öffnungszeiten. Bei Sonne kann ein Besuch nach der Arbeit oder am Wochenende noch schön sein.",
+      "conversationStarters": [
+        "MGF: Wollen wir diese Woche noch einmal ins Freibad?",
+        "Du: Gerne, wenn das Wetter warm bleibt.",
+        "MGF: Ich glaube, die Freibadsaison ist bald vorbei.",
+        "Du: Dann sollten wir die Öffnungszeiten prüfen.",
+        "MGF: Passt dir Samstag am Nachmittag?",
+        "Du: Ja, bei gutem Wetter bin ich dabei."
+      ],
+      "possibleReplies": [
+        "das Freibad — outdoor swimming pool",
+        "die Freibadsaison — outdoor pool season",
+        "die Öffnungszeiten — opening hours",
+        "zu Ende gehen — to come to an end",
+        "dabei sein — to join or take part"
+      ],
+      "germanContext": "Wenn das Wetter gut ist, gehe ich noch einmal ins Freibad."
+    }
+  ]
+}
