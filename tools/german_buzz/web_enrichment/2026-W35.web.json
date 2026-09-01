@@ -1,0 +1,49 @@
+{
+  "issueId": "2026-W35",
+  "topics": [
+    {
+      "title": "Die Bundesliga startet",
+      "englishTitle": "The Bundesliga season begins",
+      "englishContext": "The 2026/27 Bundesliga season begins on Friday, 28 August. The opening match is Bayern München against VfB Stuttgart, and the rest of the first matchday continues through the weekend.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Die Bundesliga gibt es seit 1963. In der Saison 2026/27 startet die Liga am 28. August etwas später als sonst. Das erste Spiel ist Bayern München gegen VfB Stuttgart.",
+        "en": "The Bundesliga has existed since 1963. The 2026/27 season begins on 28 August, slightly later than usual. The opening match is Bayern Munich against VfB Stuttgart."
+      },
+      "guides": []
+    },
+    {
+      "title": "Gamescom in Köln",
+      "englishTitle": "Gamescom in Cologne",
+      "englishContext": "Gamescom takes place in Cologne from 26 to 30 August. The event brings together game companies, developers, streamers and fans from many countries.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Die Gamescom gehört zu den größten Veranstaltungen für Computerspiele weltweit. Schon am 25. August gibt es die Opening Night Live, bevor die Messe am 26. August offiziell beginnt.",
+        "en": "Gamescom is one of the world's largest gaming events. Opening Night Live takes place on 25 August, before the main event officially begins on 26 August."
+      },
+      "guides": []
+    },
+    {
+      "title": "Die ersten Äpfel der Saison",
+      "englishTitle": "The first apples of the season",
+      "englishContext": "Late summer marks the beginning of the apple harvest in many parts of Germany. Markets and supermarkets start offering more locally grown varieties.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "In Deutschland gibt es viele verschiedene Apfelsorten. Frühe Sorten werden schon im Sommer geerntet, während andere erst im Herbst reif sind. Deshalb verändert sich das Angebot im Laufe der Saison.",
+        "en": "Germany grows many different apple varieties. Early varieties are harvested during summer, while others ripen later in autumn, so the selection changes throughout the season."
+      },
+      "guides": []
+    },
+    {
+      "title": "Noch einmal ins Freibad?",
+      "englishTitle": "One more trip to the outdoor pool?",
+      "englishContext": "At the end of August, warm days can still be good for visiting an outdoor pool, but the outdoor swimming season is slowly coming to an end. Opening times can vary depending on the pool and weather.",
+      "interestingFacts": {
+        "enabled": false,
+        "de": "",
+        "en": ""
+      },
+      "guides": []
+    }
+  ]
+}
