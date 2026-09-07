@@ -1,0 +1,49 @@
+{
+  "issueId": "2026-W36",
+  "topics": [
+    {
+      "title": "Der September beginnt",
+      "englishTitle": "September begins",
+      "englishContext": "September begins this week. Mornings are often a little cooler, and the days slowly become shorter. Many people notice that summer is coming to an end.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Für Meteorologen beginnt der Herbst am 1. September. Astronomisch beginnt er erst am 22. oder 23. September.",
+        "en": "For meteorologists, autumn begins on 1 September. Astronomically, it begins only on 22 or 23 September."
+      },
+      "guides": []
+    },
+    {
+      "title": "Zeit für Zwetschgenkuchen",
+      "englishTitle": "Time for plum cake",
+      "englishContext": "Plums and damson plums are in season now. Bakeries often sell Zwetschgenkuchen, and many people also bake it at home. It is commonly enjoyed with coffee or cream.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Pflaumen und Zwetschgen haben in Deutschland im August und September Saison. Deshalb sieht man sie jetzt oft auf Märkten und in Bäckereien.",
+        "en": "Plums and damson plums are in season in Germany during August and September. This is why they are common now at markets and in bakeries."
+      },
+      "guides": []
+    },
+    {
+      "title": "Die letzten warmen Tage nutzen",
+      "englishTitle": "Making the most of the last warm days",
+      "englishContext": "Early September can still bring warm, sunny days. Many people sit outside, go for a walk, visit a lake or take a small trip. They often want to enjoy the nice weather once more.",
+      "interestingFacts": {
+        "enabled": false,
+        "de": "",
+        "en": ""
+      },
+      "guides": []
+    },
+    {
+      "title": "Pläne fürs Wochenende",
+      "englishTitle": "Weekend plans",
+      "englishContext": "At the end of the week, many people talk about their weekend plans. Some meet friends, go for a walk or watch football. Others prefer to stay home and relax. Asking about the weekend is typical small talk at work.",
+      "interestingFacts": {
+        "enabled": false,
+        "de": "",
+        "en": ""
+      },
+      "guides": []
+    }
+  ]
+}
