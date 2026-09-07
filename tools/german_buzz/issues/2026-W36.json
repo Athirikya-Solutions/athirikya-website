@@ -1,0 +1,93 @@
+{
+"id": "2026-W36",
+"title": "German Buzz",
+"weekNumber": 36,
+"year": 2026,
+"dateRange": "31 August – 6 September",
+"tagline": "Prepare for real conversations this week.",
+"weeklySummary": "Der September beginnt • Zeit für Zwetschgenkuchen • Die letzten warmen Tage nutzen • Pläne fürs Wochenende",
+"published": true,
+"publishedAt": "2026-08-30T09:00:00+02:00",
+"topics": [
+{
+"title": "Der September beginnt",
+"whatsHappening": "Diese Woche beginnt der September. Morgens ist es oft schon etwas kühler. Auch die Tage werden langsam kürzer. Viele Menschen merken jetzt, dass der Sommer langsam zu Ende geht.",
+"conversationStarters": [
+"MGF: Findest du es morgens auch schon kühler?",
+"Du: Ja, ich nehme jetzt oft eine leichte Jacke mit.",
+"MGF: Merkst du auch, dass es früher dunkel wird?",
+"Du: Ja, besonders am Abend.",
+"MGF: Magst du den Übergang zum Herbst?",
+"Du: Ja, aber ein paar warme Tage hätte ich noch gern."
+],
+"possibleReplies": [
+"der September — September",
+"kühler — cooler",
+"kürzer werden — to become shorter",
+"früher dunkel werden — to get dark earlier",
+"der Übergang — transition"
+],
+"germanContext": "Im September wird es morgens langsam kühler."
+},
+{
+"title": "Zeit für Zwetschgenkuchen",
+"whatsHappening": "Jetzt gibt es viele Zwetschgen und Pflaumen. In Bäckereien sieht man oft Zwetschgenkuchen. Viele Menschen backen ihn auch zu Hause. Dazu gibt es gern Kaffee oder etwas Sahne.",
+"conversationStarters": [
+"MGF: Hast du schon Zwetschgenkuchen gegessen?",
+"Du: Ja, gestern in einer Bäckerei.",
+"MGF: Hat er dir geschmeckt?",
+"Du: Ja, besonders mit etwas Sahne.",
+"MGF: Backst du manchmal selbst Kuchen?",
+"Du: Selten, aber Zwetschgenkuchen würde ich gern probieren."
+],
+"possibleReplies": [
+"die Zwetschge — damson plum",
+"der Zwetschgenkuchen — plum cake",
+"die Bäckerei — bakery",
+"backen — to bake",
+"die Sahne — cream"
+],
+"germanContext": "Im Spätsommer esse ich gern Zwetschgenkuchen mit Kaffee."
+},
+{
+"title": "Die letzten warmen Tage nutzen",
+"whatsHappening": "Anfang September kann es noch warme und sonnige Tage geben. Viele Menschen sitzen dann gern draußen oder machen einen Spaziergang. Auch ein Besuch am See oder ein kleiner Ausflug ist noch möglich. Man möchte das schöne Wetter oft noch einmal nutzen.",
+"conversationStarters": [
+"MGF: Das Wetter soll am Samstag noch einmal schön werden.",
+"Du: Dann möchte ich gern etwas draußen machen.",
+"MGF: Hast du schon eine Idee?",
+"Du: Vielleicht gehe ich an den See oder mache einen Spaziergang.",
+"MGF: Sollen wir zusammen einen kleinen Ausflug machen?",
+"Du: Ja, das klingt gut."
+],
+"possibleReplies": [
+"das schöne Wetter nutzen — to make use of the nice weather",
+"der Spaziergang — walk",
+"der Ausflug — trip or excursion",
+"draußen sitzen — to sit outside",
+"sonnig — sunny"
+],
+"germanContext": "Ich möchte die letzten warmen Tage noch draußen genießen."
+},
+{
+"title": "Pläne fürs Wochenende",
+"whatsHappening": "Am Ende der Woche sprechen viele Menschen über ihre Wochenendpläne. Manche treffen Freunde, gehen spazieren oder schauen Fußball. Andere möchten einfach zu Hause bleiben und sich erholen. Die Frage nach dem Wochenende ist ein typischer Small Talk im Büro.",
+"conversationStarters": [
+"MGF: Was machst du am Wochenende?",
+"Du: Ich weiß es noch nicht genau.",
+"MGF: Möchtest du etwas unternehmen?",
+"Du: Vielleicht treffe ich Freunde oder schaue Fußball.",
+"MGF: Klingt gut. Und am Sonntag?",
+"Du: Da möchte ich einfach zu Hause entspannen."
+],
+"possibleReplies": [
+"der Wochenendplan — weekend plan",
+"etwas unternehmen — to do something or go out",
+"sich mit Freunden treffen — to meet friends",
+"sich erholen — to relax or recover",
+"entspannen — to relax"
+],
+"germanContext": "Am Wochenende möchte ich Freunde treffen und mich auch etwas erholen."
+}
+]
+}
