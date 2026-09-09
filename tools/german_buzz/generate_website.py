@@ -174,15 +174,17 @@ def render_topic(topic: Topic) -> str:
     extra = ""
     if topic.enrichment:
         e = topic.enrichment
-        fact = f"<p><strong>Interesting to know:</strong> {escape(e.fact_de or '')}</p>" if e.fact_de else ""
+        german_fact = f"<p><strong>Interesting to know:</strong> {escape(e.fact_de or '')}</p>" if e.fact_de else ""
+        english_fact = f"<p><strong>Interesting to know:</strong> {escape(e.fact_en or '')}</p>" if e.fact_en else ""
         guides = "".join(f'<li><a href="{escape(g.url)}">{escape(g.title)}</a> — {escape(g.summary)}</li>' for g in e.guides)
         guide_block = f"<h3>More information</h3><ul>{guides}</ul>" if guides else ""
         extra = f"""
+          {german_fact}
           <details class="topic-extra">
             <summary>English context</summary>
             <h3>{escape(e.english_title)}</h3>
             <p>{escape(e.english_context)}</p>
-            {fact}
+            {english_fact}
             {guide_block}
           </details>"""
     return f"""        <section class="topic-card">
