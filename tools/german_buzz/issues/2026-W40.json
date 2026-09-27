@@ -1,0 +1,93 @@
+{
+  "id": "2026-W40",
+  "title": "German Buzz",
+  "weekNumber": 40,
+  "year": 2026,
+  "dateRange": "28. September – 4. Oktober 2026",
+  "tagline": "Prepare for real conversations this week.",
+  "weeklySummary": "Tag der Deutschen Einheit • Erntedankfest • Zwiebelkuchen im Herbst • Die Heizung wieder anmachen",
+  "published": true,
+  "publishedAt": "2026-09-27T09:00:00+02:00",
+  "topics": [
+    {
+      "title": "Tag der Deutschen Einheit",
+      "whatsHappening": "Am 3. Oktober ist der Tag der Deutschen Einheit. Er erinnert an die Wiedervereinigung Deutschlands im Jahr 1990. Der Tag ist ein gesetzlicher Feiertag in ganz Deutschland. Viele Geschäfte und Ämter bleiben geschlossen, und in vielen Städten gibt es Feste, Konzerte oder andere Veranstaltungen.",
+      "conversationStarters": [
+        "MGF: Weißt du, warum der 3. Oktober ein Feiertag ist?",
+        "Du: Ja, es ist der Tag der Deutschen Einheit.",
+        "MGF: Was bedeutet der Tag genau?",
+        "Du: Er erinnert an die Wiedervereinigung Deutschlands.",
+        "MGF: Hast du am Feiertag etwas geplant?",
+        "Du: Vielleicht besuche ich eine Veranstaltung in meiner Stadt."
+      ],
+      "possibleReplies": [
+        "die Wiedervereinigung — reunification",
+        "der gesetzliche Feiertag — public holiday",
+        "das Amt — public office",
+        "geschlossen — closed",
+        "die Veranstaltung — event"
+      ],
+      "germanContext": "Am 3. Oktober erinnert Deutschland an die Wiedervereinigung von 1990."
+    },
+    {
+      "title": "Erntedankfest",
+      "whatsHappening": "Am ersten Sonntag im Oktober feiern viele Kirchengemeinden Erntedank. Kirchen werden oft mit Obst, Gemüse, Getreide und Blumen geschmückt. Das Fest erinnert daran, dankbar für die Ernte und für Lebensmittel zu sein. In manchen Orten gibt es auch Gottesdienste, kleine Feste oder Aktionen zum Teilen und Spenden.",
+      "conversationStarters": [
+        "MGF: Kennst du das Erntedankfest?",
+        "Du: Ja, aber ich habe es in Deutschland noch nicht erlebt.",
+        "MGF: In vielen Kirchen gibt es besondere Dekorationen.",
+        "Du: Was wird dort gezeigt?",
+        "MGF: Oft sieht man Obst, Gemüse, Getreide und Blumen.",
+        "Du: Das klingt interessant. Vielleicht schaue ich mir das einmal an."
+      ],
+      "possibleReplies": [
+        "die Ernte — harvest",
+        "das Getreide — grain",
+        "etwas schmücken — to decorate something",
+        "dankbar sein — to be thankful",
+        "spenden — to donate"
+      ],
+      "germanContext": "Beim Erntedankfest sind Kirchen oft mit Obst und Gemüse geschmückt."
+    },
+    {
+      "title": "Zeit für Zwiebelkuchen",
+      "whatsHappening": "Zwiebelkuchen gehört in vielen Weinregionen zum Herbst. Der herzhafte Kuchen wird mit vielen Zwiebeln gebacken und warm gegessen. Besonders bekannt ist die Kombination mit Federweißer. Das ist ein teilweise vergorener Traubensaft mit Alkohol. Zwiebelkuchen findet man im Herbst oft auf Weinfesten, in Bäckereien oder in Restaurants.",
+      "conversationStarters": [
+        "MGF: Hast du schon einmal Zwiebelkuchen probiert?",
+        "Du: Nein, aber ich würde ihn gern einmal probieren.",
+        "MGF: Er ist herzhaft und wird mit vielen Zwiebeln gemacht.",
+        "Du: Isst man ihn warm oder kalt?",
+        "MGF: Meistens wird er warm gegessen.",
+        "Du: Dann schaue ich beim nächsten Weinfest danach."
+      ],
+      "possibleReplies": [
+        "der Zwiebelkuchen — onion tart",
+        "herzhaft — savory",
+        "der Federweißer — partially fermented young wine (contains alcohol)",
+        "der Traubensaft — grape juice",
+        "die Weinregion — wine-growing region"
+      ],
+      "germanContext": "Im Herbst findet man Zwiebelkuchen oft auf Weinfesten und in Bäckereien."
+    },
+    {
+      "title": "Die Heizung wieder anmachen",
+      "whatsHappening": "Wenn es draußen kühler wird, beginnt in vielen Wohnungen wieder die Heizzeit. Heizkörper sorgen dafür, dass die Räume warm bleiben. Gleichzeitig ist regelmäßiges Lüften wichtig, damit frische Luft in die Wohnung kommt und zu viel Feuchtigkeit vermieden wird. Viele Menschen lüften deshalb mehrmals am Tag kurz mit weit geöffneten Fenstern.",
+      "conversationStarters": [
+        "MGF: Hast du zu Hause schon die Heizung angemacht?",
+        "Du: Ja, besonders morgens ist es schon ziemlich kühl.",
+        "MGF: Wie oft lüftest du im Herbst?",
+        "Du: Meistens morgens und abends für ein paar Minuten.",
+        "MGF: Machst du dabei die Fenster ganz auf?",
+        "Du: Ja, dann kommt schnell frische Luft in die Wohnung."
+      ],
+      "possibleReplies": [
+        "der Heizkörper — radiator",
+        "die Heizzeit — heating season",
+        "lüften — to air out a room",
+        "die Feuchtigkeit — moisture",
+        "das Fenster weit öffnen — to open the window wide"
+      ],
+      "germanContext": "Im Herbst heize ich wieder und lüfte regelmäßig meine Wohnung."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "issueId": "2026-W40",
+  "topics": [
+    {
+      "title": "Tag der Deutschen Einheit",
+      "englishTitle": "German Unity Day",
+      "englishContext": "German Unity Day is Germany’s national public holiday. It marks the reunification of Germany on 3 October 1990. Many shops, public offices and schools are closed, while cities may hold concerts, festivals or official events.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Der 3. Oktober ist seit 1990 ein gesetzlicher Feiertag in ganz Deutschland.",
+        "en": "3 October has been a public holiday throughout Germany since 1990."
+      },
+      "guides": [
+        {
+          "title": "German Unity Day: Understanding Germany’s National Day",
+          "summary": "What 3 October commemorates, what changes in everyday life and how newcomers can plan for this public holiday.",
+          "url": "/mygermanfreund/guides/german-unity-day/"
+        }
+      ]
+    },
+    {
+      "title": "Erntedankfest",
+      "englishTitle": "Harvest Thanksgiving",
+      "englishContext": "Many church communities celebrate Harvest Thanksgiving on the first Sunday in October. Churches are often decorated with fruit, vegetables, grain and flowers to express gratitude for the harvest and for food.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "2026 fällt Erntedank auf Sonntag, den 4. Oktober.",
+        "en": "In 2026, Harvest Thanksgiving falls on Sunday, 4 October."
+      },
+      "guides": []
+    },
+    {
+      "title": "Zeit für Zwiebelkuchen",
+      "englishTitle": "Onion Tart Season",
+      "englishContext": "Zwiebelkuchen is a savoury onion tart that is especially popular in German wine regions during autumn. It is often served warm with Federweißer, a young, partly fermented wine that contains alcohol.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Federweißer enthält Alkohol und gärt weiter. Er wird traditionell oft mit Zwiebelkuchen getrunken.",
+        "en": "Federweißer contains alcohol and continues to ferment. It is traditionally often served with onion tart."
+      },
+      "guides": [
+        {
+          "title": "Zwiebelkuchen and Federweißer: an Autumn Food Tradition in Germany",
+          "summary": "A practical introduction to this seasonal food and drink pairing, including alcohol and dietary considerations.",
+          "url": "/mygermanfreund/guides/zwiebelkuchen-and-federweisser/"
+        }
+      ]
+    },
+    {
+      "title": "Die Heizung wieder anmachen",
+      "englishTitle": "Turning the Heating Back On",
+      "englishContext": "As autumn becomes cooler, many people start using their heating again. In German homes, heating and short, regular ventilation work together: the heating keeps rooms warm, while opening windows wide for a few minutes helps remove moisture and bring in fresh air.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Eine höhere Thermostatstufe heizt nicht schneller. Bei vielen Heizkörpern entspricht Stufe 3 ungefähr 20 °C.",
+        "en": "A higher thermostat setting does not heat a room faster. On many radiators, setting 3 is approximately 20°C."
+      },
+      "guides": [
+        {
+          "title": "Heating and Ventilating Your Home in Germany",
+          "summary": "A practical guide to radiators, thermostats, ventilation, moisture and when to contact your landlord or building manager.",
+          "url": "/mygermanfreund/guides/heating-and-ventilating-your-home-in-germany/"
+        }
+      ]
+    }
+  ]
+}
