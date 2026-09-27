@@ -1,0 +1,93 @@
+{
+"id": "2026-W39",
+"title": "German Buzz",
+"weekNumber": 39,
+"year": 2026,
+"dateRange": "21.–27. September 2026",
+"tagline": "Prepare for real conversations this week.",
+"weeklySummary": "Der Herbst beginnt • Unterwegs ohne Auto • Kastanien sammeln • Zeit für Tee und warme Getränke",
+"published": true,
+"publishedAt": "2026-09-20T09:00:00+02:00",
+"topics": [
+{
+"title": "Der Herbst beginnt",
+"whatsHappening": "Am Mittwoch beginnt offiziell der Herbst. Die Tage werden jetzt kürzer und die Abende früher dunkel. Morgens kann es schon deutlich kühler sein. Viele Menschen sprechen jetzt über den Wechsel der Jahreszeit.",
+"conversationStarters": [
+"MGF: Jetzt beginnt wirklich der Herbst.",
+"Du: Ja, morgens ist es schon deutlich kühler.",
+"MGF: Magst du diese Jahreszeit?",
+"Du: Ja, besonders wenn die Sonne scheint.",
+"MGF: Was magst du am Herbst am meisten?",
+"Du: Ich mag die Farben und Spaziergänge im Wald."
+],
+"possibleReplies": [
+"der Herbst — autumn",
+"die Jahreszeit — season",
+"kürzer werden — to become shorter",
+"deutlich kühler — noticeably cooler",
+"der Jahreszeitenwechsel — change of season"
+],
+"germanContext": "Im Herbst werden die Tage kürzer und die Abende kühler."
+},
+{
+"title": "Unterwegs ohne Auto",
+"whatsHappening": "Am Anfang der Woche endet die Europäische Mobilitätswoche. In vielen Städten geht es dabei um Bus, Bahn, Fahrrad und Wege zu Fuß. Das Thema passt gut zum Alltag in Deutschland. Viele Menschen sprechen darüber, wie sie zur Arbeit oder in die Stadt kommen.",
+"conversationStarters": [
+"MGF: Wie kommst du normalerweise zur Arbeit?",
+"Du: Meistens fahre ich mit der Bahn.",
+"MGF: Fährst du manchmal auch mit dem Fahrrad?",
+"Du: Ja, wenn das Wetter gut ist.",
+"MGF: Brauchst du oft ein Auto?",
+"Du: Eigentlich nicht. Vieles kann ich mit Bus und Bahn erreichen."
+],
+"possibleReplies": [
+"die Mobilität — mobility",
+"öffentliche Verkehrsmittel — public transport",
+"zu Fuß — on foot",
+"etwas erreichen — to reach something",
+"unterwegs sein — to be on the move"
+],
+"germanContext": "Für viele Wege benutze ich Bus, Bahn oder Fahrrad."
+},
+{
+"title": "Kastanien sammeln",
+"whatsHappening": "Im September liegen wieder Kastanien unter vielen Bäumen. Besonders Kinder sammeln sie gern beim Spaziergang. Zu Hause kann man damit basteln oder sie als Herbstdekoration benutzen. Wichtig: Rosskastanien aus Parks und Straßen sind nicht zum Essen gedacht.",
+"conversationStarters": [
+"MGF: Schau mal, hier liegen viele Kastanien.",
+"Du: Ja, ich nehme ein paar mit.",
+"MGF: Was möchtest du damit machen?",
+"Du: Vielleicht bastle ich etwas mit meinem Kind.",
+"MGF: Sammelt ihr jedes Jahr Kastanien?",
+"Du: Ja, das gehört für uns zum Herbst dazu."
+],
+"possibleReplies": [
+"die Kastanie — chestnut",
+"etwas sammeln — to collect something",
+"basteln — to do crafts",
+"die Herbstdekoration — autumn decoration",
+"dazugehören — to be part of something"
+],
+"germanContext": "Beim Spaziergang sammeln wir im Herbst gern Kastanien."
+},
+{
+"title": "Zeit für warme Getränke",
+"whatsHappening": "Wenn die Tage kühler werden, trinken viele Menschen wieder öfter Tee oder andere warme Getränke. Im Büro oder zu Hause ist eine Tasse Tee eine kleine Pause im Alltag. Auch in Cafés ändern sich langsam die saisonalen Angebote. Über Kaffee und Tee kommt man leicht ins Gespräch.",
+"conversationStarters": [
+"MGF: Möchtest du einen Kaffee oder lieber einen Tee?",
+"Du: Heute nehme ich lieber einen Tee.",
+"MGF: Welche Sorte magst du gern?",
+"Du: Im Herbst trinke ich gern Kräutertee.",
+"MGF: Möchtest du Honig dazu?",
+"Du: Ja, ein bisschen Honig wäre schön."
+],
+"possibleReplies": [
+"das warme Getränk — hot drink",
+"der Kräutertee — herbal tea",
+"die Sorte — variety",
+"eine Pause machen — to take a break",
+"etwas dazu nehmen — to have something with it"
+],
+"germanContext": "An kühlen Tagen trinke ich gern eine warme Tasse Tee."
+}
+]
+}

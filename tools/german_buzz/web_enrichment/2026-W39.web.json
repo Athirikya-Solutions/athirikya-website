@@ -1,0 +1,53 @@
+{
+  "issueId": "2026-W39",
+  "topics": [
+    {
+      "title": "Der Herbst beginnt",
+      "englishTitle": "Autumn Begins",
+      "englishContext": "Astronomical autumn begins this week. The days gradually become shorter, mornings feel cooler and evenings get dark earlier. This seasonal change is a common topic in everyday conversations.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "2026 beginnt der astronomische Herbst in Deutschland am Mittwoch, 23. September. Der meteorologische Herbst beginnt schon am 1. September.",
+        "en": "In 2026, astronomical autumn begins in Germany on Wednesday, 23 September. Meteorological autumn begins earlier, on 1 September."
+      },
+      "guides": []
+    },
+    {
+      "title": "Unterwegs ohne Auto",
+      "englishTitle": "Getting Around Without a Car",
+      "englishContext": "European Mobility Week encourages people to think about walking, cycling, buses and trains. It is a useful topic for everyday life in Germany, where many people combine public transport, cycling and walking.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Die Europäische Mobilitätswoche findet jedes Jahr vom 16. bis 22. September statt.",
+        "en": "European Mobility Week takes place every year from 16 to 22 September."
+      },
+      "guides": [
+        {
+          "title": "Europäische Mobilitätswoche",
+          "summary": "Information and local activities in Germany from the Federal Environment Agency.",
+          "url": "https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/europaeische-mobilitaetswoche"
+        }
+      ]
+    },
+    {
+      "title": "Kastanien sammeln",
+      "englishTitle": "Collecting Chestnuts",
+      "englishContext": "Horse chestnuts are easy to find in parks and along streets in autumn. Many children collect them for crafts or autumn decorations. They are different from edible sweet chestnuts, which are used in cooking.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Rosskastanien aus Parks und Straßen sind nicht zum Essen gedacht. Esskastanien sehen anders aus und werden zum Kochen verwendet.",
+        "en": "Horse chestnuts from parks and streets are not for eating. Sweet chestnuts look different and are used for cooking."
+      },
+      "guides": []
+    },
+    {
+      "title": "Zeit für warme Getränke",
+      "englishTitle": "Time for Warm Drinks",
+      "englishContext": "As the weather becomes cooler, tea, coffee and other warm drinks become a simple way to take a break at home or at work. Asking someone whether they would like tea or coffee is an easy conversation starter.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    }
+  ]
+}
