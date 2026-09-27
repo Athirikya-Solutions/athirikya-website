@@ -1,0 +1,93 @@
+{
+"id": "2026-W38",
+"title": "German Buzz",
+"weekNumber": 38,
+"year": 2026,
+"dateRange": "14.–20. September 2026",
+"tagline": "Prepare for real conversations this week.",
+"weeklySummary": "Oktoberfest startet • Herbstfeste und Kirmes • Kürbiszeit beginnt • Jacke am Morgen, Sonne am Nachmittag",
+"published": true,
+"publishedAt": "2026-09-13T09:00:00+02:00",
+"topics": [
+{
+"title": "Das Oktoberfest startet",
+"whatsHappening": "Am Samstag beginnt das Oktoberfest in München. Um 12 Uhr wird das erste Fass geöffnet. Viele Menschen sprechen jetzt über die Wiesn, Trachten und Festzelte. Das Oktoberfest läuft bis Anfang Oktober.",
+"conversationStarters": [
+"MGF: Hast du schon gehört? Am Samstag startet das Oktoberfest.",
+"Du: Ja, ich habe schon Bilder davon gesehen.",
+"MGF: Warst du schon einmal auf der Wiesn?",
+"Du: Noch nicht. Ich würde es aber gern einmal sehen.",
+"MGF: Würdest du eine Tracht tragen?",
+"Du: Vielleicht. Ich würde zuerst gern alles anschauen."
+],
+"possibleReplies": [
+"die Wiesn — local name for Oktoberfest",
+"das Festzelt — festival tent",
+"die Tracht — traditional clothing",
+"das Fass — barrel",
+"etwas eröffnen — to open or inaugurate something"
+],
+"germanContext": "Am Samstag startet das Oktoberfest in München."
+},
+{
+"title": "Herbstfeste und Kirmes",
+"whatsHappening": "Im September gibt es in vielen Städten Herbstfeste und Kirmes. Dort gibt es Fahrgeschäfte, Essen, Musik und verschiedene Stände. Viele Menschen gehen mit Freunden oder mit der Familie hin. Solche Feste sind ein typisches Thema für Wochenendpläne.",
+"conversationStarters": [
+"MGF: Gibt es bei euch gerade ein Herbstfest?",
+"Du: Ja, am Wochenende ist eine Kirmes in der Stadt.",
+"MGF: Möchtest du hingehen?",
+"Du: Vielleicht am Samstag mit Freunden.",
+"MGF: Fährst du gern mit den Fahrgeschäften?",
+"Du: Manchmal. Ich mag aber auch die Essensstände."
+],
+"possibleReplies": [
+"das Herbstfest — autumn festival",
+"die Kirmes — funfair",
+"das Fahrgeschäft — fairground ride",
+"der Stand — stall",
+"hingehen — to go there"
+],
+"germanContext": "Am Wochenende möchte ich mit Freunden auf ein Herbstfest gehen."
+},
+{
+"title": "Die Kürbiszeit beginnt",
+"whatsHappening": "Im September sieht man wieder mehr Kürbisse in Geschäften und auf Märkten. Es gibt viele verschiedene Sorten. Kürbis wird oft für Suppe, Ofengemüse oder andere Herbstgerichte benutzt. Viele Menschen probieren jetzt wieder Rezepte mit Kürbis.",
+"conversationStarters": [
+"MGF: Kochst du manchmal mit Kürbis?",
+"Du: Ja, ich mache gern Kürbissuppe.",
+"MGF: Welche Sorte kaufst du meistens?",
+"Du: Oft nehme ich Hokkaido.",
+"MGF: Was magst du noch mit Kürbis?",
+"Du: Ofengemüse mit Kürbis finde ich auch lecker."
+],
+"possibleReplies": [
+"der Kürbis — pumpkin",
+"die Kürbissuppe — pumpkin soup",
+"die Sorte — variety",
+"das Ofengemüse — roasted vegetables",
+"ein Rezept ausprobieren — to try a recipe"
+],
+"germanContext": "Im Herbst koche ich gern eine warme Kürbissuppe."
+},
+{
+"title": "Jacke am Morgen, Sonne am Nachmittag",
+"whatsHappening": "Im September kann es morgens schon kühl sein. Am Nachmittag wird es manchmal wieder warm und sonnig. Deshalb ist es nicht immer leicht, die passende Kleidung zu wählen. Viele Menschen nehmen morgens eine Jacke mit und ziehen sie später wieder aus.",
+"conversationStarters": [
+"MGF: Heute Morgen war es wieder ziemlich kühl.",
+"Du: Ja, aber jetzt ist es richtig warm.",
+"MGF: Ich wusste heute Morgen nicht, was ich anziehen soll.",
+"Du: Das kenne ich. Ich nehme einfach eine leichte Jacke mit.",
+"MGF: Am Nachmittag braucht man sie oft nicht mehr.",
+"Du: Genau. Das Wetter im September kann schnell wechseln."
+],
+"possibleReplies": [
+"die passende Kleidung — suitable clothing",
+"etwas anziehen — to put something on",
+"etwas ausziehen — to take something off",
+"eine Jacke mitnehmen — to take a jacket along",
+"das Wetter wechselt — the weather changes"
+],
+"germanContext": "Im September nehme ich morgens oft eine leichte Jacke mit."
+}
+]
+}

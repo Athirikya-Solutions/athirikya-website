@@ -1,0 +1,51 @@
+{
+  "issueId": "2026-W38",
+  "topics": [
+    {
+      "title": "Das Oktoberfest startet",
+      "englishTitle": "Oktoberfest Begins",
+      "englishContext": "Munich’s Oktoberfest is often called the Wiesn. It is a large public festival with traditional clothing, festival tents, food, music and fairground rides. You do not need to drink alcohol to visit; many people go simply to see the atmosphere.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Das Oktoberfest 2026 findet vom 19. September bis zum 4. Oktober auf der Theresienwiese in München statt.",
+        "en": "Oktoberfest 2026 takes place from 19 September to 4 October on Munich’s Theresienwiese."
+      },
+      "guides": [
+        {
+          "title": "Oktoberfest 2026: Offizielle Informationen",
+          "summary": "Opening times, visitor information and important dates from the official Oktoberfest website.",
+          "url": "https://www.oktoberfest.de/"
+        }
+      ]
+    },
+    {
+      "title": "Herbstfeste und Kirmes",
+      "englishTitle": "Autumn Festivals and Funfairs",
+      "englishContext": "Many towns and cities hold local autumn festivals or funfairs in September. They are a relaxed way to spend time with friends or family, try local food and enjoy rides, music or market stalls.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    },
+    {
+      "title": "Die Kürbiszeit beginnt",
+      "englishTitle": "Pumpkin Season Begins",
+      "englishContext": "Pumpkins are a common autumn ingredient in Germany. You will see them in supermarkets, markets, bakeries and restaurant menus. Pumpkin soup and roasted vegetables are especially popular.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Beim Hokkaido-Kürbis kann man die Schale meist mitessen. Man muss ihn nur gut waschen.",
+        "en": "With a Hokkaido pumpkin, you can usually eat the skin too. Just wash it well."
+      },
+      "guides": []
+    },
+    {
+      "title": "Jacke am Morgen, Sonne am Nachmittag",
+      "englishTitle": "A Jacket in the Morning, Sunshine in the Afternoon",
+      "englishContext": "September weather can change a lot during one day. A light jacket or layers are practical because mornings may feel cool while afternoons can still be warm and sunny.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    }
+  ]
+}
