@@ -1,0 +1,93 @@
+{
+"id": "2026-W37",
+"title": "German Buzz",
+"weekNumber": 37,
+"year": 2026,
+"dateRange": "7.–13. September 2026",
+"tagline": "Prepare for real conversations this week.",
+"weeklySummary": "Bundesweiter Warntag • Tag des offenen Denkmals • Pilze sammeln im Herbst • Der Herbst kommt näher",
+"published": true,
+"publishedAt": "2026-09-06T09:00:00+02:00",
+"topics": [
+{
+"title": "Bundesweiter Warntag",
+"whatsHappening": "Am Donnerstag ist in Deutschland der Bundesweite Warntag. Um 11 Uhr werden verschiedene Warnsysteme getestet. Auf vielen Handys kommt eine Testwarnung über Cell Broadcast oder eine Warn-App. Auch Sirenen können zu hören sein. Es ist nur ein Test.",
+"conversationStarters": [
+"MGF: Hast du heute die Warnung auf deinem Handy bekommen?",
+"Du: Ja, plötzlich kam eine laute Meldung.",
+"MGF: Das war wegen des Bundesweiten Warntags.",
+"Du: Gut zu wissen. Ich war zuerst etwas überrascht.",
+"MGF: Bei uns konnte man auch die Sirenen hören.",
+"Du: Jetzt weiß ich, wie eine Warnung im Ernstfall aussehen kann."
+],
+"possibleReplies": [
+"der Warntag — warning day",
+"die Testwarnung — test warning",
+"die Sirene — siren",
+"die Warn-App — warning app",
+"der Ernstfall — emergency"
+],
+"germanContext": "Am Warntag teste ich, ob mein Handy eine Warnung bekommt."
+},
+{
+"title": "Tag des offenen Denkmals",
+"whatsHappening": "Am Sonntag ist der Tag des offenen Denkmals. Viele historische Gebäude und besondere Orte öffnen ihre Türen. Oft gibt es Führungen, Ausstellungen oder kleine Veranstaltungen. Viele Angebote sind kostenlos. Man kann auch nach Veranstaltungen in der eigenen Region suchen.",
+"conversationStarters": [
+"MGF: Hast du schon vom Tag des offenen Denkmals gehört?",
+"Du: Nein. Was kann man dort machen?",
+"MGF: Viele historische Gebäude kann man an diesem Tag besuchen.",
+"Du: Das klingt interessant. Kostet der Eintritt etwas?",
+"MGF: Viele Angebote sind kostenlos.",
+"Du: Dann schaue ich, was es bei uns in der Nähe gibt."
+],
+"possibleReplies": [
+"das Denkmal — historic monument",
+"die Führung — guided tour",
+"historisch — historic",
+"der Eintritt — admission",
+"kostenlos — free of charge"
+],
+"germanContext": "Am Sonntag möchte ich ein historisches Gebäude in meiner Nähe besuchen."
+},
+{
+"title": "Pilze sammeln im Herbst",
+"whatsHappening": "Im September gehen viele Menschen gern im Wald spazieren. Jetzt sieht man dort auch wieder mehr Pilze. Manche Menschen sammeln Pilze für die Küche. Dabei ist wichtig: Man sollte nur Pilze mitnehmen, die man sicher kennt.",
+"conversationStarters": [
+"MGF: Gehst du im Herbst gern in den Wald?",
+"Du: Ja, besonders wenn das Wetter schön ist.",
+"MGF: Sammelst du auch Pilze?",
+"Du: Nein, ich kenne mich damit nicht gut aus.",
+"MGF: Dann ist Anschauen wahrscheinlich besser.",
+"Du: Ja, ich möchte lieber nur einen schönen Spaziergang machen."
+],
+"possibleReplies": [
+"der Pilz — mushroom",
+"Pilze sammeln — to pick mushrooms",
+"der Wald — forest",
+"sich auskennen — to know a subject well",
+"sicher erkennen — to identify with certainty"
+],
+"germanContext": "Ich sammle nur Pilze, die ich sicher kenne."
+},
+{
+"title": "Der Herbst kommt näher",
+"whatsHappening": "Im September verändert sich langsam die Jahreszeit. Morgens und abends kann es schon kühler sein. Viele Menschen nehmen wieder eine Jacke mit. Trotzdem gibt es oft noch schöne Tage draußen.",
+"conversationStarters": [
+"MGF: Heute Morgen war es schon ziemlich kühl.",
+"Du: Ja, ich habe zum ersten Mal wieder eine Jacke angezogen.",
+"MGF: Bist du schon bereit für den Herbst?",
+"Du: Noch nicht ganz. Ich mag die warmen Tage.",
+"MGF: Am Nachmittag soll es wieder sonnig werden.",
+"Du: Dann können wir das schöne Wetter noch genießen."
+],
+"possibleReplies": [
+"die Jahreszeit — season",
+"kühler werden — to become cooler",
+"eine Jacke anziehen — to put on a jacket",
+"sonnig — sunny",
+"das Wetter genießen — to enjoy the weather"
+],
+"germanContext": "Morgens nehme ich jetzt wieder eine leichte Jacke mit."
+}
+]
+}

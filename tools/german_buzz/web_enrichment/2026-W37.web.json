@@ -1,0 +1,61 @@
+{
+  "issueId": "2026-W37",
+  "topics": [
+    {
+      "title": "Bundesweiter Warntag",
+      "englishTitle": "Nationwide Warning Day",
+      "englishContext": "Germany tests its public warning systems once a year. Test messages can arrive through Cell Broadcast, warning apps, radio, television and, in some places, sirens. It is only a test, but it helps people understand what an official warning may look and sound like.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Die Probewarnung wird um 11 Uhr verschickt. Gegen 11:45 Uhr folgt die Entwarnung.",
+        "en": "The test warning is sent at 11:00 am. The all-clear follows at around 11:45 am."
+      },
+      "guides": [
+        {
+          "title": "Informationen zum Bundesweiten Warntag",
+          "summary": "Official information from Germany’s Federal Office of Civil Protection and Disaster Assistance.",
+          "url": "https://www.bbk.bund.de/DE/Warnung-Vorsorge/Bundesweiter-Warntag/bundesweiter-warntag_node.html"
+        }
+      ]
+    },
+    {
+      "title": "Tag des offenen Denkmals",
+      "englishTitle": "Open Monument Day",
+      "englishContext": "On this Sunday, historic buildings and special places across Germany open to the public. You can often join a guided tour, visit an exhibition or discover a place in your own area that is normally closed.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Das Motto 2026 lautet: „NetzWERKE: Denkmale & Infrastruktur“.",
+        "en": "The 2026 theme is: “Networks: monuments and infrastructure.”"
+      },
+      "guides": [
+        {
+          "title": "Programm zum Tag des offenen Denkmals",
+          "summary": "Find participating places and events in your region.",
+          "url": "https://www.tag-des-offenen-denkmals.de/"
+        }
+      ]
+    },
+    {
+      "title": "Pilze sammeln im Herbst",
+      "englishTitle": "Mushroom Picking in Autumn",
+      "englishContext": "In September, many people enjoy walks in the forest and notice more mushrooms. Some collect edible mushrooms, but it is important to take only mushrooms that you can identify with complete certainty.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Pilze können sich sehr ähnlich sehen. Nimm nur Pilze mit, die du sicher kennst.",
+        "en": "Mushrooms can look very similar. Only take mushrooms that you know with certainty."
+      },
+      "guides": []
+    },
+    {
+      "title": "Der Herbst kommt näher",
+      "englishTitle": "Autumn Is Getting Closer",
+      "englishContext": "September often brings cooler mornings and evenings, even when afternoons are still sunny. A light jacket becomes useful again, while people still enjoy the last warm days outside.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Für Meteorologen beginnt der Herbst am 1. September. Astronomisch beginnt er erst am 22. oder 23. September.",
+        "en": "For meteorologists, autumn begins on 1 September. Astronomically, it begins only on 22 or 23 September."
+      },
+      "guides": []
+    }
+  ]
+}
