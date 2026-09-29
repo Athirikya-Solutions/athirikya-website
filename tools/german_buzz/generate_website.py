@@ -180,12 +180,12 @@ def render_topic(topic: Topic) -> str:
         guide_block = f"<h3>More information</h3><ul>{guides}</ul>" if guides else ""
         extra = f"""
           {german_fact}
+          {guide_block}
           <details class="topic-extra">
             <summary>English context</summary>
             <h3>{escape(e.english_title)}</h3>
             <p>{escape(e.english_context)}</p>
             {english_fact}
-            {guide_block}
           </details>"""
     return f"""        <section class="topic-card">
           <h2>{escape(topic.title)}</h2>
