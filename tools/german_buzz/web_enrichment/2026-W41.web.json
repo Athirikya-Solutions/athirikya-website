@@ -1,0 +1,57 @@
+{
+  "issueId": "2026-W41",
+  "topics": [
+    {
+      "title": "Frankfurter Buchmesse",
+      "englishTitle": "Frankfurt Book Fair",
+      "englishContext": "The Frankfurt Book Fair takes place this week. Authors, publishers and people who work with books meet there from Wednesday to Sunday. Private visitors can visit from Friday to Sunday. There are new books, readings, talks and book-signing sessions. Czechia is the Guest of Honour this year.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Die Frankfurter Buchmesse ist eine der wichtigsten internationalen Buchmessen. Für Privatbesucher ist sie 2026 von Freitag bis Sonntag geöffnet.",
+        "en": "The Frankfurt Book Fair is one of the most important international book fairs. In 2026, it is open to private visitors from Friday to Sunday."
+      },
+      "guides": []
+    },
+    {
+      "title": "Die Herbstferien beginnen",
+      "englishTitle": "Autumn School Holidays Begin",
+      "englishContext": "Autumn school holidays begin at different times in Germany because school dates are set by each federal state. In Hessen, the holidays begin this week and last for two weeks. Families may use this time for trips, visits or local activities.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": [
+        {
+          "title": "School Holidays in Germany: A Practical Guide for Families",
+          "summary": "Find the right holiday dates for your federal state, plan childcare and travel, and understand why school attendance rules matter.",
+          "url": "/mygermanfreund/guides/school-holidays-in-germany/"
+        }
+      ]
+    },
+    {
+      "title": "Walnüsse im Herbst",
+      "englishTitle": "Walnuts in Autumn",
+      "englishContext": "Walnuts are in season during autumn. Regional walnuts can be found at markets in September and October. Ripe walnuts fall from the tree and have a hard shell. They are often used in cakes, muesli, salads or as a snack.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Frische Walnüsse haben außen zuerst eine grüne Hülle. Wenn sie reif sind, löst sich diese Hülle und die Nuss fällt vom Baum.",
+        "en": "Fresh walnuts first have a green outer husk. When they are ripe, this husk opens and the nut falls from the tree."
+      },
+      "guides": []
+    },
+    {
+      "title": "Drachen steigen lassen",
+      "englishTitle": "Flying a Kite",
+      "englishContext": "Autumn is a popular time for flying a kite. You need wind and a large open area, such as a meadow or open field. Keep a safe distance from roads, power lines and other dangerous places.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": [
+        {
+          "title": "Flying a Kite Safely in Germany",
+          "summary": "Choose a safe place, understand the main rules and know what to do near power lines, roads and airfields.",
+          "url": "/mygermanfreund/guides/flying-a-kite-safely-in-germany/"
+        }
+      ]
+    }
+  ]
+}
