@@ -1,0 +1,93 @@
+{
+  "id": "2026-W41",
+  "title": "German Buzz",
+  "weekNumber": 41,
+  "year": 2026,
+  "dateRange": "5. Oktober – 11. Oktober 2026",
+  "tagline": "Prepare for real conversations this week.",
+  "weeklySummary": "Frankfurter Buchmesse • Herbstferien beginnen • Walnüsse im Herbst • Drachen steigen lassen",
+  "published": true,
+  "publishedAt": "2026-10-04T09:00:00+02:00",
+  "topics": [
+    {
+      "title": "Frankfurter Buchmesse",
+      "whatsHappening": "Diese Woche findet die Frankfurter Buchmesse statt. Von Mittwoch bis Sonntag treffen sich dort Autorinnen und Autoren, Verlage und Menschen aus der Buchbranche. Privatbesucher können die Messe von Freitag bis Sonntag besuchen. Es gibt neue Bücher, Lesungen, Gespräche und Signierstunden. Ehrengast ist in diesem Jahr Tschechien.",
+      "conversationStarters": [
+        "MGF: Hast du schon von der Frankfurter Buchmesse gehört?",
+        "Du: Ja, sie findet diese Woche statt.",
+        "MGF: Liest du gern Bücher?",
+        "Du: Ja, besonders Romane und Reisebücher.",
+        "MGF: Würdest du die Buchmesse gern besuchen?",
+        "Du: Ja, ich würde gern neue Bücher und Autoren entdecken."
+      ],
+      "possibleReplies": [
+        "die Buchmesse — book fair",
+        "der Verlag — publishing house",
+        "die Lesung — public reading",
+        "die Signierstunde — book-signing session",
+        "der Ehrengast — guest of honour"
+      ],
+      "germanContext": "Privatbesucher können die Frankfurter Buchmesse von Freitag bis Sonntag besuchen."
+    },
+    {
+      "title": "Die Herbstferien beginnen",
+      "whatsHappening": "In einigen Bundesländern beginnen im Oktober die Herbstferien. In Hessen starten sie diese Woche und dauern zwei Wochen. Familien nutzen die freie Zeit oft für Urlaub, Ausflüge oder Besuche bei Verwandten. Die Ferientermine sind in Deutschland je nach Bundesland unterschiedlich.",
+      "conversationStarters": [
+        "MGF: Haben die Herbstferien bei euch schon begonnen?",
+        "Du: Ja, diese Woche ist der erste Ferientag.",
+        "MGF: Habt ihr etwas geplant?",
+        "Du: Wir möchten ein paar Tagesausflüge machen.",
+        "MGF: Fahrt ihr auch weg?",
+        "Du: Nein, dieses Mal bleiben wir in der Nähe."
+      ],
+      "possibleReplies": [
+        "die Herbstferien — autumn school holidays",
+        "der Ferientag — school holiday day",
+        "das Bundesland — federal state",
+        "der Tagesausflug — day trip",
+        "bei Verwandten zu Besuch sein — to visit relatives"
+      ],
+      "germanContext": "Die Herbstferien beginnen nicht in allen Bundesländern zur gleichen Zeit."
+    },
+    {
+      "title": "Walnüsse im Herbst",
+      "whatsHappening": "Im Herbst haben Walnüsse Saison. Im September und Oktober findet man auch Walnüsse aus der Region auf Märkten. Reife Walnüsse fallen vom Baum und haben eine harte Schale. Sie werden für Kuchen, Müsli, Salate oder einfach als Snack verwendet.",
+      "conversationStarters": [
+        "MGF: Magst du eigentlich Walnüsse?",
+        "Du: Ja, ich esse sie gern im Müsli.",
+        "MGF: Kaufst du sie mit oder ohne Schale?",
+        "Du: Meistens kaufe ich sie schon ohne Schale.",
+        "MGF: Benutzt du Walnüsse auch beim Backen?",
+        "Du: Ja, manchmal kommen sie in einen Kuchen."
+      ],
+      "possibleReplies": [
+        "die Walnuss — walnut",
+        "reif — ripe",
+        "die Schale — shell",
+        "eine Nuss knacken — to crack a nut",
+        "aus der Region — from the local region"
+      ],
+      "germanContext": "Im Herbst kaufe ich gern Walnüsse aus der Region."
+    },
+    {
+      "title": "Drachen steigen lassen",
+      "whatsHappening": "Der Herbst ist eine beliebte Zeit zum Drachensteigen. Dafür braucht man Wind und eine große freie Fläche. Wiesen und offene Felder können gut geeignet sein. Wichtig ist genug Abstand zu Straßen, Stromleitungen und anderen gefährlichen Orten.",
+      "conversationStarters": [
+        "MGF: Hast du schon einmal einen Drachen steigen lassen?",
+        "Du: Ja, aber das ist schon lange her.",
+        "MGF: Heute gibt es ziemlich viel Wind.",
+        "Du: Dann wäre das Wetter vielleicht gut dafür.",
+        "MGF: Kennst du eine große freie Wiese?",
+        "Du: Ja, wir könnten am Wochenende dorthin gehen."
+      ],
+      "possibleReplies": [
+        "der Drachen — kite",
+        "Drachen steigen lassen — to fly a kite",
+        "die freie Fläche — open area",
+        "die Stromleitung — power line",
+        "genug Abstand halten — to keep enough distance"
+      ],
+      "germanContext": "Zum Drachensteigen braucht man Wind und genug freien Platz."
+    }
+  ]
+}
