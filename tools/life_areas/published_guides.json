@@ -43,5 +43,23 @@
     "url": "/mygermanfreund/guides/zwiebelkuchen-and-federweisser/",
     "sourceIssueId": "2026-W40",
     "sourceTopic": "Zeit für Zwiebelkuchen"
+  },
+  {
+    "id": "school-holidays-in-germany",
+    "lifeArea": "family",
+    "title": "School Holidays in Germany: A Practical Guide for Families",
+    "summary": "Find the right holiday dates for your federal state, plan childcare and travel, and understand why school attendance rules matter.",
+    "url": "/mygermanfreund/guides/school-holidays-in-germany/",
+    "sourceIssueId": "2026-W41",
+    "sourceTopic": "Die Herbstferien beginnen"
+  },
+  {
+    "id": "flying-a-kite-safely-in-germany",
+    "lifeArea": "leisure",
+    "title": "Flying a Kite Safely in Germany",
+    "summary": "Choose a safe place, understand the main rules and know what to do near power lines, roads and airfields.",
+    "url": "/mygermanfreund/guides/flying-a-kite-safely-in-germany/",
+    "sourceIssueId": "2026-W41",
+    "sourceTopic": "Drachen steigen lassen"
   }
 ]
