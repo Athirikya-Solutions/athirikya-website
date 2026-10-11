@@ -73,4 +73,9 @@
     <priority>0.8</priority>
   </url>
   <url><loc>https://athirikya.com/mygermanfreund/guides/winter-tyres-in-germany/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://athirikya.com/mygermanfreund/german-buzz/kw-42/</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
