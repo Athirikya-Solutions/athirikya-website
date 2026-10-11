@@ -1,0 +1,49 @@
+{
+  "issueId": "2026-W42",
+  "topics": [
+    {
+      "title": "Zugvögel im Herbst",
+      "englishTitle": "Migratory Birds in Autumn",
+      "englishContext": "In autumn, many birds travel to warmer regions. Some fly over Germany in large groups. Cranes are especially noticeable because you can often hear their calls before you see them. During their journey, the birds stop to rest in different places.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Kraniche fliegen oft in einer V-Form. Diese Formation hilft ihnen, Energie zu sparen.",
+        "en": "Cranes often fly in a V-shaped formation. This formation helps them save energy."
+      },
+      "guides": []
+    },
+    {
+      "title": "Nebel am Morgen",
+      "englishTitle": "Morning Fog",
+      "englishContext": "Fog is more common in autumn mornings. It reduces visibility on roads and paths, so drivers and cyclists need to be especially careful. When the fog clears later, the day can still become sunny.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    },
+    {
+      "title": "Zeit für Winterreifen",
+      "englishTitle": "Time for Winter Tyres",
+      "englishContext": "In autumn, many drivers start thinking about winter tyres. Germany does not have one fixed period when winter tyres are always required. However, in icy, snowy or slushy road conditions, drivers must use tyres that meet the legal winter requirements. Many people therefore arrange a tyre change in autumn.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": [
+        {
+          "title": "Winter Tyres in Germany: When You Need Them and What to Check",
+          "summary": "Understand Germany’s condition-based winter-tyre rule, prepare for a workshop visit, and know when to ask for vehicle-specific advice.",
+          "url": "/mygermanfreund/guides/winter-tyres-in-germany/"
+        }
+      ]
+    },
+    {
+      "title": "Suppen und Eintöpfe",
+      "englishTitle": "Soups and Stews",
+      "englishContext": "When the weather becomes cooler, soups and stews become more common. A stew is made by cooking different ingredients together in one pot. Potatoes, lentils, beans and vegetables are popular choices. Many dishes can be prepared in advance and reheated the next day.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    }
+  ]
+}
