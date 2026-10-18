@@ -1,0 +1,49 @@
+{
+  "issueId": "2026-W43",
+  "topics": [
+    {
+      "title": "Die Uhren werden umgestellt",
+      "englishTitle": "The Clocks Change",
+      "englishContext": "In the night before Sunday, daylight saving time ends. At 3 a.m., the clocks go back to 2 a.m. It becomes light earlier in the morning, but darker earlier in the evening. Most smartphones and other digital devices change the time automatically.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "In der Nacht auf Sonntag bekommt man eine Stunde dazu, weil die Uhr von 3 Uhr auf 2 Uhr zurückgestellt wird.",
+        "en": "During the night before Sunday, you gain an extra hour because the clock moves back from 3 a.m. to 2 a.m."
+      },
+      "guides": []
+    },
+    {
+      "title": "Sicher unterwegs im Dunkeln",
+      "englishTitle": "Staying Safe After Dark",
+      "englishContext": "In autumn, it becomes dark earlier in the evening. For pedestrians and cyclists, being easy to see is especially important. Bright clothing, reflectors and bicycle lights help other road users notice you. A bicycle’s front and rear lights should work properly.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": [
+        {
+          "title": "Staying Visible and Safe After Dark in Germany",
+          "summary": "Practical checks for walking and cycling after dark, including lights, reflectors, children and when to get help.",
+          "url": "/mygermanfreund/guides/staying-visible-after-dark-in-germany/"
+        }
+      ]
+    },
+    {
+      "title": "Halloween kommt näher",
+      "englishTitle": "Halloween Is Getting Closer",
+      "englishContext": "Halloween is on 31 October. In the weeks before, shops sell pumpkins, costumes and decorations. Some children dress up and go from house to house on Halloween evening. They often say “Süßes oder Saures” and receive sweets.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    },
+    {
+      "title": "Bratäpfel im Herbst",
+      "englishTitle": "Baked Apples in Autumn",
+      "englishContext": "Baked apples are a simple warm dish for autumn and winter. Apples are baked in the oven, often with nuts, cinnamon or raisins as a filling. The apple becomes soft while baking, and the kitchen smells of cinnamon and warm fruit.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    }
+  ]
+}
