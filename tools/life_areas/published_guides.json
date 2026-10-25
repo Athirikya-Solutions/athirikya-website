@@ -79,5 +79,23 @@
     "url": "/mygermanfreund/guides/staying-visible-after-dark-in-germany/",
     "sourceIssueId": "2026-W43",
     "sourceTopic": "Sicher unterwegs im Dunkeln"
+  },
+  {
+    "id": "public-holidays-by-federal-state",
+    "lifeArea": "culture",
+    "title": "Public Holidays in Germany: Why They Differ by Federal State",
+    "summary": "Understand why public holidays differ by federal state and how to plan work, school and everyday appointments.",
+    "url": "/mygermanfreund/guides/public-holidays-by-federal-state/",
+    "sourceIssueId": "2026-W44",
+    "sourceTopic": "Reformationstag / Allerheiligen"
+  },
+  {
+    "id": "maronen-and-rosskastanien",
+    "lifeArea": "food",
+    "title": "Maronen and Rosskastanien: Understanding Autumn Chestnuts in Germany",
+    "summary": "Learn the difference between edible Maronen and Rosskastanien, and enjoy this autumn food tradition safely.",
+    "url": "/mygermanfreund/guides/maronen-and-rosskastanien/",
+    "sourceIssueId": "2026-W44",
+    "sourceTopic": "Maronen im Herbst"
   }
 ]
