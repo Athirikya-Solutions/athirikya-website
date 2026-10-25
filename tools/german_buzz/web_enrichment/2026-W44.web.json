@@ -1,0 +1,61 @@
+{
+  "issueId": "2026-W44",
+  "topics": [
+    {
+      "title": "Reformationstag",
+      "englishTitle": "Reformation Day",
+      "englishContext": "Reformation Day is on 31 October. It remembers the Reformation, which is closely connected with Martin Luther. It is a public holiday in nine German federal states, including Lower Saxony, Saxony and Hamburg. In other states, it is not a public holiday. In 2026, Reformation Day falls on a Saturday.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": [
+        {
+          "title": "Public Holidays in Germany: Why They Differ by Federal State",
+          "summary": "A practical introduction to regional public holidays, including how to check what applies where you live.",
+          "url": "/mygermanfreund/guides/public-holidays-by-federal-state/"
+        }
+      ]
+    },
+    {
+      "title": "Allerheiligen",
+      "englishTitle": "All Saints' Day",
+      "englishContext": "All Saints' Day is on 1 November. It is a public holiday in Baden-Württemberg, Bavaria, North Rhine-Westphalia, Rhineland-Palatinate and Saarland. In 2026, it falls on a Sunday. Many Catholic families visit relatives' graves, where people often place candles, flowers and floral arrangements.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": [
+        {
+          "title": "Public Holidays in Germany: Why They Differ by Federal State",
+          "summary": "A practical introduction to regional public holidays, including how to check what applies where you live.",
+          "url": "/mygermanfreund/guides/public-holidays-by-federal-state/"
+        }
+      ]
+    },
+    {
+      "title": "Weltspartag",
+      "englishTitle": "World Savings Day",
+      "englishContext": "World Savings Day is on 30 October. It is a reminder to save money regularly and use money consciously. Some banks and savings banks run special activities around this date. Traditionally, children also took their piggy banks or saved money to the bank.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Der Weltspartag wurde 1924 ins Leben gerufen. In Deutschland findet er 2026 am 30. Oktober statt.",
+        "en": "World Savings Day was created in 1924. In Germany, it takes place on 30 October in 2026."
+      },
+      "guides": []
+    },
+    {
+      "title": "Maronen im Herbst",
+      "englishTitle": "Sweet Chestnuts in Autumn",
+      "englishContext": "In autumn, you see sweet chestnuts more often in Germany. They are also called Maronen or Esskastanien. Unlike horse chestnuts found in parks, sweet chestnuts can be eaten. They are often roasted and sold warm, and can also be used in soups, side dishes and sweet recipes.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": [
+        {
+          "title": "Maronen and Rosskastanien: Understanding Autumn Chestnuts in Germany",
+          "summary": "A practical guide to sweet chestnuts, non-food horse chestnuts and buying seasonal Maronen safely.",
+          "url": "/mygermanfreund/guides/maronen-and-rosskastanien/"
+        }
+      ]
+    }
+  ]
+}
