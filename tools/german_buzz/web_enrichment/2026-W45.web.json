@@ -1,0 +1,59 @@
+{
+  "issueId": "2026-W45",
+  "topics": [
+    {
+      "title": "Laternenumzüge",
+      "englishTitle": "Lantern Parades",
+      "englishContext": "In many places, lantern parades take place in early November. They are often connected with St Martin’s Day on 11 November. Children carry handmade lanterns and walk through the streets together. They often sing lantern songs. Some parades end with a small St Martin’s fire or a shared celebration.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Martinstag ist jedes Jahr am 11. November. Wann ein Laternenumzug stattfindet, ist je nach Ort, Schule oder Kindergarten unterschiedlich.",
+        "en": "St Martin’s Day is on 11 November every year. The date of a lantern parade differs depending on the town, school or kindergarten."
+      },
+      "guides": [
+        {
+          "title": "St Martin’s Day in Germany: Lantern Parades, Weckmänner and Local Traditions",
+          "summary": "A practical introduction to lantern parades, regional bakery traditions and taking part around St Martin’s Day.",
+          "url": "/mygermanfreund/guides/st-martins-day-in-germany/"
+        }
+      ]
+    },
+    {
+      "title": "Grünkohl hat Saison",
+      "englishTitle": "Kale Is in Season",
+      "englishContext": "In November, kale is in season in Germany. This green winter vegetable is often cooked and eaten as a warm dish. Traditional kale dishes are especially common in northern Germany. It can also be prepared as a vegetarian meal, for example with potatoes or other vegetables.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Grünkohl ist ein typisches Wintergemüse. In Norddeutschland gehört er oft zu gemeinsamen Essen und Ausflügen in der kalten Jahreszeit.",
+        "en": "Kale is a typical winter vegetable. In northern Germany, it is often part of shared meals and outings during the colder months."
+      },
+      "guides": []
+    },
+    {
+      "title": "Laub auf Straßen und Wegen",
+      "englishTitle": "Leaves on Streets and Paths",
+      "englishContext": "In November, many leaves lie on roads, cycle paths and pavements. When the leaves are wet, they can become very slippery. Cyclists and pedestrians should be especially careful. In front of many homes, people sweep and collect the leaves.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    },
+    {
+      "title": "Martinsbrezeln und Weckmänner",
+      "englishTitle": "St Martin’s Pretzels and Sweet Bread Figures",
+      "englishContext": "Around St Martin’s Day, many bakeries sell special pastries. Depending on the region, the sweet bread figures may be called Weckmann, Stutenkerl or Martinsmann. They are usually baked from yeast dough and are often decorated with raisins. In some regions, St Martin’s pretzels are also part of the tradition.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Weckmann, Stutenkerl und Martinsmann meinen oft ein ähnliches Gebäck. Der Name ist je nach Region unterschiedlich.",
+        "en": "Weckmann, Stutenkerl and Martinsmann often refer to a similar baked sweet. The name differs by region."
+      },
+      "guides": [
+        {
+          "title": "St Martin’s Day in Germany: Lantern Parades, Weckmänner and Local Traditions",
+          "summary": "A practical introduction to lantern parades, regional bakery traditions and taking part around St Martin’s Day.",
+          "url": "/mygermanfreund/guides/st-martins-day-in-germany/"
+        }
+      ]
+    }
+  ]
+}
