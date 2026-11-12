@@ -1,0 +1,53 @@
+{
+  "issueId": "2026-W46",
+  "topics": [
+    {
+      "title": "Karneval startet am 11.11.",
+      "englishTitle": "Carnival Starts on 11 November",
+      "englishContext": "On 11 November, the new Carnival season traditionally begins. In cities such as Cologne, Düsseldorf and Mainz, many people celebrate the start at 11:11. Some wear costumes, listen to Carnival music and meet in public squares. The large Carnival parades take place much later, shortly before Lent.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Der 11.11. um 11:11 Uhr ist der symbolische Beginn der Karnevalssaison. Die großen Umzüge finden jedoch erst viel später, vor der Fastenzeit, statt.",
+        "en": "11 November at 11:11 is the symbolic start of the Carnival season. The large parades take place much later, before Lent."
+      },
+      "guides": [
+        {
+          "title": "Carnival in Germany: What Starts on 11 November?",
+          "summary": "Understand the 11:11 season opening, regional names and the difference between November and the main parade period.",
+          "url": "/mygermanfreund/guides/carnival-season-in-germany/"
+        }
+      ]
+    },
+    {
+      "title": "Volkstrauertag",
+      "englishTitle": "National Day of Mourning",
+      "englishContext": "Sunday is Volkstrauertag in Germany. On this day, people remember the victims of war and violence. Many places hold memorial ceremonies at monuments or cemeteries. Politicians, associations and other organisations also take part in these events.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Der Volkstrauertag liegt jedes Jahr zwei Sonntage vor dem ersten Advent. Im Jahr 2026 ist er am 15. November.",
+        "en": "Volkstrauertag takes place two Sundays before the first Sunday of Advent each year. In 2026, it falls on 15 November."
+      },
+      "guides": []
+    },
+    {
+      "title": "Mandarinen und Clementinen haben Saison",
+      "englishTitle": "Mandarins and Clementines Are in Season",
+      "englishContext": "From November, supermarkets have many mandarins and clementines again. The fruit usually comes from countries around the Mediterranean. They are sweet, easy to peel and especially popular in winter. Clementines often have fewer seeds than mandarins.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Mandarinen und Clementinen haben im deutschen Handel ungefähr von November bis Februar Hauptsaison. Sie kommen meist aus Mittelmeerländern.",
+        "en": "Mandarins and clementines are in their main season in German shops from around November to February. They usually come from Mediterranean countries."
+      },
+      "guides": []
+    },
+    {
+      "title": "Frost am Morgen",
+      "englishTitle": "Morning Frost",
+      "englishContext": "In November, there can already be frost in the morning. Car windows, roofs and grass may be frozen. Drivers need to clear their windows completely before driving. Paths and roads can also be icy in some places.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    }
+  ]
+}
