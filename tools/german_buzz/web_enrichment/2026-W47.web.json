@@ -1,0 +1,59 @@
+{
+  "issueId": "2026-W47",
+  "topics": [
+    {
+      "title": "Buß- und Bettag",
+      "englishTitle": "Day of Repentance and Prayer",
+      "englishContext": "Wednesday, 18 November, is Buß- und Bettag, a Protestant day of remembrance. It is a statutory public holiday only in Saxony. In the other federal states, it is normally not a general day off work.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Buß- und Bettag ist nur in Sachsen ein gesetzlicher Feiertag. Im Jahr 2026 fällt er auf Mittwoch, den 18. November.",
+        "en": "Buß- und Bettag is a statutory public holiday only in Saxony. In 2026, it falls on Wednesday, 18 November."
+      },
+      "guides": [
+        {
+          "title": "Public Holidays in Germany: Why They Differ by Federal State",
+          "summary": "Understand why public holidays differ by federal state and how to plan work, school and everyday appointments.",
+          "url": "/mygermanfreund/guides/public-holidays-by-federal-state/"
+        }
+      ]
+    },
+    {
+      "title": "Die ersten Weihnachtsmärkte öffnen",
+      "englishTitle": "The First Christmas Markets Open",
+      "englishContext": "In some cities, the first Christmas markets open this week. Dates differ from city to city. In Munich, for example, markets already open this week, while Frankfurt’s Christmas market starts only on 23 November. On Totensonntag, opening times may be restricted or markets may close, depending on the location.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Der Münchner Christkindlmarkt öffnet 2026 am 20. November. Der Frankfurter Weihnachtsmarkt beginnt erst am 23. November.",
+        "en": "Munich’s Christkindlmarkt opens on 20 November in 2026. Frankfurt’s Christmas market starts only on 23 November."
+      },
+      "guides": [
+        {
+          "title": "Christmas Markets in Germany: Plan Your First Visit",
+          "summary": "A practical guide to finding local dates, understanding reusable-cup deposits and planning a comfortable first Christmas-market visit.",
+          "url": "/mygermanfreund/guides/christmas-markets-in-germany/"
+        }
+      ]
+    },
+    {
+      "title": "Plätzchen backen zu Hause",
+      "englishTitle": "Baking Christmas Cookies at Home",
+      "englishContext": "In November, some families begin baking cookies for Advent. Popular types include butter cookies and vanilla crescent cookies. Many varieties can be stored in a tin for a few weeks. Baking often requires flour, butter, sugar, spices and cookie cutters.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Viele Plätzchen werden in einer Dose aufbewahrt. Manche Sorten schmecken nach ein paar Tagen sogar noch besser.",
+        "en": "Many Christmas cookies are stored in a tin. Some varieties may even taste better after a few days."
+      },
+      "guides": []
+    },
+    {
+      "title": "Warme Kleidung für kalte Tage",
+      "englishTitle": "Warm Clothing for Cold Days",
+      "englishContext": "In November, warmer clothing is often needed outdoors. Several layers can be practical because you can take one layer off indoors. A hat, scarf and gloves protect the head, neck and hands from the cold. For longer journeys, it helps to check the weather forecast.",
+      "interestingFacts": {
+        "enabled": false
+      },
+      "guides": []
+    }
+  ]
+}
