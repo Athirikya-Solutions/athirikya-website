@@ -1,0 +1,61 @@
+{
+  "issueId": "2026-W48",
+  "topics": [
+    {
+      "title": "Der erste Advent",
+      "englishTitle": "The First Sunday of Advent",
+      "englishContext": "Sunday, 29 November, is the first Sunday of Advent. It marks the beginning of Advent, the time of preparation for Christmas. Many homes have an Advent wreath with four candles. Traditionally, the wreath is made of fir branches. Another candle is lit on each Sunday of Advent.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Ein Adventskranz hat meistens vier Kerzen – eine für jeden Adventssonntag.",
+        "en": "An Advent wreath usually has four candles, one for each Sunday of Advent."
+      },
+      "guides": [
+        {
+          "title": "Advent in Germany: Wreaths, Calendars and Traditions",
+          "summary": "Understand the four Sundays of Advent, wreaths, calendars and simple ways to enjoy the season.",
+          "url": "/mygermanfreund/guides/advent-traditions-in-germany/"
+        }
+      ]
+    },
+    {
+      "title": "Black Friday – Angebote vergleichen",
+      "englishTitle": "Black Friday: Comparing Offers",
+      "englishContext": "Friday, 27 November, is Black Friday. Many shops and online stores offer discounts on clothing, electronics and other products. However, not every special offer is really a good deal. Comparing prices with other shops or with earlier prices can help you save money. It is worth buying only things you really need.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Beim Online-Kauf lohnt es sich, den Gesamtpreis zu vergleichen. Dazu gehören auch mögliche Versandkosten.",
+        "en": "When shopping online, it is worth comparing the total price, including any delivery costs."
+      },
+      "guides": [
+        {
+          "title": "Black Friday in Germany: A Practical Shopping Guide",
+          "summary": "Compare total prices, check unfamiliar sellers and make a considered decision before buying.",
+          "url": "/mygermanfreund/guides/black-friday-shopping-in-germany/"
+        }
+      ]
+    },
+    {
+      "title": "Ein Adventskalender für Dezember",
+      "englishTitle": "An Advent Calendar for December",
+      "englishContext": "A traditional Advent calendar has 24 little doors or small packages. From 1 to 24 December, one is opened each day. Behind the doors there is often chocolate, a picture or a small gift. Some families make their own calendar and fill it with personal surprises. Advent calendars are available for adults as well as children.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Ein Adventskalender beginnt meistens am 1. Dezember. Der erste Advent kann aber schon im November sein.",
+        "en": "An Advent calendar usually begins on 1 December. However, the first Sunday of Advent can fall in November."
+      },
+      "guides": []
+    },
+    {
+      "title": "Zeit für Christstollen",
+      "englishTitle": "Time for Christstollen",
+      "englishContext": "Christstollen is a traditional German Christmas bake. It is usually made from yeast dough with butter, raisins and other ingredients. Some varieties also contain almonds or marzipan. The Stollen often has a thick layer of powdered sugar on top. Dresden Christstollen is especially well known and is often enjoyed with coffee or tea during Advent.",
+      "interestingFacts": {
+        "enabled": true,
+        "de": "Stollen gibt es mit unterschiedlichen Zutaten. Wer eine Allergie hat oder bestimmte Lebensmittel meidet, sollte die Zutatenliste prüfen.",
+        "en": "Stollen comes with different ingredients. People with allergies or dietary restrictions should check the ingredients list."
+      },
+      "guides": []
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "2026-W48",
+  "title": "German Buzz",
+  "weekNumber": 48,
+  "year": 2026,
+  "dateRange": "23. November – 29. November 2026",
+  "tagline": "Prepare for real conversations this week.",
+  "weeklySummary": "Der erste Advent • Black Friday – Angebote vergleichen • Ein Adventskalender für Dezember • Zeit für Christstollen",
+  "published": true,
+  "publishedAt": "2026-11-22T09:00:00+01:00",
+  "topics": [
+    {
+      "title": "Der erste Advent",
+      "whatsHappening": "Am Sonntag, dem 29. November, ist der erste Advent. Damit beginnt die Adventszeit, die Zeit der Vorbereitung auf Weihnachten. In vielen Wohnungen steht ein Adventskranz mit vier Kerzen. Der Kranz besteht traditionell aus Tannenzweigen. An jedem Adventssonntag zündet man eine weitere Kerze an.",
+      "conversationStarters": [
+        "MGF: Hast du schon einen Adventskranz zu Hause?",
+        "Du: Noch nicht. Ich möchte am Samstag einen kaufen.",
+        "MGF: Machst du deinen Adventskranz selbst?",
+        "Du: Dieses Jahr nicht, aber vielleicht nächstes Jahr.",
+        "MGF: Am Sonntag kannst du schon die erste Kerze anzünden.",
+        "Du: Ja, ich freue mich auf eine gemütliche Adventszeit."
+      ],
+      "possibleReplies": [
+        "der Adventskranz — Advent wreath",
+        "die Kerze — candle",
+        "eine Kerze anzünden — to light a candle",
+        "der Tannenzweig — fir branch",
+        "die Adventszeit — Advent season"
+      ],
+      "germanContext": "Am ersten Advent zünden wir die erste Kerze auf dem Adventskranz an."
+    },
+    {
+      "title": "Black Friday – Angebote vergleichen",
+      "whatsHappening": "Am Freitag, dem 27. November, ist Black Friday. Viele Geschäfte und Online-Shops bieten Rabatte auf Kleidung, Elektrogeräte und andere Produkte an. Nicht jedes Sonderangebot ist aber wirklich günstig. Ein Preisvergleich mit anderen Geschäften oder früheren Preisen kann beim Sparen helfen. Es lohnt sich, nur Dinge zu kaufen, die man wirklich braucht.",
+      "conversationStarters": [
+        "MGF: Möchtest du am Black Friday etwas kaufen?",
+        "Du: Ja, ich brauche neue Kopfhörer.",
+        "MGF: Hast du schon ein gutes Angebot gefunden?",
+        "Du: Ja, aber ich möchte noch die Preise vergleichen.",
+        "MGF: Wie hoch ist der Rabatt?",
+        "Du: Zwanzig Prozent, aber vielleicht finde ich sie woanders noch günstiger."
+      ],
+      "possibleReplies": [
+        "der Rabatt — discount",
+        "das Sonderangebot — special offer",
+        "das Schnäppchen — bargain",
+        "der Preisvergleich — price comparison",
+        "reduziert — reduced in price"
+      ],
+      "germanContext": "Bevor ich ein Sonderangebot nutze, vergleiche ich die Preise."
+    },
+    {
+      "title": "Ein Adventskalender für Dezember",
+      "whatsHappening": "Ein traditioneller Adventskalender hat 24 Türchen oder kleine Päckchen. Vom 1. bis zum 24. Dezember öffnet man jeden Tag eines davon. Hinter den Türchen verstecken sich oft Schokolade, Bilder oder kleine Geschenke. Manche Familien basteln einen Kalender selbst und füllen ihn mit persönlichen Überraschungen. Adventskalender gibt es nicht nur für Kinder, sondern auch für Erwachsene.",
+      "conversationStarters": [
+        "MGF: Hast du schon einen Adventskalender für dieses Jahr?",
+        "Du: Ja, ich möchte einen für meine Familie selbst machen.",
+        "MGF: Womit möchtest du ihn füllen?",
+        "Du: Mit Schokolade und kleinen Überraschungen.",
+        "MGF: Sind schon alle 24 Päckchen fertig?",
+        "Du: Fast. Bis zum 1. Dezember habe ich noch etwas Zeit."
+      ],
+      "possibleReplies": [
+        "der Adventskalender — Advent calendar",
+        "das Türchen — little door",
+        "das Päckchen — small package",
+        "die Überraschung — surprise",
+        "etwas füllen — to fill something"
+      ],
+      "germanContext": "Ab dem 1. Dezember öffnen wir jeden Tag ein Türchen im Adventskalender."
+    },
+    {
+      "title": "Zeit für Christstollen",
+      "whatsHappening": "Christstollen ist ein traditionelles deutsches Weihnachtsgebäck. Er besteht meist aus Hefeteig mit Butter, Rosinen und weiteren Zutaten. Manche Sorten enthalten auch Mandeln oder Marzipan. Auf dem Stollen liegt oft eine dicke Schicht Puderzucker. Besonders bekannt ist der Dresdner Christstollen, den man in der Adventszeit gern mit Kaffee oder Tee genießt.",
+      "conversationStarters": [
+        "MGF: Hast du schon einmal Christstollen probiert?",
+        "Du: Noch nicht. Ist das eine Art Weihnachtskuchen?",
+        "MGF: Ja, es gibt ihn mit verschiedenen Zutaten.",
+        "Du: Gibt es auch Stollen mit Marzipan?",
+        "MGF: Ja, Marzipanstollen ist sehr beliebt.",
+        "Du: Dann kaufe ich einen für unseren Adventssonntag."
+      ],
+      "possibleReplies": [
+        "der Christstollen — traditional German Christmas fruit loaf",
+        "das Weihnachtsgebäck — Christmas baked goods",
+        "der Puderzucker — powdered sugar",
+        "das Marzipan — marzipan",
+        "die Rosine — raisin"
+      ],
+      "germanContext": "In der Adventszeit esse ich gern ein Stück Christstollen zu meinem Kaffee."
+    }
+  ]
+}
