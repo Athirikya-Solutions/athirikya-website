@@ -124,5 +124,23 @@
     "url": "/mygermanfreund/guides/christmas-markets-in-germany/",
     "sourceIssueId": "2026-W47",
     "sourceTopic": "Die ersten Weihnachtsmärkte öffnen"
+  },
+  {
+    "id": "advent-traditions-in-germany",
+    "lifeArea": "culture",
+    "title": "Advent in Germany: Wreaths, Calendars and Traditions",
+    "summary": "Understand the four Sundays of Advent, wreaths, calendars and simple ways to enjoy the season.",
+    "url": "/mygermanfreund/guides/advent-traditions-in-germany/",
+    "sourceIssueId": "2026-W48",
+    "sourceTopic": "Der erste Advent"
+  },
+  {
+    "id": "black-friday-shopping-in-germany",
+    "lifeArea": "culture",
+    "title": "Black Friday in Germany: A Practical Shopping Guide",
+    "summary": "Compare total prices, check unfamiliar sellers and make a considered decision before buying.",
+    "url": "/mygermanfreund/guides/black-friday-shopping-in-germany/",
+    "sourceIssueId": "2026-W48",
+    "sourceTopic": "Black Friday – Angebote vergleichen"
   }
 ]
